@@ -1,0 +1,300 @@
+{
+    "root": {
+        "data": {
+            "id": "c2dlsoq89k00",
+            "created": 1588154533757,
+            "text": "词项词典和倒排记录表"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2dlt1rjio00",
+                    "created": 1588154562134,
+                    "text": "建立词项词典"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2dml9gk73s0",
+                            "created": 1588156773081,
+                            "text": "文档解析"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dmlcqrnco0",
+                            "created": 1588156780229,
+                            "text": "词条化"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dmsa6b4rs0",
+                                    "created": 1588157323187,
+                                    "text": "将给定的字符序列拆分成一系列子序列（词条Token）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dmsvenwew0",
+                                    "created": 1588157369405,
+                                    "text": "每个词条都作为候选的索引"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dmt9jj0kw0",
+                                    "created": 1588157400174,
+                                    "text": "词条化的策略"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2dmtewvrio0",
+                                            "created": 1588157411865,
+                                            "text": "基于字典"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2dmvl9r6jk0",
+                                                    "created": 1588157582433,
+                                                    "text": "将字符串与字典中的词条进行匹配，匹配成功则字符串是一个词条"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2dmvq730q80",
+                                                    "created": 1588157593155,
+                                                    "text": "按扫描方向"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c2dmvuff9080",
+                                                            "created": 1588157602367,
+                                                            "text": "正向匹配"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c2dmvwyjrj40",
+                                                            "created": 1588157607877,
+                                                            "text": "逆向匹配"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2dmw4vsalk0",
+                                                    "created": 1588157625124,
+                                                    "text": "按扫描长度"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c2dmwphl0n40",
+                                                            "created": 1588157669978,
+                                                            "text": "最大匹配"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c2dmwsikd9k0",
+                                                            "created": 1588157676567,
+                                                            "text": "最小匹配"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2dmx02ud9c0",
+                                                    "created": 1588157693031,
+                                                    "text": "正向最大匹配"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c2dmyke2do80",
+                                                            "created": 1588157815609,
+                                                            "text": "从左向右取待切分语句的m个字符作为匹配字段（m为词典中最长词条个数）"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c2dmzbosb5c0",
+                                                            "created": 1588157875031,
+                                                            "text": "查找词典并匹配"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c2dmzfterts0",
+                                                                    "created": 1588157884017,
+                                                                    "text": "匹配成功：将匹配字段作为词条切分出来"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c2dmznhqeeo0",
+                                                                    "created": 1588157900725,
+                                                                    "text": "匹配失败：将匹配字段的最后一个字去掉，剩下的字符串作为新的匹配字段，再次匹配，直到切分出所有词条"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2dmx4bd9l40",
+                                                    "created": 1588157702253,
+                                                    "text": "逆向最大匹配"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2dmx78jm9k0",
+                                                    "created": 1588157708613,
+                                                    "text": "双向最大匹配"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c2dn0gkfamw0",
+                                                            "created": 1588157964015,
+                                                            "text": "将征向最大匹配和逆向最大匹配的结果进行比较，将可能的最大词都划分出来"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2dmtiw0ay00",
+                                            "created": 1588157420520,
+                                            "text": "基于统计"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2dmucolrw80",
+                                                    "created": 1588157485376,
+                                                    "text": "训练：根据观测到的数据（人工标注好的语料）的统计特征对模型参数进行估计"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2dmuuqyl9s0",
+                                                    "created": 1588157524700,
+                                                    "text": "分词：通过模型计算各种分词出现的概率，将概率最大的分词结果作为最终结果"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2dn0z4g17c0",
+                                                    "created": 1588158004408,
+                                                    "text": "n-gram：基于假设，第n个词的出现只与前面n-1个词相关，与爱他此都不相关，整句的概率就是歌歌词出现概率的乘积"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2dmlib6ic00",
+                            "created": 1588156792347,
+                            "text": "停用词"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dmlln0zig0",
+                            "created": 1588156799594,
+                            "text": "词项归一化"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dmlpvw7z40",
+                            "created": 1588156808837,
+                            "text": "词干还原"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dmlsohu5c0",
+                            "created": 1588156814920,
+                            "text": "词形合并"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2dlt7jbeg00",
+                    "created": 1588154574698,
+                    "text": "实现倒排记录表",
+                    "progress": 1
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2dmlzixx5s0",
+                            "created": 1588156829822,
+                            "text": "快速合并算法：带跳表的倒排记录表",
+                            "progress": 1
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dmm2tgkk00",
+                            "created": 1588156836988,
+                            "text": "包含位置信息的倒排记录表和短语查询"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9qf2lk2g0",
+                            "created": 1591776661130,
+                            "text": "HMM？",
+                            "progress": 1
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

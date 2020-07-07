@@ -1,0 +1,651 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "指令系统"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3kblono1k80",
+                    "created": 1592492852091,
+                    "text": "数据表示"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kbpkgi8w80",
+                            "created": 1592493156407,
+                            "text": "定义：计算机硬件能够直接识别，可以被指令系统直接调用的数据类型"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbprzj90o0",
+                            "created": 1592493172795,
+                            "text": "数据结构要通过软件映像，变换成机器所具有的数据表示来实现，不同数据表示可以为数据结构的实现提供不同支持"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbqes7bow0",
+                            "created": 1592493222418,
+                            "text": "数据结构和数据表示实际上是软硬件的交界面，需要在系统结构设计时予以确定"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbqxghszc0",
+                            "created": 1592493263069,
+                            "text": "高级数据表示"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kbr04euy80",
+                                    "created": 1592493268868,
+                                    "text": "自定义数据表示"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kbuh4ewv40",
+                                            "created": 1592493540966,
+                                            "text": "标志符数据表示"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbyyz4hs00",
+                                    "created": 1592493893285,
+                                    "text": "向量、数组数据表示"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kbz5rxnt40",
+                                            "created": 1592493908088,
+                                            "text": "为向量、数组数据结构的实现和快速运算提供更好的硬件支持的方法是增设数组数据表示，组成向量机"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbz1xw9ao0",
+                                    "created": 1592493899741,
+                                    "text": "堆栈数据表示"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kc02ihayw0",
+                            "created": 1592493979350,
+                            "text": "引入数据表示的原则"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kc093rb0o0",
+                                    "created": 1592493993697,
+                                    "text": "看系统的效率是否显著提高，包括实现时间和存储空间是否显著减少"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kc0lzmcqo0",
+                                    "created": 1592494021745,
+                                    "text": "通用性和利用率是否提高"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kc305r8hs0",
+                            "created": 1592494209320,
+                            "text": "浮点数的表示方法",
+                            "priority": 1
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kblq6cby80",
+                    "created": 1592492855397,
+                    "text": "寻址技术"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kc3sytzns0",
+                            "created": 1592494272028,
+                            "text": "编址方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kc42lv83c0",
+                                    "created": 1592494293012,
+                                    "text": "编址单位"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kc4ds9gfs0",
+                                            "created": 1592494317343,
+                                            "text": "常用编址单位：字编址，字节编址，位编址，块编制"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kc7faj1yo0",
+                                    "created": 1592494555717,
+                                    "text": "大端小端"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kca48525c0",
+                                    "created": 1592494766720,
+                                    "text": "零地址空间个数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kca73dx3c0",
+                                    "created": 1592494772963,
+                                    "text": "并行存储器的编址技术"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kcairjniw0",
+                                            "created": 1592494798368,
+                                            "text": "模m低位交叉编址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kcay9qf8g0",
+                                            "created": 1592494832120,
+                                            "text": "模m高位交叉编址"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kcb90o2g00",
+                                    "created": 1592494855516,
+                                    "text": "输入输出设备的编制"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kc3ww1iv40",
+                            "created": 1592494280566,
+                            "text": "寻址方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kccaohaf40",
+                                    "created": 1592494937497,
+                                    "text": "立即数寻址方式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kccj800vk0",
+                                    "created": 1592494956092,
+                                    "text": "面向寄存器的寻址方式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kccmoqoy80",
+                                    "created": 1592494963634,
+                                    "text": "面向主存储器的寻址方式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kcd0pjhyg0",
+                                            "created": 1592494994158,
+                                            "text": "直接寻址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kcd3erpt40",
+                                            "created": 1592495000037,
+                                            "text": "间接寻址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kcd6771co0",
+                                            "created": 1592495006109,
+                                            "text": "变址寻址"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kcepw87j40",
+                                    "created": 1592495127346,
+                                    "text": "面向堆栈的寻址方式"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kc3yex9s80",
+                            "created": 1592494283885,
+                            "text": "定位方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kcew62iew0",
+                                    "created": 1592495141001,
+                                    "text": "程序所分配到的主存物理空间和程序本身的逻辑物理空间不相同，需要转换"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kcf75tzao0",
+                                    "created": 1592495164932,
+                                    "text": "定位方式主要研究程序的主存物理地址在什么时间确定，采用什么方式来实现"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kcfkt8gco0",
+                                    "created": 1592495194645,
+                                    "text": "直接定位"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kcfsv4kbk0",
+                                            "created": 1592495212174,
+                                            "text": "在程序装入主存储器之前，程序中的指令和数据的主存物理就已经确定了"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kcfmnfvrc0",
+                                    "created": 1592495198648,
+                                    "text": "静态定位"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kcgaocamg0",
+                                            "created": 1592495250945,
+                                            "text": "在程序装入主存储器的过程中进行地址变换，确定指令和数据的主存物理地址"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kcfow0cnc0",
+                                    "created": 1592495203520,
+                                    "text": "动态定位"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kcgl9b1vk0",
+                                            "created": 1592495273981,
+                                            "text": "在程序执行过程中访问到相应的指令或数据时才进行地址变换，确定指令和数据的主存物理地址"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kblrjbsig0",
+                    "created": 1592492858358,
+                    "text": "优化设计"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kd96mrd2w0",
+                            "created": 1592497514703,
+                            "text": "目的：节省程序存储空间，指令格式尽量规整，便于译码"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3kd9mualu80",
+                            "created": 1592497549988,
+                            "text": "指令的组成"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kd9p128bc0",
+                                    "created": 1592497554750,
+                                    "text": "操作码"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kdad7qq5c0",
+                                            "created": 1592497607397,
+                                            "text": "操作种类"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kdaedtbwo0",
+                                            "created": 1592497609941,
+                                            "text": "操作数描述"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kd9r4modc0",
+                                    "created": 1592497559320,
+                                    "text": "地址码"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kda2m7mlc0",
+                                            "created": 1592497584327,
+                                            "text": "地址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kda4jhr8o0",
+                                            "created": 1592497588517,
+                                            "text": "地址的附加信息"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kda77a4fc0",
+                                            "created": 1592497594308,
+                                            "text": "寻址方式"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kd9upp2f40",
+                            "created": 1592497567124,
+                            "text": "指令的优化设计"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kdal1fke00",
+                                    "created": 1592497624430,
+                                    "text": "固定长度"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kdaxrrvs00",
+                                            "created": 1592497652144,
+                                            "text": "规整，译码简单，浪费信息量"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kdamjguw80",
+                                    "created": 1592497627697,
+                                    "text": "哈夫曼编码"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kdbccszug0",
+                                            "created": 1592497683891,
+                                            "text": "哈夫曼树（最小概率合并法）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kdaoh7iiw0",
+                                    "created": 1592497631914,
+                                    "text": "拓展编码"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kdc6jrevk0",
+                                            "created": 1592497749615,
+                                            "text": "长度不规整，译码困难，和地址码共同组成固定长的指令比较困难"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kd9wt0fds0",
+                            "created": 1592497571678,
+                            "text": "指令字格式的优化设计"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kdco8kfm80",
+                                    "created": 1592497788120,
+                                    "text": "采用拓展码缩短操作码平均码长"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kdcrhluo80",
+                                    "created": 1592497795197,
+                                    "text": "采用多种寻址方式缩短地址码长度，并在有限地址长度提供更多地址信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kddckqc340",
+                                    "created": 1592497841098,
+                                    "text": "采用多种地址制，增强指令功能，从宏观上缩短指令长度加快指令执行速度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kddusis2o0",
+                                    "created": 1592497880751,
+                                    "text": "同种地址制内采用多种地址形式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kde0f9i6o0",
+                                    "created": 1592497893010,
+                                    "text": "维持指令字在存储器内按整数边界存储前提下使用多种不同的指令字长度"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kbltahud40",
+                    "created": 1592492862178,
+                    "text": "发展改进"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kdelegtig0",
+                            "created": 1592497938675,
+                            "text": "按CISC方向"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kdesyzsaw0",
+                                    "created": 1592497955153,
+                                    "text": "增强原有指令功能以及设置更为复杂的新指令，取代由软件子程序完成的功能，实现软件功能硬化"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kdeoc0ajs0",
+                            "created": 1592497945056,
+                            "text": "按RISC方向"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kdfbp8v1c0",
+                                    "created": 1592497995923,
+                                    "text": "通过减少指令种类和简化指令功能来降低硬件设计的复杂度，提高指令执行速度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kdgckp20g0",
+                                    "created": 1592498076188,
+                                    "text": "关键技术"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kdgfeoo8o0",
+                                            "created": 1592498082355,
+                                            "text": "延时转移"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kdghtf79k0",
+                                            "created": 1592498087600,
+                                            "text": "指令取消"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kdgk65rxs0",
+                                            "created": 1592498092724,
+                                            "text": "重叠寄存器窗口"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kdgoe5i8w0",
+                                            "created": 1592498101914,
+                                            "text": "指令流调整"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kdgtryw680",
+                                            "created": 1592498113634,
+                                            "text": "高速缓存Cache"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kdgx55n9c0",
+                                            "created": 1592498120961,
+                                            "text": "优化编译系统"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

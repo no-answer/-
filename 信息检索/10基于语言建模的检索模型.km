@@ -1,0 +1,30 @@
+{
+    "root": {
+        "data": {
+            "id": "c3mnhxa0e2o0",
+            "created": 1592729530631,
+            "text": "基于语言建模的检索模型"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3mote4zpuo0",
+                    "created": 1592733250450,
+                    "text": "概率语言模型"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c3motj0kz200",
+                    "created": 1592733261066,
+                    "text": "应用"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

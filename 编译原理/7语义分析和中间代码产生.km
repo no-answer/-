@@ -1,0 +1,115 @@
+{
+    "root": {
+        "data": {
+            "id": "c2ztmyl293s0",
+            "created": 1590410972953,
+            "text": "语义分析和中间代码生成"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3hnqqctt680",
+                    "created": 1592222421058,
+                    "text": "中间语言"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hnqrw8c4g0",
+                            "created": 1592222424408,
+                            "text": "后缀式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hnqtqokxk0",
+                            "created": 1592222428426,
+                            "text": "三地址代码 x := y op z"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hoinncxfk0",
+                                    "created": 1592224609361,
+                                    "text": "抽象语法树或DAG的线性表示，语句通常包含三个地址，两个操作数和一个结果"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hnqwiv4t40",
+                                    "created": 1592222434484,
+                                    "text": "四元式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hpal58r5c0",
+                                            "created": 1592226798109,
+                                            "text": "四个域的记录结构 op arg1 arg2 result"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hnqv4ircw0",
+                                    "created": 1592222431440,
+                                    "text": "三元式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hpckcvp0w0",
+                                            "created": 1592226953122,
+                                            "text": "通过计算临时变量值的语句的位置来引用临时变量"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hnqxgp39s0",
+                                    "created": 1592222436530,
+                                    "text": "间接三元式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hpbbutisw0",
+                                            "created": 1592226856252,
+                                            "text": "另设间接码表辅以三元式表的方法来表示中间代码"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hohid2iew0",
+                            "created": 1592224519491,
+                            "text": "DAG可以标识出公共子表达式"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3hpdrqqt540",
+                    "created": 1592227047562,
+                    "text": "赋值语句的翻译"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

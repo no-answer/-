@@ -1,0 +1,208 @@
+{
+    "root": {
+        "data": {
+            "id": "c2ztmyl293s0",
+            "created": 1590410972953,
+            "text": "优化"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3hi5ex1c4w0",
+                    "created": 1592206644962,
+                    "text": "原则"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hi5guszu00",
+                            "created": 1592206649181,
+                            "text": "等价：优化后不改变程序运行结果"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hi5mk8pig0",
+                            "created": 1592206661603,
+                            "text": "有效：优化后产生的目标代码运行时间较短，占用存储空间较小"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hi5x2ayc00",
+                            "created": 1592206684463,
+                            "text": "合算：尽可能以低代价取得较好优化效果"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3hi68n1wgw0",
+                    "created": 1592206709662,
+                    "text": "常用技术"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hi6jx7uq00",
+                            "created": 1592206734221,
+                            "text": "删除公共子表达式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hi6tbbp7s0",
+                            "created": 1592206754665,
+                            "text": "复写传播：减少中间过程"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hi6x5ox140",
+                            "created": 1592206763032,
+                            "text": "删除无用代码：无用的变量赋值代码"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hi74sc35k0",
+                            "created": 1592206779638,
+                            "text": "代码外提：循环中的代码产生的结果在循环中不变"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hi78c6low0",
+                            "created": 1592206787369,
+                            "text": "强度削弱：乘除法转变成加减法"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hi7a3md2w0",
+                            "created": 1592206791205,
+                            "text": "删除归纳变量"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3hi95ns9zs0",
+                    "created": 1592206938268,
+                    "text": "局部优化"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hikfw09o00",
+                            "created": 1592207822539,
+                            "text": "基本块：程序中一顺序执行的语句序列，只有一个入口和出口"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hil2o3ryw0",
+                            "created": 1592207872127,
+                            "text": "划分四元式程序为基本块的算法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hila0igd40",
+                                    "created": 1592207888115,
+                                    "text": "求出四元式程序中各个基本块的入口语句",
+                                    "priority": 1
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hilmw81ig0",
+                                            "created": 1592207916154,
+                                            "text": "程序的第一个语句"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3hilrtrhk00",
+                                            "created": 1592207926889,
+                                            "text": "能由条件转移语句或无条件转移语句转移到的语句"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3him1at4lk0",
+                                            "created": 1592207947511,
+                                            "text": "紧跟在条件转移语句后面的语句"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3him8r50ag0",
+                                    "created": 1592207963735,
+                                    "text": "对以上入口语句，构造其所属的基本块",
+                                    "priority": 2
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3himimiq4o0",
+                                            "created": 1592207985224,
+                                            "text": "由该入口语句到零一入口语句，或到一转移语句，或到一停语句之间的语句序列组成的"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hin1eizo00",
+                                    "created": 1592208026100,
+                                    "text": "未被纳入某一基本块内的的语句，都是程序控制流程无法达到的语句，即不会执行，可删除",
+                                    "priority": 3
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hizuqvar40",
+                            "created": 1592209030342,
+                            "text": "基本块的DAG表示及其应用"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hj00wgtx40",
+                                    "created": 1592209043742,
+                                    "text": "一个基本块的DAG是一种节点下带有下述标记或附加信息的DAG"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

@@ -1,0 +1,122 @@
+{
+    "root": {
+        "data": {
+            "id": "c3mk23626zs0",
+            "created": 1592719826297,
+            "text": "支持向量机"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3mk4tp7dbc0",
+                    "created": 1592720040779,
+                    "text": "定义"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mk4emljls0",
+                            "created": 1592720007970,
+                            "text": "最大间隔分类器的以重，基于向量空间的机器学习方法"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mk4xpr4bc0",
+                            "created": 1592720049519,
+                            "text": "目标是找到两个类别之间的一个决策边界，使之尽量远离训练集上任意一点（不包含离群点和噪点）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mk5el8v3k0",
+                            "created": 1592720086252,
+                            "text": "准则是寻找一个离数据点最远的据侧面，从决策面到最近数据点的距离决定了分类器的间隔"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mmpvsgrnc0",
+                    "created": 1592727333197,
+                    "text": "几何间隔"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mmpym5fu80",
+                            "created": 1592727339346,
+                            "text": "中间空白带的最大宽度，该空白带可以用于将两类支持向量分开，是支持向量到超平面距离的两倍"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mlg1a8fkw0",
+                    "created": 1592723740404,
+                    "text": "软间隔分类"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mmqtst6140",
+                            "created": 1592727407229,
+                            "text": "如果训练集不是线性可分，引入松弛变量来允许决策间隔犯错误"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmr50804o0",
+                            "created": 1592727431621,
+                            "text": "以一定的代价将噪点移到其他类"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmrc0wf6g0",
+                            "created": 1592727446900,
+                            "text": "训练的目标依然是最小化错误，并求最大间隔超平面"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mmroy4nxk0",
+                    "created": 1592727475030,
+                    "text": "非线性SVM"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mmrxo6vxc0",
+                            "created": 1592727494021,
+                            "text": "数据集是线性可分的"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmrzzkpyg0",
+                            "created": 1592727499062,
+                            "text": "如果数据集不可能被线性分类器直接分开，可以将数据映射到一个高维空间并在此空间上使用线性分类器将数据分开"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

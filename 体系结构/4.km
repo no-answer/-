@@ -1,0 +1,931 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "输入输出系统"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3lo2kwv1xs0",
+                    "created": 1592629589406,
+                    "text": "输入输出原理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3lo2yitwyg0",
+                            "created": 1592629619032,
+                            "text": "处理机和主存之外的部分统称为输入输出系统，时处理机与外界进行数据交换的通道"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3lo6lq4eug0",
+                            "created": 1592629904632,
+                            "text": "异步性"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lo7o46syo0",
+                                    "created": 1592629988200,
+                                    "text": "每个设备有自己的时钟"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lo6nlxiow0",
+                            "created": 1592629908732,
+                            "text": "实时性"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lo7j25ns80",
+                                    "created": 1592629977193,
+                                    "text": "及时提供服务并处理错误"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lo6on5vq80",
+                            "created": 1592629910983,
+                            "text": "与设备无关性"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lo79vilmo0",
+                                    "created": 1592629957201,
+                                    "text": "独立于设备的标准接口"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lo6u41q3s0",
+                            "created": 1592629922888,
+                            "text": "输入输出系统的组织"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lo77tum1c0",
+                                    "created": 1592629952746,
+                                    "text": "针对异步性，采用自治控制"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lo8243n9k0",
+                                    "created": 1592630018670,
+                                    "text": "针对实时性，采用层次结构"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lo88mxtuo0",
+                                    "created": 1592630032869,
+                                    "text": "针对与设备无关性，采用分类处理"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lo96lgmiw0",
+                            "created": 1592630106791,
+                            "text": "基本输入输出方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lo8pguvz40",
+                                    "created": 1592630069507,
+                                    "text": "程序控制输入输出方式Polling",
+                                    "priority": null,
+                                    "progress": 1
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lo998v9400",
+                                    "created": 1592630112559,
+                                    "text": "中断Interrupts",
+                                    "progress": 1
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lo9lc448o0",
+                                    "created": 1592630138877,
+                                    "text": "直接存储器访问方式DMA",
+                                    "progress": 1
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lo9x5suuo0",
+                                            "created": 1592630164617,
+                                            "text": "周期窃取"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lo9zf43gg0",
+                                            "created": 1592630169533,
+                                            "text": "直接存取"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3loa0vp5so0",
+                                            "created": 1592630172713,
+                                            "text": "数据块传送"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lo2pmdi5c0",
+                    "created": 1592629599656,
+                    "text": "中断系统"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3log2aar9c0",
+                            "created": 1592630645958,
+                            "text": "中断优先级"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3log8hm7ew0",
+                                    "created": 1592630659461,
+                                    "text": "由硬件排队器决定中断优先级，通过软件设置中断屏蔽码改变中断服务顺序"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3loikz3fvc0",
+                            "created": 1592630843367,
+                            "text": "软硬件分配",
+                            "progress": 1
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3loimvp1ts0",
+                                    "created": 1592630847515,
+                                    "text": "硬件实现速度快，灵活性差"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lolu770rk0",
+                                            "created": 1592631098541,
+                                            "text": "保存中断点和进入中断服务程序入口"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3loit97xsw0",
+                                    "created": 1592630861394,
+                                    "text": "软件实现速度满，灵活性好"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lom00wfg00",
+                                            "created": 1592631111221,
+                                            "text": "中断服务和返回到中断点"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3loj771cso0",
+                            "created": 1592630891737,
+                            "text": "中断处理过程",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lojbubk5k0",
+                                    "created": 1592630901852,
+                                    "text": "现行值零结束，且没有更紧急的服务请求"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lojgtsjsg0",
+                                    "created": 1592630912704,
+                                    "text": "关CPU中断"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lojj14ciw0",
+                                    "created": 1592630917500,
+                                    "text": "保存断点"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lojl65rcg0",
+                                    "created": 1592630922159,
+                                    "text": "撤销中断源的中断请求"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lojpccz2o0",
+                                    "created": 1592630931241,
+                                    "text": "保存硬件现场，主要是PSW及SP等"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lojw3uia80",
+                                    "created": 1592630945964,
+                                    "text": "识别中断源"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lojywc5fk0",
+                                    "created": 1592630952040,
+                                    "text": "改变设备屏蔽状态"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lok1e2jjk0",
+                                    "created": 1592630957466,
+                                    "text": "进入终端服务程序入口"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lok4e4wao0",
+                                    "created": 1592630964000,
+                                    "text": "保存软件现场，在中断服务程序中使用的通用寄存器等"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lokmatgbc0",
+                                    "created": 1592631002981,
+                                    "text": "开CPU中断，可以响应更高级别的中断请求"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lokwbz6dk0",
+                                    "created": 1592631024819,
+                                    "text": "中断服务，执行中断服务程序"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lol6k1o7s0",
+                                    "created": 1592631047075,
+                                    "text": "关CPU中断"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lol8oltpc0",
+                                    "created": 1592631051704,
+                                    "text": "恢复软件现场"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lolapuq1c0",
+                                    "created": 1592631056133,
+                                    "text": "恢复屏蔽状态"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lolds7nvc0",
+                                    "created": 1592631062806,
+                                    "text": "恢复硬件现场"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lolfujebc0",
+                                    "created": 1592631067300,
+                                    "text": "开CPU中断"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lolhwgjxs0",
+                                    "created": 1592631071770,
+                                    "text": "返回到中断点"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3loloenibs0",
+                            "created": 1592631085931,
+                            "text": "中断源的识别方法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lomq5ixgw0",
+                                    "created": 1592631168097,
+                                    "text": "查询法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lomt5f2t40",
+                                    "created": 1592631174621,
+                                    "text": "软件排队链法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lomxsb5940",
+                                    "created": 1592631184712,
+                                    "text": "串行排队链法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lon2sfr8g0",
+                                    "created": 1592631195604,
+                                    "text": "中断向量法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lon88lptk0",
+                                    "created": 1592631207465,
+                                    "text": "独立请求法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3longdior40",
+                            "created": 1592631225176,
+                            "text": "中断屏蔽",
+                            "progress": 1
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lonpqejo00",
+                                    "created": 1592631245547,
+                                    "text": "可以在硬件确定了中断优先级之后改变中断源的服务顺序"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lopnvaurc0",
+                                    "created": 1592631398217,
+                                    "text": "每个中断源设置一个中断屏蔽位"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lpwtbf0ig0",
+                                            "created": 1592634779735,
+                                            "text": "需要的屏蔽位数较多，可屏蔽任意个中断源"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lops4od340",
+                                    "created": 1592631407492,
+                                    "text": "改变处理机优先级"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lpx26on0g0",
+                                            "created": 1592634799040,
+                                            "text": "只需要log2n个屏蔽位，只能屏蔽掉比某个优先级低的中断源"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lo2r83shc0",
+                    "created": 1592629603146,
+                    "text": "通道处理机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3lpxkuoslc0",
+                            "created": 1592634839673,
+                            "text": "通道的作用和功能"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lpzxylh2w0",
+                                    "created": 1592635024936,
+                                    "text": "接收CPU发来的指令，选择一台指定的外围设备与通道相连接"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lpxoei1l40",
+                            "created": 1592634847402,
+                            "text": "通道的工作过程"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lq0o67cyo0",
+                                    "created": 1592635081992,
+                                    "text": "用户程序使用访管指令进入管理程序，CPU通过管理程序组织一个通道程序，并启动通道"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lq15kzcy80",
+                                    "created": 1592635119891,
+                                    "text": "通道处理机执行程序，完成指定的数据输入输出工作"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lq1d33vi80",
+                                    "created": 1592635136225,
+                                    "text": "通道程序结束后再次调用管理程序进行处理"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lq29yrgrk0",
+                                    "created": 1592635207796,
+                                    "text": "没完成一次IO，CPU只需要两次调用管理程序"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lpxqxncw80",
+                            "created": 1592634852913,
+                            "text": "通道的种类"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lq2jnn1k00",
+                                    "created": 1592635228891,
+                                    "text": "字节多路通道"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lq2mgduow0",
+                                    "created": 1592635234983,
+                                    "text": "选择通道"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lq2oq2t5s0",
+                                    "created": 1592635239922,
+                                    "text": "数组多路通道"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lpxsyepqw0",
+                            "created": 1592634857313,
+                            "text": "通道中的数据传送过程",
+                            "progress": 1
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lrb3md4gg0",
+                                    "created": 1592638720373,
+                                    "text": "Ts设备选择时间，n每个设备传送字节数，Td传送一个字节所需时间，P在一个通道上连接的设备台数，k一个数据块中字节数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrc3u6w600",
+                                    "created": 1592638799210,
+                                    "text": "字节多路通道所需总时间 T = (Ts+Td)Pn"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrcet1ih40",
+                                    "created": 1592638823085,
+                                    "text": "选择通道所需总时间 T = (Ts/n+Td)Pn"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrd1bgqwg0",
+                                    "created": 1592638872089,
+                                    "text": "数组多路通道所需时间 T = (Ts/k+Td)Pn"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lpxvshj540",
+                            "created": 1592634863485,
+                            "text": "通道流量分析",
+                            "progress": 1
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lrdptmmw00",
+                                    "created": 1592638925430,
+                                    "text": "通道流量：单位时间内能够传送的最大数据量，又称通道吞吐率"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lre0aq0s00",
+                                    "created": 1592638948231,
+                                    "text": "最大流量计算"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lree0i0dk0",
+                                            "created": 1592638978088,
+                                            "text": "字节多路通道"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lretdx9sw0",
+                                                    "created": 1592639011552,
+                                                    "text": "1/(Ts+Td)字节每秒"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lreiqtouo0",
+                                            "created": 1592638988387,
+                                            "text": "选择通道"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lrezzytq80",
+                                                    "created": 1592639025945,
+                                                    "text": "1/(Ts/n+Td)字节每秒"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrek366xc0",
+                                            "created": 1592638991310,
+                                            "text": "数组多路通道"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lrf5vcrhs0",
+                                                    "created": 1592639038727,
+                                                    "text": "1/(Ts/k+Td)字节每秒"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrft5xhls0",
+                                    "created": 1592639089432,
+                                    "text": "为了保证不丢失数据，通道实际流量不应大于通道最大流量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrkn20gko0",
+                                    "created": 1592639467955,
+                                    "text": "有设备得不到响应，丢失了数据"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrkvr7f3k0",
+                                            "created": 1592639486893,
+                                            "text": "增大通道最大工作流量"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrkzuu5w00",
+                                            "created": 1592639495820,
+                                            "text": "动态改变设备优先级"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrl49alag0",
+                                            "created": 1592639505401,
+                                            "text": "增加缓冲存储器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lo2spjnrc0",
+                    "created": 1592629606378,
+                    "text": "输入输出处理机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3lrrjrmehs0",
+                            "created": 1592640009346,
+                            "text": "能够独立承担输入输出工作的专用处理机"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lo2v4j4y80",
+                    "created": 1592629611637,
+                    "text": "总线"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3lrrvc31wo0",
+                            "created": 1592640034528,
+                            "text": "互联计算机、CPU，等设备间信息传输通路的集合"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3lrsxpv6680",
+                            "created": 1592640118079,
+                            "text": "分类"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lrsz8i9cw0",
+                                    "created": 1592640121383,
+                                    "text": "按使用方法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrt5msbhs0",
+                                            "created": 1592640135307,
+                                            "text": "专用总线"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrt7f83ds0",
+                                            "created": 1592640139203,
+                                            "text": "非专用总线"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lrtdg20eg0",
+                                                    "created": 1592640152314,
+                                                    "text": "单总线"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3lrteyvcdk0",
+                                                    "created": 1592640155629,
+                                                    "text": "双总线、多总线"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrtkonsyo0",
+                                    "created": 1592640168072,
+                                    "text": "按控制方式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrtm728ao0",
+                                            "created": 1592640171361,
+                                            "text": "集中式控制"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lrtx3ako00",
+                                                    "created": 1592640195078,
+                                                    "text": "串行连接"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3lrtzdeeu80",
+                                                    "created": 1592640200043,
+                                                    "text": "定时查询"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3lru0jeb740",
+                                                    "created": 1592640202582,
+                                                    "text": "独立请求"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrtnw09600",
+                                            "created": 1592640175047,
+                                            "text": "分布式控制"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lru6rmy000",
+                            "created": 1592640216141,
+                            "text": "总线的通讯方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lrubek0i00",
+                                    "created": 1592640226234,
+                                    "text": "同步通讯"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrud0uxxs0",
+                                    "created": 1592640229759,
+                                    "text": "异步通讯"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lruhqjh9c0",
+                            "created": 1592640240019,
+                            "text": "数据宽度：I/O设备取得I/O总线后所传送数据的总量"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3lruslpne80",
+                            "created": 1592640263672,
+                            "text": "数据通路宽度：总线的物理宽度（一个时钟周期内所传送的数据量）"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

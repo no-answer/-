@@ -1,0 +1,751 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "向量处理机"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3oa1zxo2aw0",
+                    "created": 1592894728073,
+                    "text": "介绍"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oa2cs91s80",
+                            "created": 1592894756044,
+                            "text": "具有向量数据表示和向量指令系统的处理机"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oa2geqmsg0",
+                            "created": 1592894763934,
+                            "text": "向量处理机是解决数值计算问题的高性能计算机"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oa2na2c0o0",
+                            "created": 1592894778889,
+                            "text": "一般采用流水线结构，通常由多条并行工作的流水线"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oa3z38p0g0",
+                            "created": 1592894882962,
+                            "text": "必须把要解决的问题转换成向量运算才能发挥效率"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oa414dlyw0",
+                    "created": 1592894887384,
+                    "text": "向量数据表示方式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oa5mex8880",
+                            "created": 1592895012098,
+                            "text": "一条向量指令可以处理N个或N对操作数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oa6lv7kaw0",
+                            "created": 1592895089271,
+                            "text": "等间距向量表示法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oa6oeh2ds0",
+                                    "created": 1592895094789,
+                                    "text": "三个参数表示一个等间距向量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oa6vfh4sw0",
+                                    "created": 1592895110087,
+                                    "text": "向量起始地址A，向量长度L，向量间距f"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oa8rb3e3k0",
+                            "created": 1592895257843,
+                            "text": "带位移量的向量表示法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oa93gzp880",
+                                    "created": 1592895284321,
+                                    "text": "三个参数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oa9ch55tk0",
+                                    "created": 1592895303921,
+                                    "text": "向量基地址A，向量长度L，向量位移量f"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oa9nrtl4o0",
+                                    "created": 1592895328512,
+                                    "text": "向量有效长度L-f，向量起始地址A+f"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oa9vuds4w0",
+                                    "created": 1592895346081,
+                                    "text": "优点：每个向量可以代为一，能够通过控制向量实现可变增量，能够表示稀疏向量"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oa8zlg0jk0",
+                            "created": 1592895275883,
+                            "text": "稀疏向量表示法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oaamhuexk0",
+                                    "created": 1592895404096,
+                                    "text": "定义：0元素很多，非0元素很少的向量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oabflwgtc0",
+                                    "created": 1592895467468,
+                                    "text": "使用压缩向量和压缩位向量共同表示一个稀疏向量"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oa451czrs0",
+                    "created": 1592894895909,
+                    "text": "向量处理机的结构"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oaetwmxe00",
+                            "created": 1592895733684,
+                            "text": "主要问题：设计一个能满足运算器带宽要求的存储系统"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oadlomg3s0",
+                            "created": 1592895637421,
+                            "text": "存储器-存储器结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oaeby94ag0",
+                                    "created": 1592895694600,
+                                    "text": "使用多个独立的存储器模块来支持相对独立的数据并发访问，从而达到所要求的带宽"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oai59p0q80",
+                                    "created": 1592895993511,
+                                    "text": "多个独立存储器模块并行工作，需要高速存储系统"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oan8e8n3k0",
+                                            "created": 1592896392137,
+                                            "text": "采用多个存储体交叉和并行访问来提高存储器速度"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oasg5x2u80",
+                                            "created": 1592896800869,
+                                            "text": "在运算流水线的输入端和输出端增加缓冲器以消除争用存储器现象"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oadoffp3s0",
+                            "created": 1592895643396,
+                            "text": "寄存器-寄存器结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oafou5mqo0",
+                                    "created": 1592895801015,
+                                    "text": "构造一个具有所要求的带宽的高速中间存储器，并实现该高速中间存储器与主存储器之间的快速交换"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oaif5miyo0",
+                                    "created": 1592896015033,
+                                    "text": "运算通过向量寄存器进行，需要大量高速寄存器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oaswxing80",
+                                            "created": 1592896837366,
+                                            "text": "将存储器-存储器结构中的缓冲栈改为向量寄存器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oat2oitx40",
+                                            "created": 1592896849883,
+                                            "text": "向量寄存器能够保存一个向量，连续访问向量的各个分量"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oatqnp8600",
+                                            "created": 1592896902076,
+                                            "text": "还需要有标量寄存器和地址寄存器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oa49mn7k80",
+                    "created": 1592894905903,
+                    "text": "向量处理方式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ob52ihc680",
+                            "created": 1592897789888,
+                            "text": "横向处理方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ob66b59pc0",
+                                    "created": 1592897876516,
+                                    "text": "向量计算按行从左到右横向进行"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ob54fb7zc0",
+                            "created": 1592897794050,
+                            "text": "纵向处理方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ob6edw3yo0",
+                                    "created": 1592897894096,
+                                    "text": "向量计算按列从上而下纵向进行"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ob56yzz540",
+                            "created": 1592897799594,
+                            "text": "纵横处理方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ob74en3xc0",
+                                    "created": 1592897950738,
+                                    "text": "横向处理和纵向处理相结合"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oa4bh22540",
+                    "created": 1592894909919,
+                    "text": "向量处理机的关键技术"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ob8bpm6ts0",
+                            "created": 1592898045003,
+                            "text": "向量与标量性能的平衡"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ob8h8k4000",
+                                    "created": 1592898057032,
+                                    "text": "希望向量硬件和标量硬件都能充分利用"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ob8nqnggw0",
+                                    "created": 1592898071187,
+                                    "text": "向量平衡点：为了使向量硬件和标量硬件的利用率相等，一个程序中向量代码所占百分比"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ob9hggjog0",
+                            "created": 1592898135874,
+                            "text": "向量链接技术"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3obbwy7wso0",
+                                    "created": 1592898326328,
+                                    "text": "当前一条指令的结果寄存器可以作为后继指令的操作数寄存器是，多条数据相关的向量指令并行执行，称为两条流水线的链接技术"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3obcw6at280",
+                                    "created": 1592898403004,
+                                    "text": "向量运算中的数据相关和功能部件冲突"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3obd19kniw0",
+                                            "created": 1592898414086,
+                                            "text": "写读数据相关"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3oin7o6n7c0",
+                                                    "created": 1592918959441,
+                                                    "text": "只有这个能进行向量链接"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3obd5v64f40",
+                                            "created": 1592898424099,
+                                            "text": "读读数据相关或向量寄存器冲突"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3obdbumog00",
+                                            "created": 1592898437127,
+                                            "text": "运算部件冲突"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ohns2u8rs0",
+                                    "created": 1592916182753,
+                                    "text": "需要保证无向量寄存器使用寄存冲突和无向量功能部件使用冲突"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oho7xkss80",
+                                    "created": 1592916217263,
+                                    "text": "只有在前一条向量指令的第一个结果元素送入结果向量寄存器的那个时钟周期才能链接"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ohooqkczs0",
+                                    "created": 1592916253844,
+                                    "text": "一条向量指令的源操作数分别是两条先行向量指令的结果寄存器时，两条先行向量指令产生结果的时间必须相等"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ohpb67ja80",
+                                    "created": 1592916302680,
+                                    "text": "只有所有可以链接执行的向量指令的向量长度相等，才能链接"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ohq1sku800",
+                            "created": 1592916360628,
+                            "text": "向量循环开采技术"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ohqhto3a00",
+                                    "created": 1592916395523,
+                                    "text": "向量长度大于向量寄存器长度时，必须把长向量分成长度固定的段，采用循环结构来处理长向量"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ohrpe438o0",
+                            "created": 1592916490361,
+                            "text": "向量递归技术"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ohs4e12hs0",
+                                    "created": 1592916523007,
+                                    "text": "向量指令可以让源向量和结果向量同时使用一个向量寄存器组，并控制分量计数器的修改，实现递归操作"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oa4dyw2340",
+                    "created": 1592894915351,
+                    "text": "向量处理机实例"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ohu04xfuo0",
+                            "created": 1592916670478,
+                            "text": "向量协处理器，以中小型机或微型机做主机，向量处理部件作为外围设备，加速向量的处理速度"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oa4fxslcw0",
+                    "created": 1592894919638,
+                    "text": "向量处理机性能评价"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ohv459ryo0",
+                            "created": 1592916757570,
+                            "text": "评价指标"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ohv7351l40",
+                                    "created": 1592916763972,
+                                    "text": "向量指令处理时间Tvp"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ohwr0htk80",
+                                            "created": 1592916885712,
+                                            "text": "Tvp=Ts+Tvf+(n-1)Tc"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ohwxrxjvs0",
+                                                    "created": 1592916900431,
+                                                    "text": "Ts为向量流水线建立时间，即为了使部件处理器能开始工作所需要的准备时间"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ohxejtqu80",
+                                                    "created": 1592916936947,
+                                                    "text": "Tvf为向量流水线的流过时间，即第一对向量元素通过流水线并产生第一个结果所花的时间"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ohy400iaw0",
+                                                    "created": 1592916992345,
+                                                    "text": "Tc为流水线的时钟周期时间"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oi02doxb40",
+                                            "created": 1592917145547,
+                                            "text": "Tvp=[s+e+(n-1)]γ"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3oi0m9s4a80",
+                                                    "created": 1592917188846,
+                                                    "text": "s为向量流水线建立所需周期数"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3oi0slgfbs0",
+                                                    "created": 1592917202613,
+                                                    "text": "e为向量流水线流过所需周期数"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3oi0yjlaq80",
+                                                    "created": 1592917215561,
+                                                    "text": "n为向量长度"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3oi10jtqw00",
+                                                    "created": 1592917219928,
+                                                    "text": "γ为时钟周期长度"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ohzbeer1k0",
+                                            "created": 1592917086817,
+                                            "text": "取决于"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ohzd1os4w0",
+                                                    "created": 1592917090401,
+                                                    "text": "向量长度"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ohzeibk3c0",
+                                                    "created": 1592917093584,
+                                                    "text": "向量操作之间是否存在流水线功能部件冲突"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ohzku7bvs0",
+                                                    "created": 1592917107363,
+                                                    "text": "数据的相关性"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oi21z0j4w0",
+                                            "created": 1592917301388,
+                                            "text": "能在一个时钟周期内一起开始执行的向量指令称为一个编队"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ohvdmzac80",
+                                    "created": 1592916778232,
+                                    "text": "最大性能R∞"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oi718i44g0",
+                                            "created": 1592917691605,
+                                            "text": "R∞=lim(n→∞)(向量执行序列中浮点运算次数x时钟频率/向量指令序列执行所花费的时钟周期数)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oi8gysb7k0",
+                                            "created": 1592917804211,
+                                            "text": "单位为MFLOPS"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ohvkqm8yw0",
+                                    "created": 1592916793690,
+                                    "text": "半性能向量长度n1/2"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oi8mmm8oo0",
+                                            "created": 1592917816535,
+                                            "text": "向量处理机的性能为最大性能的一半所需要的向量长度"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ohvtk6tf40",
+                                    "created": 1592916812892,
+                                    "text": "向量长度临界值nv"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oi8xhcs940",
+                                            "created": 1592917840162,
+                                            "text": "对某一计算任务而言，向量方式的处理速度优于标量串行方式处理速度时所需要的最小向量长度"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oa4iq81z40",
+                    "created": 1592894925710,
+                    "text": "向量处理机的发展"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oi9te86q80",
+                            "created": 1592917909630,
+                            "text": "向量计算机系统结构的主要优点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oi9z1jt080",
+                                    "created": 1592917921924,
+                                    "text": "通过流水线方式有效提高了存储器带宽"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oia6zm4p40",
+                                    "created": 1592917939221,
+                                    "text": "流水结构的运算器有很高的性能价格比"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oiaeuut280",
+                                    "created": 1592917956348,
+                                    "text": "很简单的机制就能满足通信和同步要求"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

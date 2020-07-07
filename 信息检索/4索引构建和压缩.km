@@ -1,0 +1,667 @@
+{
+    "root": {
+        "data": {
+            "id": "c2jltcd0lhs0",
+            "created": 1588763944941,
+            "text": "索引构建与压缩"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2jlu6v1khc0",
+                    "created": 1588764011334,
+                    "text": "每条数据12字节，<词项，文档，频数>",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jm4cxxf1s0",
+                            "created": 1588764808211,
+                            "text": "可以使用<词项，文档ID>对替换<词项ID，文档ID>对，平均字节数=7.5"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jlun9dky80",
+                    "created": 1588764047030,
+                    "text": "BSBI基于块的排序索引构建算法",
+                    "expandState": "collapse",
+                    "progress": 1
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jluzcaejc0",
+                            "created": 1588764073327,
+                            "text": "面向静态文档集，单机，可拓展，效率非常低"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jlz8rdbfc0",
+                            "created": 1588764407287,
+                            "text": "基本思想：对每一个块生成倒排记录，排序后写入硬盘，然后将这些快合并成一个长的排好序的倒排记录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jm16d8qo00",
+                            "created": 1588764558807,
+                            "text": "合并的时候可以n路合并加快速度"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jlv7asw540",
+                    "created": 1588764090651,
+                    "text": "SPIMI内存式单遍扫描索引构建算法",
+                    "expandState": "collapse",
+                    "progress": 1
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jm2swnj8w0",
+                            "created": 1588764686234,
+                            "text": "核心思想1：为每个块单独生成一个词典，不需要维护全局的<词项，词项ID映射表>"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jm3belgoo0",
+                            "created": 1588764726501,
+                            "text": "核心思想2：不进行排序，有新的<词项，文档ID对的时候直接在倒排记录表中新增>"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jm51mg9lk0",
+                            "created": 1588764861937,
+                            "text": "为每一块生成完整的倒排索引后合并成大的索引"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jmk3iax1k0",
+                            "created": 1588766041502,
+                            "text": "没有全局的词典"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jlvicjhk00",
+                    "created": 1588764114701,
+                    "text": "分布式索引构建算法",
+                    "expandState": "collapse",
+                    "progress": 1
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jmbk5kfq80",
+                            "created": 1588765372460,
+                            "text": "利用集群中的主控节点来指挥索引构建工作"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jmbsm8r340",
+                            "created": 1588765390882,
+                            "text": "将索引构建过程分解成一组并行任务"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jmcbowlqg0",
+                                    "created": 1588765432402,
+                                    "text": "采用两组不同的并行任务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2jmcge32lk0",
+                                            "created": 1588765442632,
+                                            "text": "Parsers分析器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jmckyuoeg0",
+                                            "created": 1588765452594,
+                                            "text": "Inverters倒排器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmcu5tenc0",
+                                    "created": 1588765472607,
+                                    "text": "将文档集分割成n个数据片（文档子集）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2jmdamjlyw0",
+                                            "created": 1588765508447,
+                                            "text": "基于文档的分割"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jmde65peo0",
+                                            "created": 1588765516163,
+                                            "text": "基于词项的分割"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmdl6ctwg0",
+                                    "created": 1588765531412,
+                                    "text": "主节点分配任务，分析器依次读取文档并生成<词项，文档>对"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jme3u65ko0",
+                                    "created": 1588765572034,
+                                    "text": "分析器将数据按词项分成若干个段，每一段是按照词项首字母划分的区间"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmewqca9k0",
+                                    "created": 1588765634930,
+                                    "text": "对每一个词项分区，倒排器手机所有的<词项，文档>对（倒排记录）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmfdx73000",
+                                    "created": 1588765672349,
+                                    "text": "排序并写入最终的倒排记录表"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jmbz4wktc0",
+                            "created": 1588765405071,
+                            "text": "主控计算机从集群中选择空闲主机并分配任务"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jmkei6t080",
+                            "created": 1588766065440,
+                            "text": "MapReduce"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jmkq11htk0",
+                                    "created": 1588766090524,
+                                    "text": "稳定并且概念简单的分布式计算架构"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jml8nnh9c0",
+                                    "created": 1588766131073,
+                                    "text": "阶段"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2jmlcq0szk0",
+                                            "created": 1588766139924,
+                                            "text": "索引构建"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jmlfa9hu00",
+                                            "created": 1588766145501,
+                                            "text": "将基于词项划分的索引表转换成基于文档划分的索引表"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2jmlr2c72g0",
+                                                    "created": 1588766171143,
+                                                    "text": "基于词项划分：一台机器处理所有词项的一个子区间"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2jmm3gmbk80",
+                                                    "created": 1588766198128,
+                                                    "text": "基于文档划分的：一台机器处理所有文档的一个子区间"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2jmmcujq3s0",
+                                                    "created": 1588766218562,
+                                                    "text": "基于文档划分的索引表有更好的负载平衡"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmmvgwjm00",
+                                    "created": 1588766259095,
+                                    "text": "架构"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2jmmyebx7k0",
+                                            "created": 1588766265470,
+                                            "text": "Map：输入->list(k,v) Reduce:(k,list(v))->输出"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jmo4esip40",
+                                            "created": 1588766356923,
+                                            "text": "在索引构建中的实例"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2jmocemfxk0",
+                                                    "created": 1588766374327,
+                                                    "text": "Map:Web文档集->list(词项ID，文档ID)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2jmonsh9q00",
+                                                    "created": 1588766399109,
+                                                    "text": "Reduce:(<词项ID1,list(文档ID)>,<词项ID2,list(文档ID)>,...)->(倒排记录表1，倒排记录表2，...)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jlvlsc5x40",
+                    "created": 1588764122187,
+                    "text": "动态索引构建算法",
+                    "expandState": "collapse",
+                    "progress": 1
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jmi5plqcg0",
+                            "created": 1588765889569,
+                            "text": "索引更新方法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jmi90eaq00",
+                                    "created": 1588765896752,
+                                    "text": "周期性索引重构"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmig8glco0",
+                                    "created": 1588765912477,
+                                    "text": "维护一个大的主索引，新文档信息存储在内存中的辅助索引中，检索时同时遍历两个索引"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmjgkb55s0",
+                                    "created": 1588765991557,
+                                    "text": "对数合并，维护一个索引列表，每个都是前一个的两倍大小"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jmq0kmpnk0",
+                    "created": 1588766505297,
+                    "text": "索引压缩",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jmwg9sm7k0",
+                            "created": 1588767009656,
+                            "text": "原因"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jmwhtb4a80",
+                                    "created": 1588767013012,
+                                    "text": "词典"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2jmx0w2mp40",
+                                            "created": 1588767054538,
+                                            "text": "压缩的足够小便能够放入内存中"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jmx4sqyg00",
+                                            "created": 1588767063044,
+                                            "text": "可以在内存中存储部分倒排记录表"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jmwv9r6a80",
+                                    "created": 1588767042305,
+                                    "text": "倒排记录文件"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2jmxb7wew00",
+                                            "created": 1588767077021,
+                                            "text": "节约磁盘空间和读取时间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jmxh5s7kw0",
+                                            "created": 1588767089954,
+                                            "text": "大的搜索引擎在内存中存储了很大一部分的倒排记录表"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jmxztqq340",
+                                            "created": 1588767130585,
+                                            "text": "将设计各种基于IR系统的压缩架构"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jn4yxfl600",
+                            "created": 1588767677180,
+                            "text": "索引参数vs索引内容"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jn4gbev7s0",
+                            "created": 1588767636667,
+                            "text": "无损压缩vs有损压缩，和需求相关"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jn57g6xb40",
+                            "created": 1588767695729,
+                            "text": "词汇量vs文档集大小"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jn5jkrht40",
+                            "created": 1588767722127,
+                            "text": "heaps定律：M = kT^b"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jn5ri2tbs0",
+                                    "created": 1588767739378,
+                                    "text": "M：词项数目，T：文档集中词条数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jn5yskun40",
+                                    "created": 1588767755251,
+                                    "text": "参数k和b的典型取值：30≤k≤100，b≈0.5"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jn75l02oo0",
+                                    "created": 1588767848394,
+                                    "text": "词汇量大小M和文档集大小T在对数空间中存在着斜率为1/2的线性关系（经验发现）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jn8cllyjc0",
+                            "created": 1588767942033,
+                            "text": "拟合vs真实"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jn8qsrphc0",
+                            "created": 1588767972941,
+                            "text": "Zipf定律"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jn8tix4g00",
+                                    "created": 1588767978875,
+                                    "text": "排名第i多的词项的文档频率与1/i成正比"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jn95mk3z40",
+                                    "created": 1588768005217,
+                                    "text": "CFi正向关于1/i=K/i"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jna8pbvtc0",
+                                    "created": 1588768090279,
+                                    "text": "CFi是文档集频率：词项Ti在文档集中出现的次数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jnar8y1qo0",
+                                    "created": 1588768130647,
+                                    "text": "拟合度不是很高，但是有个关键性发现：高频此项很少，低频罕见词项很多"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jnb98h4kw0",
+                    "created": 1588768169801,
+                    "text": "词典压缩",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jnbjfpng00",
+                            "created": 1588768192006,
+                            "text": "定长方法存储词项浪费空间"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jnc3896ko0",
+                                    "created": 1588768235091,
+                                    "text": "将所有词项存储为一个长字符串"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jnck7q6so0",
+                            "created": 1588768272064,
+                            "text": "按块存储"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jncwml5uw0",
+                                    "created": 1588768299084,
+                                    "text": "k个词项分成一块，只保留第一个指针，需要存储词项长度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jndsjn0vk0",
+                                    "created": 1588768368563,
+                                    "text": "块外二分查找，块内线性查找"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jnee7w8800",
+                            "created": 1588768415742,
+                            "text": "前端编码"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jnep9ro0g0",
+                    "created": 1588768439800,
+                    "text": "倒排记录表压缩",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jnpjqjby80",
+                            "created": 1588769289759,
+                            "text": "每个倒排记录用文档ID来定义，目标：用远小于20bit来表示每个文档ID"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jnq9bozpk0",
+                            "created": 1588769345458,
+                            "text": "按照文档ID的递增顺序来存储一个词项的倒排列表，使用与第一个文档ID的间距GAP替代真实ID"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jnr6ozg140",
+                            "created": 1588769418095,
+                            "text": "可变长度编码"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jnrt0txk00",
+                                    "created": 1588769466701,
+                                    "text": "对GAP进行可变长度编码"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

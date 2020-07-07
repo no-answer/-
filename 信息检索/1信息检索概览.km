@@ -1,0 +1,291 @@
+{
+    "root": {
+        "data": {
+            "id": "c2dill53gc80",
+            "created": 1588145514070,
+            "text": "概览"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2dip7bal280",
+                    "created": 1588145797426,
+                    "text": "搜索的基本概念",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2dio69i17k0",
+                            "created": 1588145716777,
+                            "text": "用户需求UN"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dio97rpyg0",
+                                    "created": 1588145723203,
+                                    "text": "用户需要获得的信息。在提交给检索系统时称为查询Query"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2diovza76o0",
+                            "created": 1588145772755,
+                            "text": "文档Document"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dip1fwp1c0",
+                                    "created": 1588145784645,
+                                    "text": "检索的对象"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2dipovrio00",
+                            "created": 1588145835669,
+                            "text": "文档集合Collection"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2diprzaga80",
+                                    "created": 1588145842413,
+                                    "text": "所有待检索的的文档构成的集合"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2diq9hw2gw0",
+                            "created": 1588145880543,
+                            "text": "相关度Relevance"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2diqm8r3lc0",
+                                    "created": 1588145908289,
+                                    "text": "系统角度：系统输出结果，用户是信息接收者"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2direyimo00",
+                                            "created": 1588145970796,
+                                            "text": "主题相关性：检索系统检出的文档的主题（核心内容）与用户信息需求相匹配"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2diqyoqk7s0",
+                                    "created": 1588145935377,
+                                    "text": "用户角度"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2dir15buvs0",
+                                            "created": 1588145940733,
+                                            "text": "观察用户对检索结果的反应，是系统输出向用户需求的投射"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dis2b1eo00",
+                                    "created": 1588146021620,
+                                    "text": "相关度：函数f"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2disg8mdew0",
+                                            "created": 1588146051948,
+                                            "text": "输入：查询Q，文档D，文档集合C"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2disoixppc0",
+                                            "created": 1588146069986,
+                                            "text": "输出：实数R=f(Q,D,C)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ditt50eqo0",
+                                    "created": 1588146158392,
+                                    "text": "只有相对意义，对同一个查询Q，不同文档的相关度可以比较，但是对于不同的查询Q的相关度无法比较"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2dit8c5hy80",
+                            "created": 1588146113112,
+                            "text": "信息检索：给定一个查询Q，从文档集合C中计算每篇文档D与Q的相关度并排序（Ranking）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2diumq0am80",
+                            "created": 1588146222789,
+                            "text": "用户接口User Interface：用户和IR系统的人机接口"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2div45tycg0",
+                                    "created": 1588146260751,
+                                    "text": "输入查询Query"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2divakta340",
+                                    "created": 1588146274717,
+                                    "text": "返回排序后的结果文档并可视化"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2divmx507s0",
+                            "created": 1588146301584,
+                            "text": "IR的两种模式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2divq4mxeo0",
+                                    "created": 1588146308568,
+                                    "text": "Pull：用户主动发起请求，在相对稳定的数据集合上查询，百度/谷歌"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2diw5ofdq00",
+                                    "created": 1588146342416,
+                                    "text": "Push：用户定义兴趣，系统在数据流上操作，将满足用户兴趣的数据推送给用户，推荐系统"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2diwlnl0go0",
+                            "created": 1588146377194,
+                            "text": "文本处理Text Operations：对查询和文本进行的预处理操作"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dix24qya80",
+                            "created": 1588146413060,
+                            "text": "查询处理Query Operations：对文本处理后的查询进一步处理，得到查询的内部表示Query"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dixk8vwvk0",
+                                    "created": 1588146452492,
+                                    "text": "查询拓展"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dixoxkaog0",
+                                    "created": 1588146462692,
+                                    "text": "查询重构"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2dixuz1piw0",
+                            "created": 1588146475842,
+                            "text": "文本索引Indexing：对文本处理后的文本进行进一步处理，得到文本的内部表示Text Representation"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2diytgc9tc0",
+                            "created": 1588146550898,
+                            "text": "搜索Searching：从文本中查找包含查询中索引项的文档"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2diz44t90o0",
+                            "created": 1588146574146,
+                            "text": "排序Ranking：对搜索出的文档按照某种方式计算相关度"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dizlnb38o0",
+                            "created": 1588146612269,
+                            "text": "Logical View：查询或文档的表示，通常采用关键词或者索引项index term来表示一个查询或者文档"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2dj0hyqudk0",
+                    "created": 1588146682618,
+                    "text": "搜索技术现状：关键词bag of words匹配"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2dj0uxrb540",
+                            "created": 1588146710856,
+                            "text": "发展目标：输入任务task，得到解决方案solution"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

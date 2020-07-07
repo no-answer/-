@@ -1,0 +1,528 @@
+{
+    "root": {
+        "data": {
+            "id": "c3d9mtuo4e00",
+            "created": 1591776379846,
+            "text": "答疑记录"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3d9mz09zog0",
+                    "created": 1591776391069,
+                    "text": "开卷考试"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c3d9nuui2vs0",
+                    "created": 1591776460376,
+                    "text": "题目形式",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3d9nwwpzxc0",
+                            "created": 1591776464864,
+                            "text": "简答"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9nz5j6680",
+                            "created": 1591776469750,
+                            "text": "计算"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3d9o7v9q3c0",
+                    "created": 1591776488721,
+                    "text": "题目内容",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3d9ojpt7vk0",
+                            "created": 1591776514512,
+                            "text": "在PPT范围内"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9olo6coo0",
+                            "created": 1591776518767,
+                            "text": "保证难度"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9owpdjmw0",
+                            "created": 1591776542784,
+                            "text": "有概念题"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3d9ot6f4f40",
+                    "created": 1591776535108,
+                    "text": "复习",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3d9pfi2txc0",
+                            "created": 1591776583702,
+                            "text": "布尔检索",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3d9q0av80w0",
+                                    "created": 1591776628978,
+                                    "text": "索引"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9r0kl7j40",
+                            "created": 1591776707930,
+                            "text": "词项词典和倒排索引"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9r4ad2ag0",
+                            "created": 1591776716019,
+                            "text": "强调索引的构建，压缩很重要但不是考试重点"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9s966k7c0",
+                            "created": 1591776805014,
+                            "text": "web搜索原理、框架、结构、过程",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3d9sjqar480",
+                                    "created": 1591776827998,
+                                    "text": "pageRank"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9snaadd40",
+                                    "created": 1591776835737,
+                                    "text": "face"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9swweun40",
+                            "created": 1591776856666,
+                            "text": "向量空间模型",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3da5zqpolc0",
+                                    "created": 1591777881586,
+                                    "text": "如何把查询和文档表示成向量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9uaa5jxk0",
+                                    "created": 1591776964159,
+                                    "text": "向量的表示"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9ta9p2fs0",
+                                    "created": 1591776885768,
+                                    "text": "相似度计算"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9tgj2h0g0",
+                                    "created": 1591776899395,
+                                    "text": "jitade公式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9tjj4h0g0",
+                                    "created": 1591776905929,
+                                    "text": "关联矩阵"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9ts9v0p40",
+                                    "created": 1591776924960,
+                                    "text": "文档和查询表示成向量之后的计算方法",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3d9txblidk0",
+                                            "created": 1591776935949,
+                                            "text": "欧氏距离"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3d9tzfwq3c0",
+                                            "created": 1591776940563,
+                                            "text": "驾驭余弦"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9ujcyeiw0",
+                            "created": 1591776983920,
+                            "text": "检索效率"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9uu132a00",
+                            "created": 1591777007147,
+                            "text": "检索评价（必考）",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3d9uwkbrc80",
+                                    "created": 1591777012664,
+                                    "text": "指标分类",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3d9vcex2kg0",
+                                            "created": 1591777047165,
+                                            "text": "准确率"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3d9ve8e5cg0",
+                                            "created": 1591777051124,
+                                            "text": "查全率"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3d9vr5jbe80",
+                                            "created": 1591777079250,
+                                            "text": "查准率"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3d9vfwbpoo0",
+                                            "created": 1591777054748,
+                                            "text": "FP值"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3d9vv1uuds0",
+                                            "created": 1591777087734,
+                                            "text": "GMAP"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3d9vx0x8200",
+                                            "created": 1591777092031,
+                                            "text": "MRR"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3d9w3ceu3s0",
+                                            "created": 1591777105787,
+                                            "text": "等等"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9wj5vog00",
+                            "created": 1591777140220,
+                            "text": "相关反馈和查询扩展",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3d9wvc68yw0",
+                                    "created": 1591777166722,
+                                    "text": "基本概念和经典算法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9wlczc000",
+                                    "created": 1591777145003,
+                                    "text": "luoque算法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9x9nnfpc0",
+                            "created": 1591777197891,
+                            "text": "概率检索模型",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3d9xee5ge80",
+                                    "created": 1591777208201,
+                                    "text": "贝叶斯公式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9xoj4rc00",
+                                    "created": 1591777230270,
+                                    "text": "BIM模型和BM25模型"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9xue5dfs0",
+                            "created": 1591777243029,
+                            "text": "基于语言建模的检索模型"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9ysftcew0",
+                            "created": 1591777317141,
+                            "text": "文本分类",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3d9yvkv5q00",
+                                    "created": 1591777323976,
+                                    "text": "基本概念和贝叶斯分类器的计算"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9z4mh6dk0",
+                                    "created": 1591777343665,
+                                    "text": "特征选择分类评价知道就行"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9zff2hrc0",
+                            "created": 1591777367161,
+                            "text": "基于向量空间的文本分类",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3d9zn7ft680",
+                                    "created": 1591777384114,
+                                    "text": "KNN"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3d9zt4w9nk0",
+                                    "created": 1591777397021,
+                                    "text": "线性非线性的概念"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3d9zx2cbyw0",
+                            "created": 1591777405574,
+                            "text": "支持向量机",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3da02fmibc0",
+                                    "created": 1591777417261,
+                                    "text": "明白基本原理"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3da05795fs0",
+                            "created": 1591777423285,
+                            "text": "文本聚类",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3da0dzsxao0",
+                                    "created": 1591777442426,
+                                    "text": "基本原理"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3da0hhny8o0",
+                                    "created": 1591777450036,
+                                    "text": "经典算法kmeans",
+                                    "progress": 1
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3da0lhm1i80",
+                                    "created": 1591777458740,
+                                    "text": "各个聚类方法的基本概念"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3da075baao0",
+                            "created": 1591777427521,
+                            "text": "隐性语义索引",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3da154v8ds0",
+                                    "created": 1591777501505,
+                                    "text": "矩阵分解"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3da1mrn0080",
+                    "created": 1591777539887,
+                    "text": "总结"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3da1o8b9qg0",
+                            "created": 1591777543072,
+                            "text": "不会脱离PPT"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3da1qdclxk0",
+                            "created": 1591777547730,
+                            "text": "一部分比较简单的基础题"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3da1t0x39c0",
+                            "created": 1591777553509,
+                            "text": "有一定难度的可计算的计算题"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

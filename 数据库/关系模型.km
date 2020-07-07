@@ -1,0 +1,31 @@
+{
+    "root": {
+        "data": {
+            "id": "c3vxtdd3edc0",
+            "created": 1593672678361,
+            "text": "关系模型"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3vxtn0kgbk0",
+                    "created": 1593672699372,
+                    "text": "关系数据库的结构"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3vxtoxqpx40",
+                            "created": 1593672703554,
+                            "text": "关系数据库由表构成，每个表有唯一的名字"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

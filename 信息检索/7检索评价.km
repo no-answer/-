@@ -1,0 +1,578 @@
+{
+    "root": {
+        "data": {
+            "id": "c3ileiro2lc0",
+            "created": 1592317381908,
+            "text": "检索评价"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3iles9b8x40",
+                    "created": 1592317402566,
+                    "text": "为什么要评估IR"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ilgjyeomw0",
+                            "created": 1592317541221,
+                            "text": "信息检索系统的目标是较少消耗情况下尽快全面返回准确的结果"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ilh7hex9c0",
+                            "created": 1592317592436,
+                            "text": "通用评价方法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ilhak1d6o0",
+                                    "created": 1592317599125,
+                                    "text": "效率：时间开销，空间开销，响应速度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ilhc4gnmg0",
+                                    "created": 1592317602537,
+                                    "text": "效果：相关度，召回率"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ilhd46sio0",
+                                    "created": 1592317604697,
+                                    "text": "覆盖率、访问量、数据更新速度"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3ilf1fbdm80",
+                    "created": 1592317422520,
+                    "text": "无序检索结果的评价"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ilomub76w0",
+                            "created": 1592318174417,
+                            "text": "文档集合的划分"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ilopp4btk0",
+                                    "created": 1592318180633,
+                                    "text": "NN未检索出的不相关文档"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ilp0dof5c0",
+                                    "created": 1592318203886,
+                                    "text": "NR未检索出的相关文档"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ilp4lab6g0",
+                                    "created": 1592318213053,
+                                    "text": "RN检索出的不相关文档"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ilp8zyhk00",
+                                    "created": 1592318222648,
+                                    "text": "RR检索出的相关文档"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ilpdz8mrc0",
+                            "created": 1592318233488,
+                            "text": "对单个查询进行评估的指标"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3imojfksx40",
+                                    "created": 1592320988106,
+                                    "text": "召回率（查全率）R：返回的相关结果数站实际相关结果数的比率 R=RR/(RR+NR)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3impi59z000",
+                                    "created": 1592321063670,
+                                    "text": "正确率（查准率）P：返回的结果中真正相关结果的比率 P = RR/(RR+RN)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3inu69iphs0",
+                                    "created": 1592324250736,
+                                    "text": "同一系统不同查询之间差异巨大"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3inuu8c7680",
+                                    "created": 1592324302907,
+                                    "text": "缺点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3inuvzah5s0",
+                                            "created": 1592324306714,
+                                            "text": "召回率难以计算"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3invb1qinc0",
+                                                    "created": 1592324339513,
+                                                    "text": "缓冲池Pooling方法或者不考虑召回率"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3invya7ico0",
+                                                            "created": 1592324390092,
+                                                            "text": "对多个检索系统的TopN个结果组成的集和进行人工标注"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3inuz3ars00",
+                                            "created": 1592324313487,
+                                            "text": "两个指标分别衡量了系统"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3inv6k2ffc0",
+                                                    "created": 1592324329738,
+                                                    "text": "融合成一个指标"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3invgept800",
+                                            "created": 1592324351182,
+                                            "text": "两个指标均基于无序集合计算"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3invmaa0680",
+                                                    "created": 1592324363975,
+                                                    "text": "引入序的作用"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3inwivmjy00",
+                                    "created": 1592324434922,
+                                    "text": "综合评价准则：F：R和P的加权调和平均值"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3inz69dp280",
+                                            "created": 1592324642548,
+                                            "text": "F1=2PR/(P+R)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3inyd8ape00",
+                                    "created": 1592324579356,
+                                    "text": "精确率：所有判定中正确的比率accuracy=(RR+NN)/(RR+RN+NR+NN)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3inzjmeki00",
+                                            "created": 1592324671634,
+                                            "text": "不适合IR的原因：相关文档是少数"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3ilf3vifjk0",
+                    "created": 1592317427853,
+                    "text": "有序检索结果的评价"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3inzz9e9800",
+                            "created": 1592324705676,
+                            "text": "查准率-查全率曲线(P-R)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3io24548ko0",
+                                    "created": 1592324873030,
+                                    "text": "对特定检索词的有序检查结果"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3io2b1dqm80",
+                                            "created": 1592324888041,
+                                            "text": "系统可能返回任意数量的结果(=N)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3io2k63yzc0",
+                                            "created": 1592324907918,
+                                            "text": "考虑TopK返回的情形(k=0,1,2,...,N)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3io2tx9gnk0",
+                                            "created": 1592324929151,
+                                            "text": "每个k的取值对应一个R和P"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3io46j9uyo0",
+                                    "created": 1592325034967,
+                                    "text": "可以求出在召回率分别为0，0.1，0.2，。。。上对应的查准率，然后描出曲线"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3io0u0jnew0",
+                                    "created": 1592324772621,
+                                    "text": "优点：简单直观，既考虑了检索结果覆盖度，又考虑了排序情况"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3io1brem1k0",
+                                    "created": 1592324811251,
+                                    "text": "缺点：难以明确表示两个查询的检索结果的优劣"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3io4zf0c940",
+                            "created": 1592325097836,
+                            "text": "基于P-R曲线的单一指标"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3io54dryp40",
+                                    "created": 1592325108646,
+                                    "text": "固定检索等级的查准率"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3io61up3ig0",
+                                            "created": 1592325181503,
+                                            "text": "比如前k个结果的查准率 Precision@k"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3io59mywqw0",
+                                    "created": 1592325120085,
+                                    "text": "11点平均正确率"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3io5h4eqi00",
+                                            "created": 1592325136377,
+                                            "text": "对十一个召回率水平上，测试集中多个查询在该点上的插值正确率求算术平均"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3io6dw7edk0",
+                                    "created": 1592325207715,
+                                    "text": "平均查准率AP"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3io6kte5w80",
+                                            "created": 1592325222783,
+                                            "text": "未插值的AP"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3io6odji0g0",
+                                            "created": 1592325230531,
+                                            "text": "插值的AP"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3io6q7x9m00",
+                                            "created": 1592325234545,
+                                            "text": "只对返回的相关文档进行计算的AP"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3io87qqik80",
+                            "created": 1592325351052,
+                            "text": "对多个查询进行评估的指标"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3io917h3j40",
+                                    "created": 1592325415191,
+                                    "text": "宏平均Macro Average"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3io9lyfwq80",
+                                            "created": 1592325460357,
+                                            "text": "对每个查询求出某个指标再进行算术平均"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ioai6kfqw0",
+                                                    "created": 1592325530506,
+                                                    "text": "对所有查询一视同仁（保护弱者）"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3io96fwmqw0",
+                                    "created": 1592325426586,
+                                    "text": "微平均Micro Average"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ioa21goxc0",
+                                            "created": 1592325495368,
+                                            "text": "将所有查询视为一个查询，将各种情况的文档总数求和，然后进行指标的计算"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ioapy94i00",
+                                                    "created": 1592325547417,
+                                                    "text": "受返回相关文档数目较多的查询影响"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iodn81gu80",
+                                    "created": 1592325776571,
+                                    "text": "平均查准率AP"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3iodsttp080",
+                                            "created": 1592325788772,
+                                            "text": "每个相关文档位置上查准率的平均值"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ioe0nmdjc0",
+                                    "created": 1592325805811,
+                                    "text": "平均查准率均值MAP"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ioe5il7w80",
+                                            "created": 1592325816391,
+                                            "text": "对所有查询求宏平均"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ioekc0g080",
+                            "created": 1592325848645,
+                            "text": "面向用户的评价指标"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ioeo4yp8o0",
+                                    "created": 1592325856926,
+                                    "text": "覆盖率：系统找到的用户已知的相关文档比例"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ioezrvtuw0",
+                                    "created": 1592325882256,
+                                    "text": "新颖率：系统返回的新相关文档的比例"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3iofe5qxsw0",
+                            "created": 1592325913570,
+                            "text": "GMAP几何平均值"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3iofp3znmo0",
+                            "created": 1592325937408,
+                            "text": "NDCG归一化折损累计增益"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3iofx8dlk00",
+                            "created": 1592325955088,
+                            "text": "MRR第一个正确答案的位置倒数"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3ilgfcwp6o0",
+                    "created": 1592317531214,
+                    "text": "结果摘要"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3iogh3axpc0",
+                            "created": 1592325998316,
+                            "text": "检索结果排序后展现一个包含文档标题和一段摘要的列表"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3iogxqbxd40",
+                            "created": 1592326034537,
+                            "text": "静态摘要：查询无关的摘要"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ioh23bbio0",
+                            "created": 1592326044029,
+                            "text": "动态摘要：依赖于查询的摘要"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

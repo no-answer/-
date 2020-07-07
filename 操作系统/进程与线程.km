@@ -1,0 +1,505 @@
+{
+    "root": {
+        "data": {
+            "id": "c2mf9c0isc80",
+            "created": 1589050130113,
+            "text": "进程与线程"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2mfbaaeq8w0",
+                    "created": 1589050283085,
+                    "text": "进程"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2mfbf0tz800",
+                            "created": 1589050293390,
+                            "text": "定义：执行中的程序，资源分配的最小单位",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfc5x9mt40",
+                                    "created": 1589050351948,
+                                    "text": "包括程序代码段、程序计数器、寄存器、堆栈段、数据段、堆"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfdeaec080",
+                            "created": 1589050448520,
+                            "text": "进程状态：新的、运行、等待、就绪、终止"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfdrpd8hc0",
+                            "created": 1589050477723,
+                            "text": "进程控制块PCB",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfdx2yg1c0",
+                                    "created": 1589050489429,
+                                    "text": "进程状态"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfdzyfw5k0",
+                                    "created": 1589050495686,
+                                    "text": "程序计数器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfe27v3xc0",
+                                    "created": 1589050500610,
+                                    "text": "CPU寄存器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfe41l3ts0",
+                                    "created": 1589050504583,
+                                    "text": "CPU调度信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfe9xzjkg0",
+                                    "created": 1589050517427,
+                                    "text": "内存管理信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfec4q8400",
+                                    "created": 1589050522188,
+                                    "text": "记账信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfef2dgfs0",
+                                    "created": 1589050528576,
+                                    "text": "I/O状态信息"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfftk2ttc0",
+                            "created": 1589050638485,
+                            "text": "进程调度",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfg30ucgw0",
+                                    "created": 1589050659090,
+                                    "text": "长期调度程序"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mfg73jrbs0",
+                                            "created": 1589050667961,
+                                            "text": "控制多道程序设计的成都（内存中的进程数量）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mfgtu1kp40",
+                                            "created": 1589050717452,
+                                            "text": "并不频繁（数分钟），平衡I/O进程和CPU进程的组合"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfhc0u3gg0",
+                                    "created": 1589050757045,
+                                    "text": "短期调度"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mfhozdyew0",
+                                            "created": 1589050785255,
+                                            "text": "从准备执行的进程中选择进程并为之分配CPU"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mfi1xkzq80",
+                                            "created": 1589050813445,
+                                            "text": "十分频繁（数毫秒）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfin69bz40",
+                            "created": 1589050859682,
+                            "text": "上下文切换"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfixrko2g0",
+                                    "created": 1589050882738,
+                                    "text": "发生中断时，CPU将当前进程的状态保存在PCB中，并通过PCB载入唤醒另一个进程"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfk788bwg0",
+                            "created": 1589050981701,
+                            "text": "进程间通信"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfk9l4b140",
+                                    "created": 1589050986833,
+                                    "text": "原因：提高运算速度，模块化，方便"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfkkqwcm80",
+                                    "created": 1589051011128,
+                                    "text": "共享内存模型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mfkxckfqg0",
+                                            "created": 1589051038559,
+                                            "text": "生产者消费者问题"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfknu87so0",
+                                    "created": 1589051017859,
+                                    "text": "消息传递模型"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2mfbd08u340",
+                    "created": 1589050289001,
+                    "text": "线程"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2mffie2h9c0",
+                            "created": 1589050614177,
+                            "text": "定义：CPU调度的最小单位"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfm3na53s0",
+                                    "created": 1589051130632,
+                                    "text": "包含线程ID，程序计数器，寄存器集合，栈"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfme3hv0o0",
+                                    "created": 1589051153380,
+                                    "text": "和同一进程的其他线程共享代码段、数据段、堆和其他操作系统资源"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfnmy93ww0",
+                            "created": 1589051251018,
+                            "text": "线程池"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfnsfs2tk0",
+                                    "created": 1589051262962,
+                                    "text": "在进程开始时创建一定数量的线程，并放入池内等待工作，当服务器收到请求，便唤醒池中的一个线程，并将请求传递给它。一旦线程完成了任务，就会返回到池中等待工作，若池中没有可用线程，服务器就等到有空线程为止"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfpg983ao0",
+                                    "created": 1589051393173,
+                                    "text": "优点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mfpkdlymg0",
+                                            "created": 1589051402145,
+                                            "text": "使用现有线程处理比创建新线程更快"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mfpti3i080",
+                                            "created": 1589051422007,
+                                            "text": "线程池限制了可用线程的最大数量，阻止了高并发请求"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2mfqps4xfk0",
+                    "created": 1589051492271,
+                    "text": "CPU调度"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2mfqsxf9q00",
+                            "created": 1589051499121,
+                            "text": "抢占调度"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfrhnig600",
+                                    "created": 1589051552942,
+                                    "text": "可以在进程从运行/等待状态切换到就绪状态时发生调度"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfs2ehtow0",
+                            "created": 1589051598109,
+                            "text": "调度准则：CPU使用率，吞吐量，周转时间，等待时间，响应时间"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2mfshrtgco0",
+                            "created": 1589051631566,
+                            "text": "调度算法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mfsjtpq9s0",
+                                    "created": 1589051636034,
+                                    "text": "先进先出FIFO"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mft557qdk0",
+                                            "created": 1589051682442,
+                                            "text": "平均等待时间长，无饥饿"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfsucwgpk0",
+                                    "created": 1589051658962,
+                                    "text": "最短作业优先SJF"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mftius7s00",
+                                            "created": 1589051712286,
+                                            "text": "无法在短期CPU调度层次上实现，可能饥饿"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfttojg2o0",
+                                    "created": 1589051735853,
+                                    "text": "剩余最短时间优先调度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfu0n7eso0",
+                                    "created": 1589051751010,
+                                    "text": "优先级调度"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mfujl5p0w0",
+                                            "created": 1589051792245,
+                                            "text": "可能饥饿"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mfuqgkzyg0",
+                                                    "created": 1589051807206,
+                                                    "text": "可以使用老化（逐渐增加等待进程的优先级）解决"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfv4hgay00",
+                                    "created": 1589051837734,
+                                    "text": "轮转法RR"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mfvcb4ox40",
+                                            "created": 1589051854766,
+                                            "text": "对就绪队列进行FIFO调度，每个进程使用一个时间片之后就被抢占"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfw2ftyuw0",
+                                    "created": 1589051911646,
+                                    "text": "多级队列调度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfw8v5j1c0",
+                                    "created": 1589051925634,
+                                    "text": "多级反馈队列调度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mfwld7klk0",
+                                    "created": 1589051952847,
+                                    "text": "多处理器调度"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mfwnvbut40",
+                                            "created": 1589051958296,
+                                            "text": "非对称多处理"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mfx4fe1yg0",
+                                                    "created": 1589051994337,
+                                                    "text": "主处理器处理调度、I/O等，其他处理器只执行用户代码"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mfwv4xue00",
+                                            "created": 1589051974114,
+                                            "text": "对称多处理"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mfxnwr4mw0",
+                                                    "created": 1589052036746,
+                                                    "text": "每个处理器自我调度"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mfyjcodag0",
+                                            "created": 1589052105189,
+                                            "text": "处理器亲和性、负载平衡"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

@@ -1,0 +1,97 @@
+{
+    "root": {
+        "data": {
+            "id": "c2mf9c0isc80",
+            "created": 1589050130113,
+            "text": "内存管理"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3wnk5ha4iw0",
+                    "created": 1593745304780,
+                    "text": "内存管理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3wnm859vls0",
+                            "created": 1593745467313,
+                            "text": "基本硬件"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3wnmbqmbow0",
+                                    "created": 1593745475134,
+                                    "text": "CPU能访问的只有内存和处理器内的寄存器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wnmj6y5j40",
+                                    "created": 1593745491359,
+                                    "text": "CPU和内存之间还有Cache"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wnmrvevcw0",
+                                    "created": 1593745510252,
+                                    "text": "基地址寄存器还有最小的合法物理地址，界限地址寄存器决定了范围i的大小"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3wo532llrc0",
+                            "created": 1593746945186,
+                            "text": "将指令与数据绑定到内存地址"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3wo5bcwv3k0",
+                                    "created": 1593746963224,
+                                    "text": "编译时"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wo5cvtl940",
+                                    "created": 1593746966544,
+                                    "text": "加载时"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wo5eyuonk0",
+                                    "created": 1593746971081,
+                                    "text": "执行时"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3wnkbtu3rk0",
+                    "created": 1593745318600,
+                    "text": "虚拟内存"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

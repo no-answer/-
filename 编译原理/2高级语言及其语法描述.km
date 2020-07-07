@@ -1,0 +1,146 @@
+{
+    "root": {
+        "data": {
+            "id": "c2ztmyl293s0",
+            "created": 1590410972953,
+            "text": "高级语言及其语法描述"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3j7i7r9e3c0",
+                    "created": 1592379735814,
+                    "text": "编译器构成"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3j7icauc7c0",
+                            "created": 1592379745705,
+                            "text": "词法分析器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j7ih3g50g0",
+                            "created": 1592379756142,
+                            "text": "语法分析器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j7iin1nbk0",
+                            "created": 1592379759503,
+                            "text": "语义分析与中间代码产生器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j7inar6kg0",
+                            "created": 1592379769644,
+                            "text": "优化器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j7iosk51k0",
+                            "created": 1592379772898,
+                            "text": "目标代码生成器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j7it6eak00",
+                            "created": 1592379782441,
+                            "text": "表格管理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j7iv7ifo80",
+                            "created": 1592379786862,
+                            "text": "出错处理"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3j7iyzhnq80",
+                    "created": 1592379795084,
+                    "text": "语法描述"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3j92koe7go0",
+                            "created": 1592384152332,
+                            "text": "文法是描述语言的语法结构的形式规则"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j935jru5c0",
+                            "created": 1592384197765,
+                            "text": "上下文无关文法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j938gg3rs0",
+                                    "created": 1592384204094,
+                                    "text": "包含一组终结符，一组非终结符，一个开始符号，一组产生式"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j99z8ayts0",
+                            "created": 1592384732560,
+                            "text": "最左推导：任何一步展开都是对最左非终结符进行替换的"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j9acfrm8w0",
+                            "created": 1592384761309,
+                            "text": "最右推导：任何一步展开都是对最右非终结符进行替换的"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j9aqlf7jc0",
+                            "created": 1592384792126,
+                            "text": "二义性"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j9ax5u2zs0",
+                                    "created": 1592384806421,
+                                    "text": "文法中存在某个句子，有两个不同的最左（最右）推导（两颗不同的语法树）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

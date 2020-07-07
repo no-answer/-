@@ -1,0 +1,755 @@
+{
+    "root": {
+        "data": {
+            "id": "c2pexuh4fmo0",
+            "created": 1589353909799,
+            "text": "考点"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2peyk3zako0",
+                    "created": 1589353965600,
+                    "text": "名词解释30'",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2peylmsswo0",
+                            "created": 1589353968915,
+                            "text": "体系结构"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2peyoenbzc0",
+                            "created": 1589353974952,
+                            "text": "数据表示"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2peypq8urk0",
+                            "created": 1589353977830,
+                            "text": "向量数组数据表示"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2peyygfe9c0",
+                            "created": 1589353996828,
+                            "text": "动态再定位"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pez2cikp40",
+                            "created": 1589354005298,
+                            "text": "并行主存"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pez8gzx540",
+                            "created": 1589354018630,
+                            "text": "中断系统"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2peza1nsvc0",
+                            "created": 1589354022056,
+                            "text": "通道处理机"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pezkiobwo0",
+                            "created": 1589354044853,
+                            "text": "数据宽度"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pezso4gx40",
+                            "created": 1589354062597,
+                            "text": "数组通道"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pezxgbwk80",
+                            "created": 1589354073009,
+                            "text": "存储体系"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf027kvso0",
+                            "created": 1589354083364,
+                            "text": "页/段式管理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf079eueo0",
+                            "created": 1589354094359,
+                            "text": "LRU"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf08ldmi80",
+                            "created": 1589354097259,
+                            "text": "虚拟存储器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0afz53s0",
+                            "created": 1589354101286,
+                            "text": "高速缓存"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0cl2d3c0",
+                            "created": 1589354105947,
+                            "text": "透明性"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0ga1fdk0",
+                            "created": 1589354113988,
+                            "text": "写直达/写回法"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0uiiapk0",
+                            "created": 1589354144975,
+                            "text": "内存的性能指标"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2pf0ljshns0",
+                    "created": 1589354125461,
+                    "text": "名词解释3'x10",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2pf0n8r6qg0",
+                            "created": 1589354129148,
+                            "text": "第一章"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0pl74v40",
+                            "created": 1589354134253,
+                            "text": "第二章"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0qx91uo0",
+                            "created": 1589354137159,
+                            "text": "第三章"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0xjery80",
+                            "created": 1589354151560,
+                            "text": "第四章"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf0zjkmfs0",
+                            "created": 1589354155923,
+                            "text": "第五章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf10s10a00",
+                                    "created": 1589354158611,
+                                    "text": "数据相关"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf19kzgwo0",
+                                    "created": 1589354177776,
+                                    "text": "静态流水线"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf1bonjwg0",
+                                    "created": 1589354182352,
+                                    "text": "动态流水线"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf1dp6kk00",
+                                    "created": 1589354186737,
+                                    "text": "重叠原理"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf1fqjyg00",
+                                    "created": 1589354191174,
+                                    "text": "预留表"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf1odn4s80",
+                                    "created": 1589354209984,
+                                    "text": "全局相关/局部性相关"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf1saa2qo0",
+                                    "created": 1589354218488,
+                                    "text": "超标量处理机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf1x2dfz40",
+                                    "created": 1589354228894,
+                                    "text": "超长指令字处理机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf20c5nts0",
+                                    "created": 1589354236016,
+                                    "text": "超流水线处理机"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf234cucg0",
+                            "created": 1589354242074,
+                            "text": "第六章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf24r7sls0",
+                                    "created": 1589354245633,
+                                    "text": "向量流水处理机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf27xiqzk0",
+                                    "created": 1589354252545,
+                                    "text": "链接技术"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf2agrkxs0",
+                                    "created": 1589354258062,
+                                    "text": "阵列处理机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf2haoq940",
+                                    "created": 1589354272932,
+                                    "text": "互联函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf2iz7sqo0",
+                                    "created": 1589354276592,
+                                    "text": "互联网络"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf2kqvkrk0",
+                                    "created": 1589354280441,
+                                    "text": "xxx网络"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf2pod5sw0",
+                                    "created": 1589354291173,
+                                    "text": "多级PM2I网"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf2tddriw0",
+                                    "created": 1589354299216,
+                                    "text": "xxx混洗网络"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf2wzbuw80",
+                                    "created": 1589354307074,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf342ld000",
+                            "created": 1589354322509,
+                            "text": "第七章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf35poed40",
+                                    "created": 1589354326081,
+                                    "text": "多处理机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf379v4xk0",
+                                    "created": 1589354329479,
+                                    "text": "紧耦合"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf3bt8jy00",
+                                    "created": 1589354339357,
+                                    "text": "松耦合"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf3dhg6g80",
+                                    "created": 1589354342998,
+                                    "text": "静态优先级算法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf3gcdfcg0",
+                                    "created": 1589354349221,
+                                    "text": "动态优先级算法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf3jn7b600",
+                                    "created": 1589354356407,
+                                    "text": "先来先服务"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf3la4y000",
+                                    "created": 1589354359970,
+                                    "text": "时间片算法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2pf3tqbntk0",
+                    "created": 1589354378363,
+                    "text": "简答题6'x5",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2pf3zrv4740",
+                            "created": 1589354391517,
+                            "text": "第一章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf439c4m80",
+                                    "created": 1589354399104,
+                                    "text": "计算机层级结构分层"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf480x9u00",
+                                    "created": 1589354409479,
+                                    "text": "计算机定量设计原理/性能评测原理嘻嘻嘻定律"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf4em84s80",
+                                    "created": 1589354423828,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf4fljeag0",
+                                    "created": 1589354425963,
+                                    "text": "并行性概念种类"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf4p7mr0w0",
+                                    "created": 1589354446890,
+                                    "text": "计算机系统的分类费莱明"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf59sm9ag0",
+                                    "created": 1589354491694,
+                                    "text": "模拟与仿真的区别"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf4tujf8w0",
+                            "created": 1589354456982,
+                            "text": "第二章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf4v5fpe80",
+                                    "created": 1589354459818,
+                                    "text": "数据表示与数据结构之间的关系"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf4zhor1k0",
+                                    "created": 1589354469266,
+                                    "text": "RISK的特点和采用的技术"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf5fg0hog0",
+                            "created": 1589354503993,
+                            "text": "第四章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf5l7f6ns0",
+                                    "created": 1589354516534,
+                                    "text": "存储体系里面相对应的算法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf5j8j65c0",
+                            "created": 1589354512248,
+                            "text": "第五章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf5rdkwag0",
+                                    "created": 1589354529967,
+                                    "text": "数据相关的处理方式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf5z8wbzs0",
+                                    "created": 1589354547098,
+                                    "text": "以及对应的控制机构"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf69kb2140",
+                                    "created": 1589354569556,
+                                    "text": "先行处理"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf6cpq2xs0",
+                                    "created": 1589354576414,
+                                    "text": "超标量/超长指令字/超流水线处理机的区别"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf667we8o0",
+                            "created": 1589354562276,
+                            "text": "第六章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf74t9tyo0",
+                                    "created": 1589354637578,
+                                    "text": "互连网络"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf67wpgag0",
+                            "created": 1589354565952,
+                            "text": "第七章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf7bahd0g0",
+                                    "created": 1589354651680,
+                                    "text": "紧耦合多处理机移植性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf7h7b3oo0",
+                                    "created": 1589354664549,
+                                    "text": "程序并行性灌粉"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf7n1flcw0",
+                                    "created": 1589354677254,
+                                    "text": "操作系统类型"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf7l3yx0g0",
+                                    "created": 1589354673054,
+                                    "text": "多处理机类型"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2pf802ctsw0",
+                    "created": 1589354705608,
+                    "text": "计算题10'4",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2pf88mstjs0",
+                            "created": 1589354724258,
+                            "text": "amodo定律加速比"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf8c2s1yg0",
+                            "created": 1589354731755,
+                            "text": "操作码优化"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf8exvcjs0",
+                            "created": 1589354737988,
+                            "text": "内存的分配，操作码地址码划分，寻址和操作划分"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf9ozdqow0",
+                            "created": 1589354838212,
+                            "text": "第三章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf8urhjr40",
+                                    "created": 1589354772431,
+                                    "text": "通道处理机流量处理"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf97n10tk0",
+                            "created": 1589354800460,
+                            "text": "第四章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf9aw7o540",
+                                    "created": 1589354807545,
+                                    "text": "替换算法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pf9h5oiqw0",
+                                    "created": 1589354821178,
+                                    "text": "段组映射方式绘图"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pf9do5xgw0",
+                            "created": 1589354813589,
+                            "text": "第五章重中之重"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pf9z9n6740",
+                                    "created": 1589354860600,
+                                    "text": "用静态流水线求效率加速比吞吐率等"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2pfa7xlirs0",
+                                    "created": 1589354879463,
+                                    "text": "给预约表找最小循环并计算吞吐率平均延迟等"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2pfaqzy3o00",
+                            "created": 1589354920964,
+                            "text": "第六章"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2pfaspm7f40",
+                                    "created": 1589354924693,
+                                    "text": "给指令做链接计算花费的周期"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

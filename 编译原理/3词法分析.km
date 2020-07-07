@@ -1,0 +1,440 @@
+{
+    "root": {
+        "data": {
+            "id": "c2ztmyl293s0",
+            "created": 1590410972953,
+            "text": "词法分析"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2ztomfm5000",
+                    "created": 1590411103231,
+                    "text": "对于词法分析器的要求"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2ztyfe5wu00",
+                            "created": 1590411871547,
+                            "text": "程序语言的单词符号",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2ztymcgs5k0",
+                                    "created": 1590411886682,
+                                    "text": "关键字"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ztyvxzc140",
+                                    "created": 1590411907574,
+                                    "text": "运算符"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ztyxqzqo00",
+                                    "created": 1590411911505,
+                                    "text": "界符"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ztytxkvo00",
+                                    "created": 1590411903196,
+                                    "text": "常数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ztyoz59so0",
+                                    "created": 1590411892407,
+                                    "text": "标识符"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2ztoqzkp8w0",
+                    "created": 1590411113145,
+                    "text": "词法分析器的设计"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2zu4ygc0ao0",
+                            "created": 1590412383222,
+                            "text": "输入预处理",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2zu50z87lk0",
+                                    "created": 1590412388718,
+                                    "text": "剔除回车换行等编辑性字符"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2zu5fa7v3s0",
+                                    "created": 1590412419858,
+                                    "text": "剔除注释"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2zu6d0pvwo0",
+                                    "created": 1590412493294,
+                                    "text": "设置扫描缓冲区"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2zu6gsa6hc0",
+                            "created": 1590412501491,
+                            "text": "超前搜索识别单词符号"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j9e9fa19c0",
+                            "created": 1592385068206,
+                            "text": "状态转换图"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j9ec8oty80",
+                                    "created": 1592385074338,
+                                    "text": "有向图，节点表示状态，单圈为普通节点，双圈为终态"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3j9fi36n6g0",
+                                    "created": 1592385165430,
+                                    "text": "用于识别一定的字符串"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2ztovnwh5c0",
+                    "created": 1590411123323,
+                    "text": "正规表达式与有限自动机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3j9hvxcggw0",
+                            "created": 1592385352280,
+                            "text": "正规集"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j9i1n5zs00",
+                                    "created": 1592385364725,
+                                    "text": "定义",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3j9i5qns0g0",
+                                            "created": 1592385373644,
+                                            "text": "A和空集B都是集合E上的正规式，他们表示的正规集分别是|A|和B"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j9iq4uxnc0",
+                                            "created": 1592385418038,
+                                            "text": "任何a∈A，a是E上的一个正规式，他表示的正规集为{a}"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j9og2t2fc0",
+                                            "created": 1592385866331,
+                                            "text": "假定U和V都是E上的正规式，他们所表示的正规集分别记为L(U)和L(V)，那么(U|V)、(U*V)、(U)*也都是正规式，分别表示并集、连接积和闭包"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3j9rf4cpwg0",
+                                    "created": 1592386099340,
+                                    "text": "有限次使用上述三步骤得到的表达式才是E上的表达式，这些正规式表现的字集才是E上的正规集"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3j9s625wog0",
+                                    "created": 1592386157981,
+                                    "text": "正规式的运算符：|或 ·连接 *闭包"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j9t23riy00",
+                            "created": 1592386227735,
+                            "text": "确定有限自动机DFA"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j9u4fl0mw0",
+                                    "created": 1592386311167,
+                                    "text": "定义（五元式）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3j9u8bgfzs0",
+                                            "created": 1592386319625,
+                                            "text": "有限集，每个元素称为一个状态"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j9ulxvm6w0",
+                                            "created": 1592386349279,
+                                            "text": "有穷字母表，每个元素称为一个输入字符"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j9uu8nxmw0",
+                                            "created": 1592386367345,
+                                            "text": "从有限集X有穷字母表到有限集的单指部分映射"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j9v92um9k0",
+                                            "created": 1592386399645,
+                                            "text": "有限集的一个元素，唯一的初态"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j9vkac3ag0",
+                                            "created": 1592386424042,
+                                            "text": "有限集的子集，终态集（可空）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3j9vx9lgko0",
+                                    "created": 1592386452296,
+                                    "text": "DFA可以使用状态转换矩阵、状态转换图表示"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ja9n6povk0",
+                                    "created": 1592387527452,
+                                    "text": "DFA的确定性表示在映射是一个单值函数，对任何状态和输入符号，唯一的确定了下一状态"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3jaaaaq3ts0",
+                            "created": 1592387577761,
+                            "text": "非确定有限自动机NFA"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3jaaf13dwg0",
+                                    "created": 1592387588062,
+                                    "text": "定义（五元式）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3j9u8bgfzs0",
+                                            "created": 1592386319625,
+                                            "text": "有限集，每个元素称为一个状态"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j9ulxvm6w0",
+                                            "created": 1592386349279,
+                                            "text": "有穷字母表，每个元素称为一个输入字符"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jaaxj53g00",
+                                            "created": 1592387628336,
+                                            "text": "从有限集X有穷字母表的闭包到有限集的子集的映射"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jabak3sxk0",
+                                            "created": 1592387656692,
+                                            "text": "非空初态集"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jabhfohz40",
+                                            "created": 1592387671662,
+                                            "text": "终态集（可空）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jb292c8880",
+                                    "created": 1592389769273,
+                                    "text": "对于有穷字母表中的任何一个字a，若存在一条从某一初态节点到某一终态节点的通路，且这条通路上所有弧的标记字依序连接成的字等于a，则称a可为NFA所识别"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jb3qr3zs00",
+                                    "created": 1592389886141,
+                                    "text": "可以通过子集法将NFA确定化为DFA"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3jb470x7xk0",
+                                            "created": 1592389921563,
+                                            "text": "引进新的初态节点X和终态节点Y，X、Y不属于有限集"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jb4k7vn340",
+                                            "created": 1592389950281,
+                                            "text": "从X到初态集中任意状态节点连一条空箭弧，从终态集中任意状态节点连一条空箭弧到Y"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jb58bruco0",
+                                            "created": 1592390002760,
+                                            "text": "对NFA的状态转换图M进一步实行替换，得到M'"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jb5xwtc7s0",
+                                            "created": 1592390058451,
+                                            "text": "将M'进一步变换为DFA"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3jb6a87s0g0",
+                                                    "created": 1592390085262,
+                                                    "text": "假定I是M'的状态集的子集，定义I的空闭包"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3jb6oph01k0",
+                                                            "created": 1592390116781,
+                                                            "text": "若q∈I，则q∈空闭包"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3jb6vfv9uo0",
+                                                            "created": 1592390131437,
+                                                            "text": "若q∈I，那么从q经过空弧能到达的状态都属于空闭包"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3jb7hhev9k0",
+                                                    "created": 1592390179420,
+                                                    "text": "假定I是M'的状态集的子集，a属于E，定义Ie"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2ztp2j6n0w0",
+                    "created": 1590411138275,
+                    "text": "词法分析器的自动产生"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

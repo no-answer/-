@@ -1,0 +1,271 @@
+{
+    "root": {
+        "data": {
+            "id": "c3mmsqtfgbk0",
+            "created": 1592727557464,
+            "text": "文本聚类"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3mmt5ast540",
+                    "created": 1592727588989,
+                    "text": "聚类"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mmt6nkkm80",
+                            "created": 1592727591938,
+                            "text": "将一系列文档按照相似性聚团成子集或簇的过程"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmtibssr40",
+                            "created": 1592727617348,
+                            "text": "簇内文档应当彼此相似，簇间文档相似度不大"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmtvzkaq00",
+                            "created": 1592727647083,
+                            "text": "分类是有监督的学习，聚类是无监督的学习（没有已经标注好的数据集"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mmub3j8tc0",
+                    "created": 1592727679975,
+                    "text": "应用"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mmufjwavc0",
+                            "created": 1592727689671,
+                            "text": "聚类假设：在考虑文档和信息需求之间的相关性时，同一簇中的文档表现相互类似"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmuwbu12w0",
+                            "created": 1592727726189,
+                            "text": "可提高召回率"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmvw1zla80",
+                            "created": 1592727803958,
+                            "text": "聚类的要求：将相关文档放到一个簇中，将不相关文档放到不同簇中"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmw85t6q80",
+                            "created": 1592727830310,
+                            "text": "扁平聚类：一开始将全部或部分文档随机划分为不同的组，通过迭代不断修正，代表：kmeans"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmwsr6gig0",
+                            "created": 1592727875138,
+                            "text": "层次聚类：构建有层次结构的簇"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmx49438w0",
+                            "created": 1592727900167,
+                            "text": "硬聚类：每篇文档仅属于一个簇"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmxckrkfk0",
+                            "created": 1592727918286,
+                            "text": "软聚类：每篇文档可以属于多个簇"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mmxq115fs0",
+                    "created": 1592727947568,
+                    "text": "K-均值聚类方法"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mmyibn8740",
+                            "created": 1592728009159,
+                            "text": "每个簇都定义为其质心向量"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmynr5dq00",
+                            "created": 1592728020981,
+                            "text": "划分准则：使得所有文档到其所在簇的质心向量的平方和最小"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mmyz9bqnc0",
+                            "created": 1592728046024,
+                            "text": "优化"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mmz0m0kwo0",
+                                    "created": 1592728048969,
+                                    "text": "重分配"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3mmzmm07680",
+                                            "created": 1592728096857,
+                                            "text": "将每篇文档分配给离他最近的簇"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mmz1y2d5k0",
+                                    "created": 1592728051874,
+                                    "text": "重计算"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3mmzslch0g0",
+                                            "created": 1592728109878,
+                                            "text": "重新计算每个簇的质心向量"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3mn4ycv7880",
+                            "created": 1592728514247,
+                            "text": "k-means一定是收敛的，但是不意味着会达到全局最优的聚类结果，最初选取的种子很重要"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mndbqjd9c0",
+                            "created": 1592729170285,
+                            "text": "RSS残差平方和=所有簇上的文档向量到最近的质心向量的距离平方和的总和"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mnak3eyhs0",
+                    "created": 1592728953385,
+                    "text": "聚类评价"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mnaxmp2mg0",
+                            "created": 1592728982849,
+                            "text": "内部准则"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mnb9dcn080",
+                                    "created": 1592729008406,
+                                    "text": "k-means的RSS值"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3mnb09pbbs0",
+                            "created": 1592728988594,
+                            "text": "外部准则"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mnckusw9s0",
+                                    "created": 1592729111770,
+                                    "text": "纯度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mncnaqslk0",
+                                    "created": 1592729117087,
+                                    "text": "归一化互信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mncqok4eg0",
+                                    "created": 1592729124453,
+                                    "text": "兰迪指数/准确率"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mncusnqq80",
+                                    "created": 1592729133408,
+                                    "text": "F值"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mnd0n321c0",
+                    "created": 1592729146131,
+                    "text": "簇个数确定"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

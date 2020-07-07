@@ -1,0 +1,179 @@
+{
+    "root": {
+        "data": {
+            "id": "c2cr2xbb3ls0",
+            "created": 1588067881680,
+            "text": "OSI七层模型"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2cslb3mifk0",
+                    "created": 1588072143356,
+                    "text": "协议：对等实体间进行通信的规则集合"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c2cr9cuau200",
+                    "created": 1588068385665,
+                    "text": "应用层"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2csisdkomw0",
+                            "created": 1588071945870,
+                            "text": "任务：通过应用进程间的交互来完成特定网络应用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2csj98v3x40",
+                            "created": 1588071982590,
+                            "text": "数据单元：报文"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2csjzilxrc0",
+                            "created": 1588072039776,
+                            "text": "DNS/HTTP/SMTP"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr9dyfzc00",
+                    "created": 1588068388093,
+                    "text": "表示层"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c2cr9ep2o540",
+                    "created": 1588068389703,
+                    "text": "会话层"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c2cr9fg8hk00",
+                    "created": 1588068391345,
+                    "text": "运输层"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2csjeapdnc0",
+                            "created": 1588071993586,
+                            "text": "任务：向两台主机中进程间的通信提供通用的数据传输服务"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2crap0cwfk0",
+                            "created": 1588068490517,
+                            "text": "中间设备：网关，网络层之上均为网关"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2csjq13adc0",
+                            "created": 1588072019126,
+                            "text": "TCP/IP"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr9g7e6bs0",
+                    "created": 1588068392987,
+                    "text": "网络层"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2crah083ow0",
+                            "created": 1588068473095,
+                            "text": "中间设备：路由器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cskfwoplc0",
+                            "created": 1588072075456,
+                            "text": "IP/ICMP/ARP"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr9gwas7s0",
+                    "created": 1588068394493,
+                    "text": "数据链路层"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2crabcli000",
+                            "created": 1588068460782,
+                            "text": "中间设备：网桥"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2csknko80o0",
+                            "created": 1588072092144,
+                            "text": "数据单元：帧"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr9hpkgm80",
+                    "created": 1588068396263,
+                    "text": "物理层"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cra6fl2sw0",
+                            "created": 1588068450079,
+                            "text": "中间设备：转发器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cskymkfhc0",
+                            "created": 1588072116203,
+                            "text": "数据单元：比特"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

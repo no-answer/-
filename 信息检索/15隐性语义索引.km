@@ -1,0 +1,172 @@
+{
+    "root": {
+        "data": {
+            "id": "c3mdk2y1psw0",
+            "created": 1592701488598,
+            "text": "隐性语义索引"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3mdkbigdzk0",
+                    "created": 1592701507246,
+                    "text": "矩阵分解"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mdkwebjq80",
+                            "created": 1592701552709,
+                            "text": "线性代数基础"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mdkyljd9k0",
+                                    "created": 1592701557499,
+                                    "text": "令C为一个MxN的词项-文档矩阵，其中的每个元素都是非负实数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mdlb7y2f40",
+                                    "created": 1592701584975,
+                                    "text": "矩阵的秩rank是线性无关的行或列的数目，因此有rank(C)<=min{M,N}"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mdlq1cbxs0",
+                                    "created": 1592701617227,
+                                    "text": "一个非对角线上元素均为0的rXr方阵被称为对角阵，其秩等于其对角线上非0元素的个数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mdmej5ks80",
+                                    "created": 1592701670547,
+                                    "text": "对MxM的方阵C及非零向量x，有Cx=λx"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3mdmyu6s9c0",
+                                            "created": 1592701714750,
+                                            "text": "λ被称为矩阵C的特征值"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3mdn5px71k0",
+                                            "created": 1592701729729,
+                                            "text": "对于特征值λ，满足等式M维非零向量x称为其右特征向量"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3mdnpt2hwo0",
+                                            "created": 1592701773455,
+                                            "text": "对应最大特征值的特征向量被称为主特征向量"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3mdnyoeks00",
+                                            "created": 1592701792764,
+                                            "text": "矩阵左特征向量是满足等式yTC=λyT的M维向量y"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mdoo12my00",
+                                    "created": 1592701847950,
+                                    "text": "特征方程(C-λIm)x=0"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3mdoy2opfk0",
+                                            "created": 1592701869815,
+                                            "text": "其中Im为m维单位矩阵"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3mdp77tg480",
+                            "created": 1592701889717,
+                            "text": "矩阵分解"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mdp8y0uf40",
+                                    "created": 1592701893478,
+                                    "text": "将方阵分解为多个矩阵因子乘积的方法，并且这几个矩阵因子都可以从方针的特征向量导出"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3mdvyz2sew0",
+                            "created": 1592702420323,
+                            "text": "矩阵对角化定理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mdw1r2d8g0",
+                                    "created": 1592702426369,
+                                    "text": "令S为MxM的实方阵，并且他有M个线性无关的特征向量，那么存在一个特征分解S=UVU-1"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mdx4k3vuo0",
+                                    "created": 1592702510843,
+                                    "text": "其中U的每一列都是S的特征向量，V是按照特征值从大到小排列的对角阵"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mdy90h0bc0",
+                                    "created": 1592702598904,
+                                    "text": "假设S是一个MxM的实对称方阵，并且有M个线性无关的特征向量，那么存在对称对角化分解S=QVQT"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mdyvubgzc0",
+                                    "created": 1592702648597,
+                                    "text": "其中Q的每一列都是S的互相正交且归一化的特征向量，V是对角矩阵，其每个对角线上的值都对应S的一个特征值，Q是实矩阵，故QT=Q-1"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

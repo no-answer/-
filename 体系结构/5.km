@@ -1,0 +1,1387 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "标量处理机"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3lrvegt3tc0",
+                    "created": 1592640311265,
+                    "text": "先行控制技术"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3lrvzod5bs0",
+                            "created": 1592640357434,
+                            "text": "指令重叠执行方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lrwdbcdaw0",
+                                    "created": 1592640387122,
+                                    "text": "指令的三个阶段"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrwgj7kbs0",
+                                            "created": 1592640394128,
+                                            "text": "取指令"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrwiqztug0",
+                                            "created": 1592640398952,
+                                            "text": "指令分析"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrwk10y740",
+                                            "created": 1592640401735,
+                                            "text": "指令执行"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrwsj7dx40",
+                                    "created": 1592640420249,
+                                    "text": "顺序执行"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrx9yjdew0",
+                                            "created": 1592640458181,
+                                            "text": "耗时：T=3nt"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrxra6exc0",
+                                            "created": 1592640495890,
+                                            "text": "速度慢，部件利用率低"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrwudth8o0",
+                                    "created": 1592640424277,
+                                    "text": "一次重叠执行"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrxfvro0w0",
+                                            "created": 1592640471075,
+                                            "text": "耗时：T=(1+2n)t"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrxmx11yo0",
+                                            "created": 1592640486388,
+                                            "text": "需要添加硬件"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lrwxme6vc0",
+                                    "created": 1592640431326,
+                                    "text": "二次重叠执行"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrxx81p340",
+                                            "created": 1592640508822,
+                                            "text": "耗时：T=(2+n)t"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lry1ml65s0",
+                                            "created": 1592640518409,
+                                            "text": "需要先行控制技术"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lryff1cvc0",
+                                            "created": 1592640548428,
+                                            "text": "要有独立的取指令部件、指令分析部件和指令执行部件"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrypqfyeo0",
+                                            "created": 1592640570884,
+                                            "text": "要解决访存冲突"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lryxfbj0w0",
+                                                    "created": 1592640587626,
+                                                    "text": "采用低位交叉存储"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3lrz0xpcdc0",
+                                                    "created": 1592640595268,
+                                                    "text": "两个独立的存储器（指令存储器和数据存储器）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3lrzcvmhfk0",
+                                                    "created": 1592640621264,
+                                                    "text": "先行控制技术"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3lrzfxhmbs0",
+                                                            "created": 1592640627907,
+                                                            "text": "缓冲"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3lrzh8ern40",
+                                                            "created": 1592640630744,
+                                                            "text": "预处理"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lrw4rvr3c0",
+                            "created": 1592640368531,
+                            "text": "先行控制方式的原理和结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lrzpbddb40",
+                                    "created": 1592640648337,
+                                    "text": "处理机结构"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lrzr1hhig0",
+                                            "created": 1592640652093,
+                                            "text": "三个独立控制器"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ls0hp07t40",
+                                                    "created": 1592640710112,
+                                                    "text": "存储控制器"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ls0ji4w5k0",
+                                                    "created": 1592640714050,
+                                                    "text": "指令控制器"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ls0lbff4g0",
+                                                    "created": 1592640717998,
+                                                    "text": "运算控制器"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lrzteaq2o0",
+                                            "created": 1592640657221,
+                                            "text": "四个缓冲栈"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lrzwefwt40",
+                                                    "created": 1592640663760,
+                                                    "text": "先行指令缓冲栈"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ls002wqm00",
+                                                    "created": 1592640671770,
+                                                    "text": "先行读数缓冲栈"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ls06ca06w0",
+                                                    "created": 1592640685397,
+                                                    "text": "先行操作栈"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ls0aakjww0",
+                                                    "created": 1592640694001,
+                                                    "text": "后行写数栈"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lrw8baxps0",
+                            "created": 1592640376235,
+                            "text": "数据相关"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ls2b5tsrs0",
+                                    "created": 1592640852620,
+                                    "text": "执行本条指令时，用到的指令、操作数、变址量是前面指令的执行结果"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ls3bqbcwo0",
+                                            "created": 1592640932223,
+                                            "text": "指令相关"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ls3f4t54g0",
+                                                    "created": 1592640939630,
+                                                    "text": "在程序执行过程中不允许修改指令"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lrw9pe75s0",
+                            "created": 1592640379264,
+                            "text": "控制相关"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ls2trhnbs0",
+                                    "created": 1592640893112,
+                                    "text": "由条件分支指令，转子程序指令，中断等引起的相关"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lrvh2j5m80",
+                    "created": 1592640316932,
+                    "text": "流水线技术"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3lsji22o940",
+                            "created": 1592642199821,
+                            "text": "把一个重复过程分解为若干子过程，每个子过程可以和其他子过程同时进行"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3lskgnk3m00",
+                            "created": 1592642275131,
+                            "text": "特点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lsk59htxk0",
+                                    "created": 1592642250336,
+                                    "text": "只有连续提供同类任务才能发挥流水线效率"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lskjapevs0",
+                                    "created": 1592642280884,
+                                    "text": "每个流水线端都要设置一个流水寄存器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lskqc673s0",
+                                    "created": 1592642296210,
+                                    "text": "各流水线的事件应该尽量相等"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lskyej3ts0",
+                                    "created": 1592642313767,
+                                    "text": "流水线要有装入时间和排空时间"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lsl3vcjww0",
+                            "created": 1592642325668,
+                            "text": "分类"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lsl65ko8g0",
+                                    "created": 1592642330640,
+                                    "text": "线性流水线"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lslj307og0",
+                                            "created": 1592642358782,
+                                            "text": "每一个流水段只流过一次"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lsldgu35k0",
+                                    "created": 1592642346558,
+                                    "text": "非线性流水线"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lslswaq140",
+                                            "created": 1592642380145,
+                                            "text": "流水段之间由反馈或前馈回路"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lsm6d28tc0",
+                                    "created": 1592642409456,
+                                    "text": "单功能流水线"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lsmci1z540",
+                                            "created": 1592642422819,
+                                            "text": "只能完成一种固定功能"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lsmaanvr40",
+                                    "created": 1592642418019,
+                                    "text": "多功能流水线"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lsmof5ig00",
+                                            "created": 1592642448766,
+                                            "text": "流水线的各段通过不同链接实现不同功能"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lsmz9wbu80",
+                                    "created": 1592642472392,
+                                    "text": "静态流水线"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lsn4j44io0",
+                                            "created": 1592642483834,
+                                            "text": "同一时间段内各个功能段只能按照一种方式连接，实现一种固定的功能"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lsn0t5rts0",
+                                    "created": 1592642475733,
+                                    "text": "动态流水线"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lsn4j44io0",
+                                            "created": 1592642483834,
+                                            "text": "同一时间段内各个功能段可以按照不同的方式连接，同时执行多种功能"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lsnvuag0w0",
+                            "created": 1592642543282,
+                            "text": "性能分析"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lsny64uhs0",
+                                    "created": 1592642548352,
+                                    "text": "吞吐率"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lso0fwtfc0",
+                                            "created": 1592642553296,
+                                            "text": "TP=n/Tk"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lso4kbn680",
+                                                    "created": 1592642562270,
+                                                    "text": "n为任务书，Tk为完成n个任务所用的时间"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3lsojhx1200",
+                                                    "created": 1592642594777,
+                                                    "text": "Tk=（k+n-1)Δt"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3lsoqavkkg0",
+                                                            "created": 1592642609588,
+                                                            "text": "k为流水线段数"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3lsotkvjpk0",
+                                                            "created": 1592642616723,
+                                                            "text": "Δt为时钟周期"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lsp8rwywg0",
+                                    "created": 1592642649801,
+                                    "text": "加速比"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lspaygp5k0",
+                                            "created": 1592642654550,
+                                            "text": "S=kn/(k+n-1)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lspnzhv800",
+                                    "created": 1592642682911,
+                                    "text": "效率"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lspr22itc0",
+                                            "created": 1592642689597,
+                                            "text": "E=T0/kTk"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3lspwiwadk0",
+                                                    "created": 1592642701498,
+                                                    "text": "T0为n个任务占用的时空区"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3lsq3h88c00",
+                                                    "created": 1592642716635,
+                                                    "text": "Tk为每个流水段占用的时空区，k为流水段个数"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3lsvptrgyw0",
+                            "created": 1592643157103,
+                            "text": "非线性流水线的调度"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lufhlq8fs0",
+                                    "created": 1592647527596,
+                                    "text": "启动距离：连续输入两个任务之间的时间间隔"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lufr4goy00",
+                                    "created": 1592647548320,
+                                    "text": "流水线冲突：几个任务争用同一个流水段"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lug9yhhyg0",
+                                    "created": 1592647589317,
+                                    "text": "无冲突调度方法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3lugc7jt8g0",
+                                            "created": 1592647594219,
+                                            "text": "禁止向量：预约表中每一行任意两个x之间距离的集合"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3luh042f540",
+                                            "created": 1592647646251,
+                                            "text": "冲突向量C=(CmCm-1...C2C1)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3luhbv34ts0",
+                                                    "created": 1592647671829,
+                                                    "text": "其中m是禁止向量中的最大值"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3luhj0jsvc0",
+                                                    "created": 1592647687397,
+                                                    "text": "若Ci在禁止向量中，则Ci=1，否则Ci=0"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3lui638y5c0",
+                                            "created": 1592647737626,
+                                            "text": "状态图：将冲突向量逻辑右移，若以出去的位是1，则表示用相应启动距离想流水线输入新任务时会产生功能段冲突，否则不会"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0dmizwiw0",
+                                            "created": 1592664308246,
+                                            "text": "简单循环：状态图中各种冲突向量只经过一次的启动循环"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0eh4g7nk0",
+                                            "created": 1592664374846,
+                                            "text": "启动距离：启动循环总长度/循环中冲突向量个数"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3m0m0x9w2o0",
+                            "created": 1592664966497,
+                            "text": "局部相关"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m0m3c328g0",
+                                    "created": 1592664971746,
+                                    "text": "顺序流动"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m0m9eibts0",
+                                            "created": 1592664984954,
+                                            "text": "任务按顺序流入流水线，也按顺序流出流水线"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0mgi5pfc0",
+                                            "created": 1592665000412,
+                                            "text": "吞吐率和效率低，逻辑控制简单"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m0mpg6anc0",
+                                    "created": 1592665019883,
+                                    "text": "乱序流动"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m0mrgvids0",
+                                            "created": 1592665024279,
+                                            "text": "指令流出流水线的顺序和流入流水线的孙旭不同"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0n17dwoo0",
+                                            "created": 1592665045473,
+                                            "text": "数据相关"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3m0n3f0tpc0",
+                                                    "created": 1592665050288,
+                                                    "text": "写读相关"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3m0n7rtu200",
+                                                    "created": 1592665059770,
+                                                    "text": "读写相关"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3m0n9b8t200",
+                                                    "created": 1592665063120,
+                                                    "text": "写写相关"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0nj3oqug0",
+                                            "created": 1592665084432,
+                                            "text": "避免方法"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3m0nl7qxv40",
+                                                    "created": 1592665089030,
+                                                    "text": "延迟执行"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3m0nngt1xc0",
+                                                    "created": 1592665093932,
+                                                    "text": "建立专用通路"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m0o8gmwig0",
+                                    "created": 1592665139634,
+                                    "text": "动态调度算法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m0oay7ghs0",
+                                            "created": 1592665145050,
+                                            "text": "集中控制CDC记分牌算法"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0ofy8f1c0",
+                                            "created": 1592665155935,
+                                            "text": "分散控制Tomasulo算法"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3m0w1bu3kw0",
+                            "created": 1592665751019,
+                            "text": "全局相关"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m0wkr1qi00",
+                                    "created": 1592665793298,
+                                    "text": "由条件转移或程序中断引起的相关"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m0wqznrwo0",
+                                    "created": 1592665806879,
+                                    "text": "第i-1条指令要等到第i+k-2条指令进入流水线时才能形成条件码"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m0xs69dcw0",
+                                            "created": 1592665887819,
+                                            "text": "需要猜测分支执行方向，有可能造成浪费"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0y6430800",
+                                            "created": 1592665918163,
+                                            "text": "方法一：只进行指令译码和准备好运算所需操作数，在转移条件形成之前不执行运算"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0ymdz5fs0",
+                                            "created": 1592665953589,
+                                            "text": "方法二：一直执行到运算完成，但不送回运算结果"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m0z2lw3j40",
+                                    "created": 1592665988897,
+                                    "text": "条件分支对流水线的影响"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m0z8gi2og0",
+                                    "created": 1592666001631,
+                                    "text": "处理办法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m0zaatbo00",
+                                            "created": 1592666005641,
+                                            "text": "延迟转移和指令取消"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3m0ze81olc0",
+                                                    "created": 1592666014181,
+                                                    "text": "只用于单流水线处理机，流水线级数不能太多"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m0zc7cxrc0",
+                                            "created": 1592666009786,
+                                            "text": "动态分支预测"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3m0zyqrylc0",
+                                                    "created": 1592666058849,
+                                                    "text": "根据进其转移是否成功的记录来预测下一次转移的方向"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3m10y5exq80",
+                                                    "created": 1592666135922,
+                                                    "text": "在指令Cache中记录转移历史信息（转移历史表）"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3m11j96kgo0",
+                                                            "created": 1592666181862,
+                                                            "text": "不必专门设置缓冲栈，记录信息较少"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3m11s1e59k0",
+                                                    "created": 1592666200982,
+                                                    "text": "设置转移目标地址缓冲栈"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m10brjfs00",
+                                            "created": 1592666087193,
+                                            "text": "静态分支预测"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3m10g5xhnk0",
+                                                    "created": 1592666096771,
+                                                    "text": "不改变转移方向预测，但是可以在两个方向上都预取指令"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m10qb7e740",
+                                            "created": 1592666118857,
+                                            "text": "提前形成条件码"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3m1236h7sw0",
+                                                    "created": 1592666225234,
+                                                    "text": "在运算开始或中间产生条件码"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3m12ludvw00",
+                            "created": 1592666265862,
+                            "text": "断点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m12s9igug0",
+                                    "created": 1592666279837,
+                                    "text": "精确断点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m13w0g0fc0",
+                                            "created": 1592666366360,
+                                            "text": "需要设置后援寄存器记录流水线所有指令执行结果和现场"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m12tqh3tk0",
+                                    "created": 1592666283039,
+                                    "text": "不精确断点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m130t77ts0",
+                                            "created": 1592666298442,
+                                            "text": "流水线可以不断流，硬件少，逻辑简单，中断响应时间加长，调试困难，程序执行结果有可能出错"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lrvinivtk0",
+                    "created": 1592640320378,
+                    "text": "超标量处理机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3m1k5jvsh40",
+                            "created": 1592667640953,
+                            "text": "普通标量处理机：一条指令流水线，一个多功能操作部件，每个时钟周期平均执行的指令的条数小于1"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3m1kr6km600",
+                            "created": 1592667688037,
+                            "text": "多操作部件标量处理机：一条指令流水线，多个独立的操作部件，指令级并行度ILP<1"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3m1lt61uow0",
+                            "created": 1592667770724,
+                            "text": "单发射与多发射"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m1m743dy00",
+                                    "created": 1592667801080,
+                                    "text": "单发射处理机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m1m90dq8w0",
+                                    "created": 1592667805209,
+                                    "text": "多发射处理机"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3m14smwpd40",
+                            "created": 1592666437375,
+                            "text": "典型结构：多条并行工作的指令流水线，多个独立的操作部件，指令并行度ILP>1"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3m1gb46cvk0",
+                            "created": 1592667339607,
+                            "text": "先行指令窗口：能够从指令Cache中预取多条指令，能够对窗口内的指令进行数据相关性分析和功能部件冲突检测"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3m1lzdwk2o0",
+                            "created": 1592667784259,
+                            "text": "多流水线调度"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m1nkuwlf40",
+                                    "created": 1592667909364,
+                                    "text": "顺序发射顺序完成"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m1no3y1o80",
+                                    "created": 1592667916441,
+                                    "text": "顺序发射乱序完成"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m1nqpmkoo0",
+                                    "created": 1592667922105,
+                                    "text": "乱序发射乱序完成"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m1qhypxi80",
+                                            "created": 1592668138156,
+                                            "text": "没有空闲周期，功能部件得到充分利用"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3m1p8i4lr40",
+                            "created": 1592668039198,
+                            "text": "资源冲突"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m1s2x86140",
+                                    "created": 1592668262143,
+                                    "text": "流水线结构的资源冲突可能性较小"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m1sdojdz40",
+                                    "created": 1592668285562,
+                                    "text": "原因分析"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m1shq73200",
+                                            "created": 1592668294369,
+                                            "text": "操作部件不采用流水线结构，则使用同一操作部件的两条指令应该至少相差mXk"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3m1t3kmshs0",
+                                            "created": 1592668341922,
+                                            "text": "操作部件采用k段流水线结构，则使用同一个操作部件的两条指令只需相差m或m以上"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3m1tvxddww0",
+                            "created": 1592668403642,
+                            "text": "性能"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m1tzgd09s0",
+                                    "created": 1592668411321,
+                                    "text": "单流水线普通标量处理机的指令级并行度记作（1，1）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m1wh6mmcg0",
+                                            "created": 1592668606643,
+                                            "text": "n条指令执行时间位 (k+N-1)Δt)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m1ubvw4co0",
+                                    "created": 1592668438381,
+                                    "text": "超标量处理机的指令级并行度记作（m，1）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m1xqqk3mo0",
+                                            "created": 1592668705803,
+                                            "text": "T(m,1) = (k+(N-m)/m)Δt"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m1ulihl3k0",
+                                    "created": 1592668459339,
+                                    "text": "超流水线处理机的指令级并行度记作（1，n）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m2gpexq0g0",
+                                            "created": 1592670191843,
+                                            "text": "T(1,n) = (k+(N-1)/n)Δt"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m1veq98kw0",
+                                    "created": 1592668522935,
+                                    "text": "超标量超流水线处理机的指令级并行度记作（m，n）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m2ikmv51c0",
+                                            "created": 1592670338167,
+                                            "text": "T(m,n) = (k+(N-m)/(mn))Δt"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lrvleqhv40",
+                    "created": 1592640326377,
+                    "text": "超流水线处理机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3m2fdi26sg0",
+                            "created": 1592670087546,
+                            "text": "定义"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m2ffrtmcg0",
+                                    "created": 1592670092490,
+                                    "text": "在一个周期内分时发射多条指令的处理机"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3m2hv0o9i80",
+                                            "created": 1592670282405,
+                                            "text": "每隔1/n个时钟周期发射一条指令"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m2fk8myag0",
+                                    "created": 1592670102214,
+                                    "text": "指令流水线段数>=8的流水线处理机"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3m2g43mw0o0",
+                            "created": 1592670145447,
+                            "text": "超标量处理机采用的是空间并行性，超流水线处理机采用的是时间并行性"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3m2hdqbxm00",
+                            "created": 1592670244775,
+                            "text": "提高性能的办法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m2hfv2b480",
+                                    "created": 1592670249414,
+                                    "text": "增加硬件资源"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3m2hhucsrc0",
+                                    "created": 1592670253725,
+                                    "text": "各部分硬件的重叠工作"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3lrvq2qmu80",
+                    "created": 1592640336536,
+                    "text": "超标量超流水线处理机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3m2i72md000",
+                            "created": 1592670308644,
+                            "text": "一个时钟周期发射m次，每次发射n条指令"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3m2ixjq7pc0",
+                            "created": 1592670366275,
+                            "text": "性能关系"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3m2j4ydf3c0",
+                                    "created": 1592670382398,
+                                    "text": "超标量处理机>超标量超流水线处理机>超流水线处理机"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

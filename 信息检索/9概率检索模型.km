@@ -1,0 +1,438 @@
+{
+    "root": {
+        "data": {
+            "id": "c2jpyvll40g0",
+            "created": 1588775663078,
+            "text": "概率检索模型"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2jpyzwbl400",
+                    "created": 1588775672435,
+                    "text": "向量空间模型",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jpz70q6t40",
+                            "created": 1588775687938,
+                            "text": "文档、查询都表示成向量，计算两个向量之间的相似度：余弦相似度，内积相似度等"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jpzuxkk2w0",
+                            "created": 1588775739990,
+                            "text": "词项权重计算方法：tf-idf公式，考虑tf，idf，文档长度三个因素"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jq0ldym7c0",
+                            "created": 1588775797578,
+                            "text": "优点：简洁直观，支持部分匹配和近似匹配，结果可排序"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jq0wlm68w0",
+                            "created": 1588775821985,
+                            "text": "缺点：理论上不够（基于直觉的经验公式），索引项之间的独立性假设与实际不符"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jq3du8hls0",
+                    "created": 1588776016240,
+                    "text": "基本概率统计知识",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jq3i9ivlc0",
+                            "created": 1588776025872,
+                            "text": "概率是统计的理论基础，统计是概率的实际应用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jq4gln01k0",
+                            "created": 1588776100615,
+                            "text": "随机试验：可在相同条件下重复进行，试验可能结果不止一个，但是能确定所有可能结果，一次试验之前无法确定结果。随机事件是随机试验的结果"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jq4tlj0nk0",
+                            "created": 1588776128906,
+                            "text": "概率，条件概率"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jq4xwmzso0",
+                            "created": 1588776138285,
+                            "text": "乘法公式，全概率公式，贝叶斯公式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jqa2cccjc0",
+                            "created": 1588776539763,
+                            "text": "事件独立性，随机变量"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jqayhqldk0",
+                            "created": 1588776609746,
+                            "text": "二项分布，二值分布，多值分布，伯努利分布，多项分布"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jqbim8irs0",
+                    "created": 1588776653554,
+                    "text": "概率检索模型",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jqbl8wlk00",
+                            "created": 1588776659278,
+                            "text": "给定查询，计算每个文档的相关度，检索系统对用户查询的理解是非确定的（uncertain），对返回结果的猜测也是非确定的，概率论为非确定推理提供理论基础"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jqcpb0rc80",
+                            "created": 1588776746477,
+                            "text": "定义：通过概率的方法将查询和文档联系起来"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jqd255x7k0",
+                                    "created": 1588776774421,
+                                    "text": "定义随机变量"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2jqdabzaao0",
+                                            "created": 1588776792247,
+                                            "text": "相关度R={0,1}"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jqdgsk0000",
+                                            "created": 1588776806310,
+                                            "text": "查询Q={q1,q2,...}"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2jqdthbkl40",
+                                            "created": 1588776833929,
+                                            "text": "文档D={d1,d2,...}"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqeb8imew0",
+                                    "created": 1588776872579,
+                                    "text": "通过计算条件概率P(R=1|Q=q,D=d)来度量文档和查询的相关度"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jqexex35s0",
+                            "created": 1588776920855,
+                            "text": "概率模型包括二值独立概率模型BIM，BM25模型，贝叶斯网络模型等"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jqfpuaky00",
+                    "created": 1588776982735,
+                    "text": "概率排序原理PRP",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jqfuuhxi80",
+                            "created": 1588776993631,
+                            "text": "定义：利用概率模型来估计每篇文档和需求的相关概率P(R=1|d,q)，然后对结果进行排序"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jqlaaj9sw0",
+                            "created": 1588777419073,
+                            "text": "最简单的PRP情况"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jqlffavbk0",
+                                    "created": 1588777430246,
+                                    "text": "检索无代价因子，不会对不同行为或错误采用不同的权重因子"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqlskkidk0",
+                                    "created": 1588777458862,
+                                    "text": "在返回一篇不相关文档或者返回一篇相关文档不成功的时候将失去一分（在计算精确率的时候这种基于二至的情形也称为1/0风险）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqmzeko140",
+                                    "created": 1588777552101,
+                                    "text": "检索的目标是对于用户任意给定的k值，返回可能性最高的前k篇文档作为结果输出。即PRP希望按照P(R=1|d,q)降序排列所有文档"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqnz9tn800",
+                                    "created": 1588777630178,
+                                    "text": "定理：在1/0损失情况下，PRP对于最小化期望损失（贝叶斯风险）而言是最优的"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jqpwze31c0",
+                            "created": 1588777781922,
+                            "text": "基于检索代价的PRP"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jqq1wzync0",
+                                    "created": 1588777792661,
+                                    "text": "C0表示检索到一篇不相关文档发生的代价，C1表示未检索到一篇相关文档发生的代价"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqqm4eg2g0",
+                                    "created": 1588777836645,
+                                    "text": "PRP认为，若对于篇特定的文档d及其所有其他未返回的文档d'都满足下面条件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqrd3bdk80",
+                                    "created": 1588777895352,
+                                    "text": "-C0*P(R=0|d)-C1*P(R=1|d)≤C0*P(R=0|d')-C1*P(R=1|d')"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqs9kodls0",
+                                    "created": 1588777966059,
+                                    "text": "C0*[1-P(R=1|d)]-C1*P(R=1|d)=C0-(C0+C1)P(R=1|d)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jqufli0yo0",
+                                    "created": 1588778135898,
+                                    "text": "两者相减表示返回文档d的代价函数，此时前者越低越好，后者越高越好，即P(R=1|d)越高越好"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jquz9ssx40",
+                                    "created": 1588778178726,
+                                    "text": "那么d就应该是下一篇被返回的文档"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2jqyrx3yug0",
+                    "created": 1588778476178,
+                    "text": "二值独立概率模型BIM"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2jqyw4s8co0",
+                            "created": 1588778485349,
+                            "text": "通过贝叶斯公式对条件概率P(R=1|1,d)进行计算，是一种生成式模型"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2jrfsjx8o00",
+                            "created": 1588779809748,
+                            "text": "贝叶斯公式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jrfvda1s00",
+                                    "created": 1588779815877,
+                                    "text": "假设A1，A2，...，An是完备事件组，则对于任一事件B，有"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jrgb73cls0",
+                                    "created": 1588779850331,
+                                    "text": "P(Ai|B)=(P(Ai)P(B|Ai))/(∑(n,j)P(Aj)P(B|Aj))"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jrht6mlhc0",
+                                    "created": 1588779967849,
+                                    "text": "在观察到事件B已发生的条件下，求导致B发生的每个原因Ai的概率"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2jriauiy6w0",
+                            "created": 1588780006300,
+                            "text": "为了对概率函数P(R|q,d)进行估计，引入假设"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2jrinetnh40",
+                                    "created": 1588780033648,
+                                    "text": "二值等价于布尔值：文档和查询都表示为文档出现与否的布尔向量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jrj8knllc0",
+                                    "created": 1588780079713,
+                                    "text": "即文档d表示为向量x→=(x1,...,xm)，其中当词项t出现在文档d中时，xt=1，否则xt=0"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jrkknt8zc0",
+                                    "created": 1588780184390,
+                                    "text": "查询q也类似的表示成词项出现向量q→"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2jrkv9q4jk0",
+                                    "created": 1588780207483,
+                                    "text": "独立性：词项在文档中的出现是相互独立的，BIM并不识别词项之间的关联"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2k5eanro6w0",
+                            "created": 1588819187973,
+                            "text": "贝叶斯公式的使用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2k5eqb10140",
+                            "created": 1588819222031,
+                            "text": "目标：BIM排序函数的推导"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2k68nd1wfk0",
+                            "created": 1588821566548,
+                            "text": "优点：建立在数学基础上，理论性强；缺点：需要顾及参数，原始的BIM没有考虑TF，文档长度因素，BIM中也存在词项独立性假设"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2k69bbjv0w0",
+                    "created": 1588821618700,
+                    "text": "BM25模型"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2k69ktf8xc0",
+                            "created": 1588821639372,
+                            "text": "非二值的模型，重视词项频率和文档长度"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

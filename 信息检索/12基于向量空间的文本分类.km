@@ -1,0 +1,320 @@
+{
+    "root": {
+        "data": {
+            "id": "c3me1lspx080",
+            "created": 1592702861825,
+            "text": "基于向量空间模型的文本分类"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3me226skao0",
+                    "created": 1592702897505,
+                    "text": "基于向量空间的分类方法"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3merzxdkk80",
+                            "created": 1592704930050,
+                            "text": "每个文档表示成一个向量，向量的每一维表示成一个term"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3meseisds00",
+                            "created": 1592704961820,
+                            "text": "向量可以归一化成单位长度"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mesilpju00",
+                            "created": 1592704970704,
+                            "text": "向量空间模型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mjehnqy940",
+                                    "created": 1592717977101,
+                                    "text": "邻近假设"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3mjekmftxs0",
+                                            "created": 1592717983553,
+                                            "text": "同一类的文档会构成一个邻近区域"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3mjep0st9c0",
+                                            "created": 1592717993128,
+                                            "text": "不同类的邻近区域之间互不重叠"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mjf829o0w0",
+                                    "created": 1592718034576,
+                                    "text": "核心问题：找到分类面决策边界"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3meq66eqqo0",
+                    "created": 1592704786929,
+                    "text": "Rocchio方法"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mer3n13mo0",
+                            "created": 1592704859768,
+                            "text": "基于质心或原型将整个向量空间划分成多个区域"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjfmpee3c0",
+                            "created": 1592718066449,
+                            "text": "一个类别c的质心可以通过类中文档向量的平均向量或质心向量来计算"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjg48cecg0",
+                            "created": 1592718104600,
+                            "text": "Rocchio算法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mjg9bog0w0",
+                                    "created": 1592718115686,
+                                    "text": "计算每个类的中心向量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mjgd4x9hs0",
+                                    "created": 1592718123984,
+                                    "text": "将每篇测试文档分到离他最近的那个中心向量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mjgmdohdk0",
+                                    "created": 1592718144105,
+                                    "text": "两类的边界由那些到两个类质心等距的点集组成（超平面）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mjhox6d9s0",
+                                    "created": 1592718228001,
+                                    "text": "为了遵循邻近性的要求，Rocchio分类中的每个类别一定要近似球形，并且它们之间具有相似的球半径"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3meqslwm2o0",
+                    "created": 1592704835755,
+                    "text": "kNN（k近邻）方法"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mjlx13bhc0",
+                            "created": 1592718559109,
+                            "text": "1NN不恨鲁棒，将每篇测试文档分给训练集中离他最近的那篇文档所属的类别"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mercjzesw0",
+                            "created": 1592704879174,
+                            "text": "k>1情况下的kNN：将每篇测试文档分到训练集中离他最近的k篇文档中所属类别中最多的那个类别"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjizzoiy80",
+                            "created": 1592718330462,
+                            "text": "基本依据：一片测试文档d将和其邻域中的训练文档具有相同的类别"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjov3e0ow0",
+                            "created": 1592718789987,
+                            "text": "训练集非常大的时候kNN分类精度很高，否则效果较差"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3meqzr0zko0",
+                    "created": 1592704851302,
+                    "text": "线性分类器"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3merkcqji80",
+                            "created": 1592704896151,
+                            "text": "指基于特征的简单线性组合就可以对文档进行分类的分类器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjyo0lreo0",
+                            "created": 1592719558223,
+                            "text": "计算特征值的一个线性加权和wixi累加和"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjyziw6pc0",
+                            "created": 1592719583273,
+                            "text": "决策规则：wixi累加和>b，b是一个参数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjz9ebci00",
+                            "created": 1592719604764,
+                            "text": "二元分类器相当于二维平面上的一条直线，三维空间中的一个平面或更高维下的超平面，称为分类面"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjzup1jls0",
+                            "created": 1592719651125,
+                            "text": "基于训练集来寻找该分类面"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mk05oi9eo0",
+                            "created": 1592719675038,
+                            "text": "一维"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mk0byk7940",
+                                    "created": 1592719688706,
+                                    "text": "方程w1d1=b对应的点，点的位置是b/w1"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mk0ojrpts0",
+                                    "created": 1592719716110,
+                                    "text": "满足w1d1>=的点d1属于类别c，否则属于类别c（上划线）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3mk15qdnzk0",
+                            "created": 1592719753515,
+                            "text": "二维"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mk185smnc0",
+                                    "created": 1592719758801,
+                                    "text": "方程w1d1+w2d2=b对应的直线"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mk1gjlvfs0",
+                                    "created": 1592719777050,
+                                    "text": "满足w1d1+w2d2>=b的点（d1，d2）属于类别c"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3mjx2a4uqo0",
+                            "created": 1592719432546,
+                            "text": "kNN不是线性分类器（但是分段线性），朴素贝叶斯、Rocchio、logistic回归、线性SVM等都是线性分类器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mk2d4shog0",
+                            "created": 1592719847988,
+                            "text": "讨论"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mk2g43bg00",
+                                    "created": 1592719854476,
+                                    "text": "噪音文档干扰了线性分类器的训练"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mk2lnpv5c0",
+                                    "created": 1592719866547,
+                                    "text": "多标签分类问题"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

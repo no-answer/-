@@ -1,0 +1,963 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "存储系统"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3kv793dnn40",
+                    "created": 1592548143312,
+                    "text": "存储系统原理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kvptq2w4g0",
+                            "created": 1592549598775,
+                            "text": "命中率"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kvpxrdqls0",
+                                    "created": 1592549607561,
+                                    "text": "在M1存储器中访问到的概率"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kvq2sj6pc0",
+                                    "created": 1592549618515,
+                                    "text": "H=N1/(N1+N2)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kvqfy0zgg0",
+                                    "created": 1592549647145,
+                                    "text": "N1是对M1存储器的访问次数，N2是对M2存储器的访问次数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kzr5dtq000",
+                            "created": 1592560986959,
+                            "text": "存储系统的访问效率"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kzr8nzcxc0",
+                                    "created": 1592560994105,
+                                    "text": "e=T1/T=T1/(HT1+(1-H)T2)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kzrxypyn40",
+                            "created": 1592561049173,
+                            "text": "存储系统的层次结构",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kzs0akbns0",
+                                    "created": 1592561054242,
+                                    "text": "寄存器堆"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kzs1xose80",
+                                    "created": 1592561057817,
+                                    "text": "缓冲buffer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kzs63ccrs0",
+                                    "created": 1592561066866,
+                                    "text": "高速缓冲Cache"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kzs9vwx880",
+                                    "created": 1592561075124,
+                                    "text": "主存"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kzsbbl5280",
+                                    "created": 1592561078249,
+                                    "text": "联机存储器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kzse81iio0",
+                                    "created": 1592561084565,
+                                    "text": "脱机存储器"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3l0jrqwjhk0",
+                            "created": 1592563229836,
+                            "text": "并行访问存储器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3l0jvcl9jk0",
+                                    "created": 1592563237678,
+                                    "text": "方法：将m字w位的存储器改变成为m/n字w位的存储器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l0kworcx40",
+                                    "created": 1592563318954,
+                                    "text": "逻辑实现：将地址码分成两部分，一部分作为存储器的地址，另一部分负责选择数据"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l0la1cur40",
+                                    "created": 1592563348014,
+                                    "text": "缺点：访问冲突大",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l0lm8fzug0",
+                                            "created": 1592563374564,
+                                            "text": "取指令冲突"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l0loj5r7k0",
+                                            "created": 1592563379566,
+                                            "text": "读操作数冲突"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l0lrs5ctk0",
+                                            "created": 1592563386640,
+                                            "text": "写数据冲突"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l0ltcdfzk0",
+                                            "created": 1592563390039,
+                                            "text": "读写冲突"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3l0mbvl1cw0",
+                            "created": 1592563430383,
+                            "text": "交叉访问存储器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3l0meiq5l40",
+                                    "created": 1592563436136,
+                                    "text": "高位交叉访问存储器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l0mrjwhls0",
+                                            "created": 1592563464505,
+                                            "text": "目的：扩大存储容量"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l0mv2quds0",
+                                            "created": 1592563472175,
+                                            "text": "用地址码的高位部分区分存储体号"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l0mmd3df40",
+                                    "created": 1592563453209,
+                                    "text": "低位交叉访问存储器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l0n5b1p000",
+                                            "created": 1592563494445,
+                                            "text": "目的：提高存储器访问速度"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l0n8sak400",
+                                            "created": 1592563502018,
+                                            "text": "用地址码的地位部分区分存储体号"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l0owerqnk0",
+                                    "created": 1592563631807,
+                                    "text": "访问冲突"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l0oyk44p40",
+                                            "created": 1592563636484,
+                                            "text": "共有n各存储体，每个存储周期只能取到k个有效字，其余n-k个存储体有冲突"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l0und3x4o0",
+                                    "created": 1592564082300,
+                                    "text": "并行存储器加速比N"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l0uukmjeg0",
+                                            "created": 1592564097993,
+                                            "text": "每个存储周期内能够访问到的平均有效字的个数"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kv7ax39y00",
+                    "created": 1592548147286,
+                    "text": "虚拟存储器"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3l1216tp0o0",
+                            "created": 1592564660945,
+                            "text": "虚拟存储器工作原理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3l0vcodjbk0",
+                                    "created": 1592564137401,
+                                    "text": "将主存、磁盘和虚拟存储器都划分成固定大小页，主存中的是实页，虚拟存储器中的是虚页"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l12nmk5sw0",
+                                    "created": 1592564709785,
+                                    "text": "多用户虚拟地址Av，虚拟页号P，页内偏移D，主存实址A，实页号p，页内偏移d"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3l14mpr8rs0",
+                            "created": 1592564864530,
+                            "text": "地址映像与变化"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3l14r5he2o0",
+                                    "created": 1592564874188,
+                                    "text": "地址空间"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l15de3fdc0",
+                                            "created": 1592564922598,
+                                            "text": "虚拟地址空间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l15fc8xls0",
+                                            "created": 1592564926840,
+                                            "text": "主存地址空间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l15j0e9200",
+                                            "created": 1592564934830,
+                                            "text": "辅存地址空间"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l15qzihsw0",
+                                    "created": 1592564952191,
+                                    "text": "地址映像"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l15szyans0",
+                                            "created": 1592564956571,
+                                            "text": "把虚拟地址映像到主存地址空间"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l160m1meo0",
+                                    "created": 1592564973145,
+                                    "text": "地址变换"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l1624937k0",
+                                            "created": 1592564976423,
+                                            "text": "在程序运行时，把虚地址变换成主存实地址"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l16cawl8o0",
+                                    "created": 1592564998593,
+                                    "text": "三种虚拟存储器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l16kson3c0",
+                                            "created": 1592565017082,
+                                            "text": "段式"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3l16tkvds80",
+                                                    "created": 1592565036201,
+                                                    "text": "地址映像方法：每个程序段都从0地址开始编址，可在程序执行过程中改变程序段的长度"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3l178297mo0",
+                                                    "created": 1592565067727,
+                                                    "text": "地址变换方法：由用户好找到基址寄存器，读出段表起始地址，与虚地址中短号相加得到段表地址，把段表中起始地址和段内偏移D相加得到主存地址 "
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l16gxg6340",
+                                            "created": 1592565008663,
+                                            "text": "页式"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3l1jblimpc0",
+                                                    "created": 1592566015792,
+                                                    "text": "全相联地址映像"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3l1jf5anbc0",
+                                                            "created": 1592566023518,
+                                                            "text": "用户的每一页都可以映像到主存的任一页"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l16micm080",
+                                            "created": 1592565020811,
+                                            "text": "段页式"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3l1jvwlkw80",
+                                                    "created": 1592566059997,
+                                                    "text": "地址映像方法：每个程序段在段表中占一行，在段表中给出页表长度和页表的起始地址，页表中给出每一页在主存储器中的实页号"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3l1klmg7200",
+                                                    "created": 1592566115980,
+                                                    "text": "地址变换方法：查段表获取页表起始地址和页表长度，再查页表找到要访问的主存实页号，将实页号p与业内偏移d拼接得到主存实地址"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l1lmuzxzc0",
+                                    "created": 1592566197038,
+                                    "text": "外部地址变换"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l1lq1e4yo0",
+                                            "created": 1592566203955,
+                                            "text": "每个程序有一张外页表，每一页或每个程序段，在外页表中有一个对应的存储字"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3l1pcd4jko0",
+                            "created": 1592566487646,
+                            "text": "加快内部地址变换的方法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3l1phxwt940",
+                                    "created": 1592566499787,
+                                    "text": "原因"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l1tsty5t40",
+                                            "created": 1592566836948,
+                                            "text": "要访问主存需要先查段表或者页表，如果段表或页表都在主存中，则因为二次访存，访问速度要降低2-3倍"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l1tuzfmjs0",
+                                            "created": 1592566841634,
+                                            "text": "页表或段表容量超过一个页面的大小的时候，可能会被映射到主存不连续的页面上"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l1tp5venk0",
+                                    "created": 1592566828962,
+                                    "text": "多级页表"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l1vqk16ow0",
+                                            "created": 1592566988724,
+                                            "text": "页表级数计算 g = (log2Nv-log2Np) / (log2Np-log2Nd)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3l1we3bhyg0",
+                                            "created": 1592567039956,
+                                            "text": "Nv为虚拟存储空间大小，Np为页面大小，Nd为一个页表存储字的大小"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l33hwh0j40",
+                                    "created": 1592570417908,
+                                    "text": "目录表法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l33nwhzcg0",
+                                            "created": 1592570430970,
+                                            "text": "用一个容量比较小的高速存储器存放页表"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l33xzfxrs0",
+                                    "created": 1592570452916,
+                                    "text": "快慢表"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l33zmdrj40",
+                                            "created": 1592570456480,
+                                            "text": "快表保存最近访问的虚页到实页的映射"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l34ojxteo0",
+                                    "created": 1592570510752,
+                                    "text": "散列函数"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3l34qlbekw0",
+                                            "created": 1592570515189,
+                                            "text": "把按内容的相连访问变成按地址访问"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3l35hm0rx40",
+                            "created": 1592570574004,
+                            "text": "页面替换"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3l35ldk9uo0",
+                                    "created": 1592570582200,
+                                    "text": "随机算法：随机选择要被替换的页"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l35pkn6lc0",
+                                    "created": 1592570591335,
+                                    "text": "最优替换OPT：选择将来最久未被访问的页作为替换页面"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l36did8rc0",
+                                    "created": 1592570643440,
+                                    "text": "近期最少使用LRU：选择近期最少访问的页"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l36mnimvk0",
+                                    "created": 1592570663343,
+                                    "text": "先进先出算法FIFO"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l36y02w9k0",
+                                    "created": 1592570688047,
+                                    "text": "堆栈型替换算法：LRU"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3l37cnci2w0",
+                            "created": 1592570719929,
+                            "text": "提高主存命中率的主要因素"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3l37gia0xc0",
+                                    "created": 1592570728330,
+                                    "text": "页面大小"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3l37hqluhs0",
+                                    "created": 1592570731010,
+                                    "text": "主存容量"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kv7czmim00",
+                    "created": 1592548151792,
+                    "text": "高速缓冲存储器Cache"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3lddruy9sg0",
+                            "created": 1592599434325,
+                            "text": "全相联映像"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3lddvk8kkg0",
+                                    "created": 1592599442384,
+                                    "text": "主存的任意一块可以映像到Cache中的任意一块"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3lde52jqlk0",
+                                    "created": 1592599463082,
+                                    "text": "Cache地址计算：b = B mod Cb"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ldeheyk0w0",
+                                            "created": 1592599489954,
+                                            "text": "b为Cache块号"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldeliz0m80",
+                                            "created": 1592599498904,
+                                            "text": "B为主存块号"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldeoah0k00",
+                                            "created": 1592599504920,
+                                            "text": "Cb为Cache块数"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ldey18f4w0",
+                                    "created": 1592599526129,
+                                    "text": "硬件实现简单，块冲突概率较高"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ldf70c0wg0",
+                            "created": 1592599545666,
+                            "text": "组相联映像"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ldf9ui07s0",
+                                    "created": 1592599551843,
+                                    "text": "主存和Cache按同样大小划分成块和组，组之间采用直接映像，组内部采用全相联映像"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ldfuwwtlc0",
+                                    "created": 1592599597702,
+                                    "text": "块冲突概率较低，利用率大幅度提高，实现难度高"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ldgjswmuo0",
+                            "created": 1592599651879,
+                            "text": "Cache替换算法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ldgnjbpp40",
+                                    "created": 1592599660007,
+                                    "text": "轮换法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ldgueufyw0",
+                                            "created": 1592599674973,
+                                            "text": "每块一个计数器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldgwn0kaw0",
+                                            "created": 1592599679821,
+                                            "text": "魅族一个计数器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ldh1zx6000",
+                                    "created": 1592599691485,
+                                    "text": "LRU"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ldh6lkxc80",
+                                    "created": 1592599701502,
+                                    "text": "比较对法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ldhbc6gtk0",
+                                    "created": 1592599711818,
+                                    "text": "堆栈法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ldnh14myw0",
+                            "created": 1592600194395,
+                            "text": "性能分析"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ldnj4kefc0",
+                                    "created": 1592600198956,
+                                    "text": "加速比"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ldnncv2hk0",
+                                            "created": 1592600208165,
+                                            "text": "Sp=1/((1-H)+HTc/Tm)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldnx3fj3s0",
+                                            "created": 1592600229363,
+                                            "text": "Tm为主存访问周期，Tc为Cache访问周期。T为Cache存储系统等效访问周期，H为命中率"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldopbbo6g0",
+                                            "created": 1592600290790,
+                                            "text": "提高加速比的最好途径是提高命中率"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ldp05ex3s0",
+                                    "created": 1592600314377,
+                                    "text": "命中率的相关因素"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ldp5drk4g0",
+                                            "created": 1592600325766,
+                                            "text": "替换算法"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldp7mrzxc0",
+                                            "created": 1592600330665,
+                                            "text": "Cache容量"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldp9zi9jk0",
+                                            "created": 1592600335788,
+                                            "text": "组相联映像中块的大小和分组数目"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ldprzl8740",
+                                    "created": 1592600374975,
+                                    "text": "Cache更新算法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ldpuyy88o0",
+                                            "created": 1592600381468,
+                                            "text": "写直达"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ldpyxeggo0",
+                                                    "created": 1592600390080,
+                                                    "text": "CPU数据写入Cache时同时写入主存"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ldpx5s3rs0",
+                                            "created": 1592600386233,
+                                            "text": "写回"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ldq579fds0",
+                                                    "created": 1592600403737,
+                                                    "text": "CPU数据只写入Cache，仅当替换时才将修改过的Cache块写回主存"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kv7hc73uo0",
+                    "created": 1592548161259,
+                    "text": "三级存储系统"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

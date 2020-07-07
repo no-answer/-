@@ -1,0 +1,423 @@
+{
+    "root": {
+        "data": {
+            "id": "c2ztmyl293s0",
+            "created": 1590410972953,
+            "text": "目标代码生成"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3hgn8lltv40",
+                    "created": 1592202399545,
+                    "text": "指令形式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hgnbcezrc0",
+                            "created": 1592202405520,
+                            "text": "直接地址型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgnxsfvc00",
+                                    "created": 1592202454378,
+                                    "text": "op Ri M"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hgo5s8wqo0",
+                                            "created": 1592202471781,
+                                            "text": "(Ri) op (M) → Ri"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hgnhw4isg0",
+                            "created": 1592202419772,
+                            "text": "寄存器型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgofm083c0",
+                                    "created": 1592202493171,
+                                    "text": "op Ri Rj"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hgojr637s0",
+                                            "created": 1592202502190,
+                                            "text": "(Ri) op (Rj) → Ri"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hgnk7it1k0",
+                            "created": 1592202424815,
+                            "text": "变址型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgopt0pjk0",
+                                    "created": 1592202515363,
+                                    "text": "op Ri c(Rj)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hgoxxypl40",
+                                            "created": 1592202533076,
+                                            "text": "(Ri) op ((Rj)+c) → Rj"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hgnnxadu00",
+                            "created": 1592202432903,
+                            "text": "间接型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgpd2006o0",
+                                    "created": 1592202565972,
+                                    "text": "op Ri *M"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hgphm4n800",
+                                            "created": 1592202575896,
+                                            "text": "(Ri) op ((M)) → Ri"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hgpntlmig0",
+                                    "created": 1592202589409,
+                                    "text": "op Ri *Ri"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hgprqurt40",
+                                            "created": 1592202597950,
+                                            "text": "(Ri) op ((Rj)) → Ri"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hgpxtz4ko0",
+                                    "created": 1592202611199,
+                                    "text": "op Ri *c(Rj)"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hgq1ld0uw0",
+                                            "created": 1592202619385,
+                                            "text": "(Ri) op (((Rj)+c)) → Ri"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3hgqf9accw0",
+                    "created": 1592202649130,
+                    "text": "op指令意义"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hgs0r7crk0",
+                            "created": 1592202774290,
+                            "text": "常见运算符ADD, SUB, MUL, DIV"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hgqm43b740",
+                            "created": 1592202664054,
+                            "text": "LD Ri B"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgqprcmvc0",
+                                    "created": 1592202671990,
+                                    "text": "把B单元的内容渠道寄存器R"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hgqwze2hk0",
+                            "created": 1592202687714,
+                            "text": "ST Ri B"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgqzdqv5c0",
+                                    "created": 1592202692936,
+                                    "text": "把寄存器Ri的内容存到B单元"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hgr5cnwdc0",
+                            "created": 1592202705931,
+                            "text": "J X"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgr7s9nu80",
+                                    "created": 1592202711228,
+                                    "text": "无条件转向X单元"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hgrd1gp9k0",
+                            "created": 1592202722668,
+                            "text": "CMP A, B"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hgrfsf8n40",
+                                    "created": 1592202728652,
+                                    "text": "把A单元和B单元的值进行比较，根据A<B分别置CT为0或1或2"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3hgsdtq8z40",
+                    "created": 1592202802741,
+                    "text": "代码生成算法"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hh51k0mow0",
+                            "created": 1592203794767,
+                            "text": "对每个中间代码 i: A := B op C，依次执行下述步骤"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hh5knorqg0",
+                            "created": 1592203836347,
+                            "text": "以中间代码 i: A := B op C为参数，调用函数过程GETREG()，返回一个寄存器R，用于存放A现行值",
+                            "priority": 1
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hhaw8xkcg0",
+                                    "created": 1592204253397,
+                                    "text": "函数GETREG算法如下"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hhb2f8acw0",
+                                    "created": 1592204266839,
+                                    "text": "若B的现行值在某寄存器Ri中，RVALUE[Ri]只包含B，或B和A是同一标识符，或B的现行值在执行中间代码后不再被引用，则取Ri，转4",
+                                    "priority": 1
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hhcxh1yjk0",
+                                    "created": 1592204412794,
+                                    "text": "若有尚未分配的寄存器，从中取一个Ri，转4",
+                                    "priority": 2
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hhdaf1m1s0",
+                                    "created": 1592204440970,
+                                    "text": "从已分配的寄存器中选取一个Ri，满足条件",
+                                    "priority": 3
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3hhe9whvww0",
+                                            "created": 1592204518213,
+                                            "text": "对RVALUE[Ri]中每一个变量M，若M不是A，或M是A又是C，但不是B并且B不在RVALUE[Ri]中"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3hhdv25pq80",
+                                            "created": 1592204485904,
+                                            "text": "如果AVALUE[M]不包含M，则生成目标代码ST Ri M",
+                                            "priority": 1
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3hhfa4pxio0",
+                                            "created": 1592204597074,
+                                            "text": "若M是B，或M是C但同时B也在RVALUE[Ri]中，则令AVALUE[M]={M, R}，否则令AVALUE[M]={M}",
+                                            "priority": 2
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3hhfaulx4w0",
+                                            "created": 1592204598640,
+                                            "text": "删除RVALUE[Ri]中的M",
+                                            "priority": 3
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hhdbgrwrs0",
+                                    "created": 1592204443252,
+                                    "text": "给出Ri，返回",
+                                    "priority": 4
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hh68ovtk00",
+                            "created": 1592203888663,
+                            "text": "利用地址描述数组AVALUE[B]和AVALUE[C]确定出变量B和C现行值的存放位置B'和C'，若现行值在寄存器中，则把寄存器去取作B'和C'",
+                            "priority": 2
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hh72mpii00",
+                            "created": 1592203953835,
+                            "text": "如果B'≠R，则生成目标代码1和2，否则生成目标代码2.若B'或C'为R，则删除AVALUE[B]或AVALUE[C]中的R",
+                            "priority": 3
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3hh85vuve80",
+                                    "created": 1592204039282,
+                                    "text": "1 LD R, B'"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3hh8czda4g0",
+                                    "created": 1592204054732,
+                                    "text": "2 op R, C'"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3hh8v514yw0",
+                            "created": 1592204094256,
+                            "text": "令AVALUE[A]=[R]，并令RVALUE[R]=[A]，以标识变量A的现行值只在R中并且R的值只代表A的现行值",
+                            "priority": 4
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3hh9ke08dk0",
+                            "created": 1592204149219,
+                            "text": "如果B和C的现行值在基本块中不再被引用，并且不是基本块出口之后的活跃变量，并且其现行值在某寄存器Ri中，则删除RVALUE[Ri]中的B或C以及AVALUE[B]中的Ri，使该寄存器不再被B或C所占用",
+                            "priority": 5
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3hhh9xu4co0",
+                    "created": 1592204753386,
+                    "text": "DAG节点重排算法"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3hhlh47j6g0",
+                            "created": 1592205082466,
+                            "text": "取内部节点→全部父节点都已经列入T的内部节点N→N的最左子节点不为叶节点且全部父节点均已列入T"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

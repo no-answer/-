@@ -1,0 +1,496 @@
+{
+    "root": {
+        "data": {
+            "id": "c3ih6uu93uw0",
+            "created": 1592305496833,
+            "text": "向量模型及检索系统"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3ih75668xk0",
+                    "created": 1592305519322,
+                    "text": "向量模型"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ih7aodxko0",
+                            "created": 1592305531307,
+                            "text": "排序式检索"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ih8kkjsj40",
+                                    "created": 1592305631207,
+                                    "text": "起因：布尔查询的结果经常不是太多就是太少，需要构造合适的query"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ih96fjuqo0",
+                                    "created": 1592305678794,
+                                    "text": "系统根据文档的query的相关性排序返回文档集合中的文档"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ihfa3cops0",
+                                    "created": 1592306156948,
+                                    "text": "自由文本查询：用户query是自然语言的一个或多个词语而不是由查询语言构造的表达式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iicxv7v680",
+                                    "created": 1592308794717,
+                                    "text": "只需要给出topK个结果即可"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3iid9rha5s0",
+                            "created": 1592308820612,
+                            "text": "评分标准"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3iidc9xgo00",
+                                    "created": 1592308826081,
+                                    "text": "Jaccard系数"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3iidomphuo0",
+                                            "created": 1592308852975,
+                                            "text": "交集除并集"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3iie0ej2740",
+                                            "created": 1592308878602,
+                                            "text": "没有考虑词项频率，罕见词比高频词的信息量更大，更具有区分度"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iiel685ww0",
+                                    "created": 1592308923812,
+                                    "text": "词项-文档二值关联矩阵"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iik4xlnsg0",
+                                    "created": 1592309358647,
+                                    "text": "词项文档词频关联矩阵"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iikjqms5s0",
+                                    "created": 1592309390878,
+                                    "text": "词袋模型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3iikmqqpfs0",
+                                            "created": 1592309397415,
+                                            "text": "不考虑词在文档中出现的顺序"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iikudiq740",
+                                    "created": 1592309414030,
+                                    "text": "词项频率tf"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3iikyxn7c80",
+                                            "created": 1592309423953,
+                                            "text": "词项t在文档d中出现的次数，记作tf下标t,d"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3iil63as4g0",
+                                            "created": 1592309439533,
+                                            "text": "相关性不会正比于词项频率"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3iimb14syg0",
+                                            "created": 1592309528650,
+                                            "text": "对数词频"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3iimdv4kbc0",
+                                                    "created": 1592309534817,
+                                                    "text": "词项t在文档d中的对数频率权重1+log10tft,d"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3iir1g2r540",
+                                            "created": 1592309899607,
+                                            "text": "文档-词项的匹配的粉是所有同时出现在q和文档d中的词项的词频的对数之和"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ih94jrrs00",
+                            "created": 1592305674695,
+                            "text": "tf-idf权重计算"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3iit43vh280",
+                                    "created": 1592310062127,
+                                    "text": "罕见词比常见词蕴含更多信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iitchaa6g0",
+                                    "created": 1592310080353,
+                                    "text": "对罕见词项赋予高权重，对常见词项赋予低权重"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iitw60hs00",
+                                    "created": 1592310123207,
+                                    "text": "使用文档频率df（出现词项的文档数目）来实现上述目标"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3iiuxq874g0",
+                                    "created": 1592310204970,
+                                    "text": "定义词项t的逆文档频率为idf=log10（N/dft）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ij83oefzc0",
+                                    "created": 1592311236654,
+                                    "text": "对于含有两个以上查询词的query，idf才会影响排序结果"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ij8ngztio0",
+                                    "created": 1592311279742,
+                                    "text": "tf-idf由tf和idf组合而成，w(t,d)=(1+log10tf(t,d) x (log10(N/dft)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ij8m6mlug0",
+                            "created": 1592311276938,
+                            "text": "向量空间模型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ijl1ah6co0",
+                                    "created": 1592312250193,
+                                    "text": "每篇文档表示成一个基于tf-idf权重的实值向量d∈R|V|（V是此项集合，|V|表示词项个数）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ijvdaqhuo0",
+                                    "created": 1592313059972,
+                                    "text": "于是有一个|V|维实向量空间，每一维对应一个词项，文档是空间中的点或向量，稀疏高维空间"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ik1q18il40",
+                                    "created": 1592313557880,
+                                    "text": "queries表示成向量"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ik1x3qrj40",
+                                            "created": 1592313573269,
+                                            "text": "思路1：将查询表示成统一高维空间的向量1"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ik29ubwco0",
+                                            "created": 1592313600998,
+                                            "text": "思路2：在向量空间内根据query与文档的向量之间的距离来排序"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ik43gjh0w0",
+                                                    "created": 1592313743832,
+                                                    "text": "欧氏距离：两点距离公式（同维度差的和的平方根）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ik4l0aopk0",
+                                                    "created": 1592313782032,
+                                                    "text": "余弦相似度"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ik5y4dank0",
+                                                    "created": 1592313888941,
+                                                    "text": "利用L2范数对文档长度进行归一化，文档向量除以L2范数（文档向量各维度值的平方的和的平方根）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ik7wgiie80",
+                                                    "created": 1592314042050,
+                                                    "text": "长度归一化之后可以通过点积计算余弦"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3il0hn1b1c0",
+                    "created": 1592316282353,
+                    "text": "检索系统"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3il0katdnk0",
+                            "created": 1592316288145,
+                            "text": "结果排序的重要性"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3il0nudts00",
+                                    "created": 1592316295858,
+                                    "text": "用户只希望看到1-3条结果"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3il1at6he80",
+                                    "created": 1592316345851,
+                                    "text": "用户摘要阅读，点击分布具有偏向性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3il17kdqsw0",
+                            "created": 1592316338789,
+                            "text": "结果排序的实现"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3il3tcp0sg0",
+                                    "created": 1592316542942,
+                                    "text": "词典保存每个词的idf值，将tf存入倒排索引中"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3il4dblzvc0",
+                                    "created": 1592316586412,
+                                    "text": "目标：从文档及的所有文档中找出k个离查询最近的文档(topK）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3il4vnt5ns0",
+                                    "created": 1592316626332,
+                                    "text": "加速方法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ilakmp49s0",
+                                            "created": 1592317072505,
+                                            "text": "快速计算余弦"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ilamrd5l40",
+                                                    "created": 1592317077141,
+                                                    "text": "查询的多个词项无权中"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3ilasiywlk0",
+                                                    "created": 1592317089694,
+                                                    "text": "只需要相对得分，因此不需要对查询向量进行归一化"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ilb7gusbk0",
+                                            "created": 1592317122217,
+                                            "text": "堆排序法"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ilbh5m8dc0",
+                                            "created": 1592317143306,
+                                            "text": "提前终止计算"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3ilbnm4jhc0",
+                                                    "created": 1592317157365,
+                                                    "text": "静态质量"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ilcsmcx740",
+                                    "created": 1592317246627,
+                                    "text": "非精确topK检索"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ild0390v40",
+                                            "created": 1592317262886,
+                                            "text": "索引去除"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ild4g06dk0",
+                                            "created": 1592317272364,
+                                            "text": "胜者表"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ild7pd59c0",
+                                            "created": 1592317279460,
+                                            "text": "静态得分"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ildaoxaiw0",
+                                            "created": 1592317285964,
+                                            "text": "权威度计算"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ildikjp6w0",
+                                    "created": 1592317303114,
+                                    "text": "影响度排序"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ildod0mqg0",
+                                    "created": 1592317315719,
+                                    "text": "簇剪枝方法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

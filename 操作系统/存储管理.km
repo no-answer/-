@@ -1,0 +1,13 @@
+{
+    "root": {
+        "data": {
+            "id": "c2mf9c0isc80",
+            "created": 1589050130113,
+            "text": "存储管理"
+        },
+        "children": []
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

@@ -1,0 +1,613 @@
+{
+    "root": {
+        "data": {
+            "id": "c2cm9qa242o0",
+            "created": 1588054309367,
+            "text": "传输层"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2cmg1fnq4w0",
+                    "created": 1588054803835,
+                    "text": "为应用进程之间提供端到端的逻辑通信服务，并且向高层屏蔽了网络层的细节"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c2cmgeu9hq80",
+                    "created": 1588054833016,
+                    "text": "需要差错检测"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c2cmh3du1200",
+                    "created": 1588054886442,
+                    "text": "TCP传输控制协议",
+                    "layout_right_offset": {
+                        "x": -2,
+                        "y": 55
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cmi5st47k0",
+                            "created": 1588054970066,
+                            "text": "数据单元：TCP报文段"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmikk404g0",
+                            "created": 1588055002191,
+                            "text": "面向连接的"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cne6658o00",
+                            "created": 1588057478525,
+                            "text": "可靠的"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cnejotqxs0",
+                                    "created": 1588057507953,
+                                    "text": "停止等待协议"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cnesj3qhk0",
+                                    "created": 1588057527198,
+                                    "text": "连续ARQ协议（滑动窗口）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmy5rvpxc0",
+                            "created": 1588056223836,
+                            "text": "只能点对点（虚连接）",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cmzuobuy00",
+                                    "created": 1588056356405,
+                                    "text": "唯一的被两端的socket所确定",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cn4a43a8w0",
+                                            "created": 1588056703467,
+                                            "text": "socket的多种含义",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2cn4gfc3ko0",
+                                                    "created": 1588056717207,
+                                                    "text": "允许应用程序访问联网协议的应用编程接口API，传输层和应用层间的接口socket API"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cn9mll5ko0",
+                                                    "created": 1588057122467,
+                                                    "text": "socket API中的一个函数socket"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cn9yjzgcg0",
+                                                    "created": 1588057148491,
+                                                    "text": "调用socket函数的断点也称之为socket"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cna7i3d8w0",
+                                                    "created": 1588057167968,
+                                                    "text": "调用socket函数，返回值称为socket描述符"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cnal8qms80",
+                                                    "created": 1588057197877,
+                                                    "text": "OS内核中联网协议的Berkeley实现，称为socket实现"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmymh24740",
+                            "created": 1588056260187,
+                            "text": "面向字节流"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmypxa01k0",
+                            "created": 1588056267698,
+                            "text": "全双工通信"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmw3dn0ag0",
+                            "created": 1588056061893,
+                            "text": "首部20字节",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cnfug1mbs0",
+                                    "created": 1588057609731,
+                                    "text": "源端口+目的端口/各2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cng5df9nc0",
+                                    "created": 1588057633517,
+                                    "text": "序号/4字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cngdv2j000",
+                                    "created": 1588057651998,
+                                    "text": "确认号/4字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cngm1chtk0",
+                                    "created": 1588057669792,
+                                    "text": "数据偏移/4位"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cnh3105nk0",
+                                    "created": 1588057706777,
+                                    "text": "保留/6位"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cnl9i4ygg0",
+                                    "created": 1588058034330,
+                                    "text": "URG/ACK/PSH/RST/SYN/FIN "
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cnmb2zzu00",
+                                    "created": 1588058116132,
+                                    "text": "窗口/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cnmjannns0",
+                                    "created": 1588058134010,
+                                    "text": "校验和/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cnmo3wie00",
+                                    "created": 1588058144485,
+                                    "text": "紧急指针/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cnmubo4r40",
+                                    "created": 1588058158015,
+                                    "text": "选项/最长40字节，不使用选项时TCP首部长度为20字节"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2co8e33ejk0",
+                            "created": 1588059846680,
+                            "text": "流量控制"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2co8isg19c0",
+                                    "created": 1588059856920,
+                                    "text": "滑动窗口"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2co7jbdhk00",
+                            "created": 1588059779700,
+                            "text": "拥塞控制",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2co7oigmmw0",
+                                    "created": 1588059791013,
+                                    "text": "慢开始"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2co8yhamgw0",
+                                            "created": 1588059891074,
+                                            "text": "发送窗口指数增长"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2co7vqhpfk0",
+                                    "created": 1588059806736,
+                                    "text": "拥塞避免"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2co9sh1ark0",
+                                            "created": 1588059956362,
+                                            "text": "达到慢开始门限之后线性增长"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2co7zdbxdk0",
+                                    "created": 1588059814647,
+                                    "text": "快重传"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2coas6gk4w0",
+                                            "created": 1588060034087,
+                                            "text": "收到三个重复确认M1之后立即重传M2"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2co83ubp400",
+                                    "created": 1588059824382,
+                                    "text": "快恢复"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2coc00j4m00",
+                                            "created": 1588060129507,
+                                            "text": "将发送窗口减半，再线性增长"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cod0z0jp40",
+                            "created": 1588060209956,
+                            "text": "TCP连接",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cod884cgo0",
+                                    "created": 1588060225744,
+                                    "text": "三次握手建立TCP连接",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2combsp6u00",
+                                            "created": 1588060938796,
+                                            "text": "主机A主动打开连接，主机B被动打开连接（创建传输控制块TCB，处于LISTEN（收听）状态）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2comt747a80",
+                                            "created": 1588060976673,
+                                            "text": "A创建TCB，向B发出连接请求报文段（同步位SYN=1，序号seq=x），报文不能携带数据，此时A进入SYN-SENT（同步已发送）状态 ",
+                                            "priority": 1
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2covss1hs80",
+                                            "created": 1588061681039,
+                                            "text": "B收到请求连接报文段后，若同意连接，向A发送确认（SYN=1，确认位ACK=1，确认号ack=x+1，seq=y），报文不能携带数据，此时B进入SYN-RCVD（同步收到）状态",
+                                            "priority": 2
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2coxd1ulig0",
+                                            "created": 1588061803532,
+                                            "text": "A收到B的确认之后，向B给出确认报文（ACK=1，ack=y+1，seq=x+1），报文可以携带数据（若不携带数据则不消耗序号），A进入ESTABLISHED（已建立连接）状态",
+                                            "layout_right_offset": {
+                                                "x": 5.083334175662799,
+                                                "y": 7.499999888241291
+                                            },
+                                            "priority": 3
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cp17uim9s0",
+                                            "created": 1588062105661,
+                                            "text": "B收到A的确认，也进入ESTABLISHED状态"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cpe3d2gig0",
+                                            "created": 1588063114633,
+                                            "text": "之所以A需要再次确认，是为了避免，1中请求报文滞留，而后A重发并建立连接之后，滞留的请求报文到达了B导致错误。在B收到滞留报文之后，发送确认给A，但是A不理睬，避免了错误"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2codepwhmg0",
+                                    "created": 1588060239880,
+                                    "text": "四次挥手断开TCP连接",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cpfp9j7mo0",
+                                            "created": 1588063240673,
+                                            "text": "A向B发出连接释放报文段（终止控制FIN=1，seq=u（之前最后的序号+1，报文不携带数据也要消耗序号），并停止发送数据，主动关闭TCP连接。此时A进入FIN-WAIT-1（终止等待1）状态",
+                                            "priority": 1
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cphkf08800",
+                                            "created": 1588063386848,
+                                            "text": "B收到连接释放报文段并发出确认（ack=u+1，seq=v）B进入CLOSE-WAIT（关闭等待）状态",
+                                            "priority": 2
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cpiekm99c0",
+                                            "created": 1588063452491,
+                                            "text": "此时TCP连接属于半关闭状态，B仍然可以向A发送数据"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cpiv2r6uw0",
+                                            "created": 1588063488416,
+                                            "text": "A收到B的确认之后，进入FIN-WAIT-2（终止等待2）状态，等待B发出连接释放报文段"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cpjfr4h4o0",
+                                            "created": 1588063533425,
+                                            "text": "没有要发送的数据了，那么就法术连接释放报文段（FIN=1，ack=u+1，此时B的序号为w），B进入LAST-ACK（最后确认）状态",
+                                            "priority": 3
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cpkmsfsb40",
+                                            "created": 1588063627107,
+                                            "text": "A对B的连接释放报文进行确认（ACK=1，ack=w+1，seq=u+1），A进入TIME-WAIT状态",
+                                            "priority": 4
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cplj22rmo0",
+                                            "created": 1588063697346,
+                                            "text": "此时TCP连接尚未释放，需要经过等待计时器TIME-WAIT timer设置的时间2MSL（MSL为最长报文寿命）之后，A进入CLOSE状态。这是为了保证B收到A的确认"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cpmuaba1s0",
+                                            "created": 1588063800153,
+                                            "text": "B收到A的确认之后便进入CLOSE状态"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cmh6h4tn40",
+                    "created": 1588054893172,
+                    "text": "UDP用户数据报协议",
+                    "layout_right_offset": {
+                        "x": -7,
+                        "y": 224
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cmidvgxrk0",
+                            "created": 1588054987641,
+                            "text": "传输单元：UDP用户数据报"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmiq9msw80",
+                            "created": 1588055014619,
+                            "text": "无连接的、不可靠的"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmjyqoxqg0",
+                            "created": 1588055111429,
+                            "text": "面向报文的"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmk6c1o680",
+                            "created": 1588055127957,
+                            "text": "没有拥塞控制"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmvm27mgo0",
+                            "created": 1588056024197,
+                            "text": "支持一对一、一对多、多对一、多对多"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cmvxqwwi00",
+                            "created": 1588056049635,
+                            "text": "UDP首部8字节"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cmw9jhco00",
+                                    "created": 1588056075307,
+                                    "text": "源端口/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cmwdj6qaw0",
+                                    "created": 1588056083996,
+                                    "text": "目的端口/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cmwggo7co0",
+                                    "created": 1588056090375,
+                                    "text": "长度/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cmwj6e5bs0",
+                                    "created": 1588056096283,
+                                    "text": "校验和/2字节",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cmxtw63oo0",
+                                            "created": 1588056197974,
+                                            "text": "伪首部"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

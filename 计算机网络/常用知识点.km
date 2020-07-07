@@ -1,0 +1,186 @@
+{
+    "root": {
+        "data": {
+            "id": "c3wr4obzvhk0",
+            "created": 1593755376433,
+            "text": "常用知识点"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3wr5e4hto00",
+                    "created": 1593755432575,
+                    "text": "DNS域名解析过程"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3wr8e7u23c0",
+                            "created": 1593755667870,
+                            "text": "浏览器先检查自身缓存中有没有被解析过的这个域名对应的ip地址（域名缓存时间可以通过TTL属性设置）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wr9pj8qt40",
+                            "created": 1593755770868,
+                            "text": "如果浏览器缓存中没有（专业点叫还没命中），浏览器会检查操作系统缓存中有没有对应的已解析过的结果（host文件）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrenytmo80",
+                            "created": 1593756159278,
+                            "text": "真正请求本地域名服务器LDNS来解析域名（有缓存域名解析结果）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrf84804o0",
+                            "created": 1593756203140,
+                            "text": "根域名服务器Root Server请求解析"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrfnm5qfc0",
+                            "created": 1593756236876,
+                            "text": "根域名服务器返回给LDNS一个所查询域的主域名服务器gTLD Server地址"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrfyrzm9s0",
+                            "created": 1593756261173,
+                            "text": "此时LDNS再发送请求给上一步返回的gTLD"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrgd9znpk0",
+                            "created": 1593756292737,
+                            "text": "接受请求的gTLD查找并返回这个域名对应的Name Server的地址，这个Name Server就是网站注册的域名服务器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrgglj18g0",
+                            "created": 1593756299965,
+                            "text": "Name Server根据映射关系表找到目标ip，返回给LDNS"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrgjqh2z40",
+                            "created": 1593756306794,
+                            "text": "LDNS缓存这个域名和对应的ip"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrgneaico0",
+                            "created": 1593756314765,
+                            "text": "LDNS把解析的结果返回给用户，用户根据TTL值缓存到本地系统缓存中"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3wrhec31lc0",
+                    "created": 1593756373404,
+                    "text": "GET/POST"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3wrhjr79m80",
+                            "created": 1593756385202,
+                            "text": "GET"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3wrhl9r9js0",
+                                    "created": 1593756388501,
+                                    "text": "从指定的资源请求数据"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wri7inuy80",
+                                    "created": 1593756436929,
+                                    "text": "查询字符串（名称/值对）是在 GET 请求的 URL 中发送的"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wridmv8fk0",
+                                    "created": 1593756450244,
+                                    "text": "会被缓存，保留在浏览器历史记录中，有长度限制，只允许ASCII字符，之应当用于取回数据"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3wrhp4jbl40",
+                            "created": 1593756396892,
+                            "text": "POST"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3wrhy6ldfs0",
+                                    "created": 1593756416608,
+                                    "text": "向指定的资源提交要处理的数据"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wriap72zk0",
+                                    "created": 1593756443854,
+                                    "text": "查询字符串（名称/值对）是在 POST 请求的 HTTP 消息主体中发送的"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wrirfjeg00",
+                                    "created": 1593756480275,
+                                    "text": "不会被缓存，不会保留在浏览器历史记录中，对数据长度没有要求，对数据类型也没有限制"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3wu7tqudjc0",
+                    "created": 1593764086636,
+                    "text": "HTTP报文"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

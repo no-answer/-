@@ -1,0 +1,1110 @@
+{
+    "root": {
+        "data": {
+            "id": "c2cqxpmtjig0",
+            "created": 1588067473141,
+            "text": "网络层"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2cqznkfro80",
+                    "created": 1588067625372,
+                    "text": "虚电路服务",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cr0ngz2jc0",
+                            "created": 1588067703527,
+                            "text": "面向连接"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr010az9c0",
+                    "created": 1588067654630,
+                    "text": "数据报服务",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cr0g2q5ls0",
+                            "created": 1588067687428,
+                            "text": "无连接、不可靠"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr16n53z40",
+                    "created": 1588067745259,
+                    "text": "IP网络协议",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2csn10vh4o0",
+                            "created": 1588072278150,
+                            "text": "IP地址（IPv4：32位）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2csngpnqa80",
+                                    "created": 1588072312300,
+                                    "text": "分类的IP地址",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2csnjuqxo80",
+                                            "created": 1588072319138,
+                                            "text": "A类：0|网络号（7位）|主机号（24位）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2csrhp6qdk0",
+                                                    "created": 1588072627905,
+                                                    "text": "126/2^64-2"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2csnwmexag0",
+                                            "created": 1588072346932,
+                                            "text": "B类：10|网络号（14位）|主机号（16位）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2cssrl5j8w0",
+                                                    "created": 1588072727793,
+                                                    "text": "2^14-1/2^16-2"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cso95t6ug0",
+                                            "created": 1588072374227,
+                                            "text": "C类：110|网络号（21位）|主机号（8位）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2csuqsv8gw0",
+                                                    "created": 1588072882811,
+                                                    "text": "2^21-1/2^8-2"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2csphjz6vs0",
+                                            "created": 1588072470862,
+                                            "text": "D类：1110|多播地址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cspobzep40",
+                                            "created": 1588072485616,
+                                            "text": "E类：1111|保留地址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2csq0qnbfk0",
+                                            "created": 1588072512624,
+                                            "text": "全0地址：本网络"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2csshe2cf40",
+                                            "created": 1588072705597,
+                                            "text": "全1地址：在本网络上广播"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2csqj4jkq00",
+                                            "created": 1588072552646,
+                                            "text": "网络号为127：保留地址，用于本地软件环回测试本主机的进程间通信"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cswe98feg0",
+                                            "created": 1588073012231,
+                                            "text": "主机号全1：对对应网络号上的主机进行广播"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cszb25jw80",
+                                    "created": 1588073240365,
+                                    "text": "IP地址是网络层及以上所使用的逻辑地址/物理地址是数据链路层和物理层使用的地址"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2ct3iwe9m80",
+                            "created": 1588073570888,
+                            "text": "在IP层抽象的互联网上只能看到IP数据报"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2ct3xlmcig0",
+                            "created": 1588073602888,
+                            "text": "路由器只根据目标IP地址的网络号进行路由选择"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2ct474jw2o0",
+                            "created": 1588073623624,
+                            "text": "在数据链路层只能看到MAC帧，IP数据报被封装在MAC帧中"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr1br6u740",
+                    "created": 1588067756387,
+                    "text": "ARP地址解析协议",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2ct4tzb3r40",
+                            "created": 1588073673372,
+                            "text": "主机中设有ARP高速缓存，其中有本局域网上各主机的IP地址到MAC地址的映射表"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2ct635dtbk0",
+                            "created": 1588073771695,
+                            "text": "如果目标主机B的项目在映射表中不存在"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2ct6c12or40",
+                                    "created": 1588073791026,
+                                    "text": "在本局域网上广播ARP请求分组（主机A的IP地址+硬件地址，请求搜索的主机B的IP地址"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ct6nop5hk0",
+                                    "created": 1588073816399,
+                                    "text": "本局域网上的主机收到请求分组"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ct6wno29s0",
+                                    "created": 1588073835927,
+                                    "text": "主机B的IP地址和ARP请求分组中要查询的IP地址一致，向主机A发送ARP响应分组（单播），在其中写入自己的MAC地址"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ct9ocj4u80",
+                                    "created": 1588074052933,
+                                    "text": "主机B在自己的ARP高速缓存中写入主机A的地址映射"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2ct8ovj6000",
+                                    "created": 1588073975717,
+                                    "text": "主机A收到主机B的ARP响应分组，在ARP高速缓存中写入主机B的IP地址和MAC地址的映射"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2ctfvg7q8g0",
+                            "created": 1588074538577,
+                            "text": "在ARP高速缓存中的映射都有生存时间，超过生存时间就删掉"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr1gn62wo0",
+                    "created": 1588067767028,
+                    "text": "ICMP网际控制报文协议",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cueb75uqw0",
+                            "created": 1588077237240,
+                            "text": "ICMP差错报告报文"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cueoyqt080",
+                                    "created": 1588077267206,
+                                    "text": "终点不可达"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cuf10hj680",
+                                    "created": 1588077293433,
+                                    "text": "超时"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cuf250wxc0",
+                                    "created": 1588077295884,
+                                    "text": "参数问题"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cuf3a7m540",
+                                    "created": 1588077298374,
+                                    "text": "改变路由"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cuehhjg340",
+                            "created": 1588077250928,
+                            "text": "ICMP询问报文"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cufnirv540",
+                                    "created": 1588077342428,
+                                    "text": "回送请求和问答"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cufsepd1s0",
+                                    "created": 1588077353066,
+                                    "text": "时间戳请求和问答"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cufzpdruw0",
+                            "created": 1588077368949,
+                            "text": "重要应用：分组网间探测PING"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cr1olby080",
+                    "created": 1588067784331,
+                    "text": "IGMP网际组管理协议",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cvqzg2mw00",
+                            "created": 1588081051502,
+                            "text": "让连接在本地局域网上的多播路由器知道本局域网上是否有某个主机的某个进程参加/退出了某个多播组"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cto5h2wbs0",
+                    "created": 1588075187311,
+                    "text": "IP数据报",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cv3gf3a940",
+                            "created": 1588079207708,
+                            "text": "固定部分20字节",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cv3tudldk0",
+                                    "created": 1588079236930,
+                                    "text": "版本/4位"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv3ylo3iw0",
+                                    "created": 1588079247287,
+                                    "text": "首部长度/4位"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv42zyrvs0",
+                                    "created": 1588079256859,
+                                    "text": "区分服务/1字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv486wubk0",
+                                    "created": 1588079268163,
+                                    "text": "总长度/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv4c2x3340",
+                                    "created": 1588079276629,
+                                    "text": "标识/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv4hdu1yg0",
+                                    "created": 1588079288172,
+                                    "text": "标志/4位"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv4t34q200",
+                                    "created": 1588079313647,
+                                    "text": "片偏移/12位"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv54nyqzc0",
+                                    "created": 1588079338851,
+                                    "text": "生存时间（跳数）/1字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv59pujvc0",
+                                    "created": 1588079349849,
+                                    "text": "协议/1字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv5di5kig0",
+                                    "created": 1588079358091,
+                                    "text": "首部校验和/2字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv5z23dts0",
+                                    "created": 1588079405009,
+                                    "text": "源地址/4字节"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cv6412m7s0",
+                                    "created": 1588079415831,
+                                    "text": "目的地址/4字节"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cv3ot71q80",
+                            "created": 1588079225975,
+                            "text": "可变部分"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2ctvjl71400",
+                    "created": 1588075766584,
+                    "text": "子网划分",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2ctvs52arc0",
+                            "created": 1588075785199,
+                            "text": "三级IP地址：网络号|子网号|主机号"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2ctw6bdmqg0",
+                            "created": 1588075816056,
+                            "text": "子网掩码"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2ctx6ipgkg0",
+                                    "created": 1588075894863,
+                                    "text": "将IP地址和子网掩码按位与即可得到子网网络地址"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2ctxzmkndc0",
+                            "created": 1588075958224,
+                            "text": "默认子网掩码中1的位置和网络号字段等同，即A类地址为255.0.0.0"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2ctymeaz4g0",
+                            "created": 1588076007790,
+                            "text": "划分子网增加了灵活性，减少了连接在网络上的主机数"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cugo9nyu80",
+                    "created": 1588077422418,
+                    "text": "路由算法",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cuh18cdmw0",
+                            "created": 1588077450636,
+                            "text": "理想算法特点"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cuhgzkbq00",
+                            "created": 1588077484934,
+                            "text": "静态路由"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cuhk6da1s0",
+                            "created": 1588077491876,
+                            "text": "动态路由"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cuht3mm880",
+                            "created": 1588077511301,
+                            "text": "互联网采用分层路由选择协议"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cui5d0wr40",
+                                    "created": 1588077537991,
+                                    "text": "内部网关协议IGP",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cuioe3nzc0",
+                                            "created": 1588077579414,
+                                            "text": "路由信息协议RIP"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2cujchs02g0",
+                                                    "created": 1588077631880,
+                                                    "text": "基于距离（跳数）向量的路由选择协议"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cukfbix400",
+                                                    "created": 1588077716396,
+                                                    "text": "距离向量算法"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cujj3wnqo0",
+                                                    "created": 1588077646278,
+                                                    "text": "只和相邻路由器交换信息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cujqct1bk0",
+                                                    "created": 1588077662054,
+                                                    "text": "发送的信息是本路由器的路由表"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cuk4fxf540",
+                                                    "created": 1588077692718,
+                                                    "text": "按固定时间间隔交换路由信息"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cul22nlc00",
+                                            "created": 1588077765926,
+                                            "text": "开放最短路径优先OSPF"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2culul8fog0",
+                                                    "created": 1588077827999,
+                                                    "text": "使用分布式的链路状态协议"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cum28cfa00",
+                                                    "created": 1588077844634,
+                                                    "text": "向所有路由器发送信息（泛洪）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cumdwp3540",
+                                                    "created": 1588077870051,
+                                                    "text": "发送的信息是与本路由器相邻的所有路由器的链路状态"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cun91pgw80",
+                                                    "created": 1588077937834,
+                                                    "text": "只有当链路状态变化的时候蔡再次泛洪发送相邻路由器链路状态"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cunuy5k5c0",
+                                                    "created": 1588077985509,
+                                                    "text": "每个路由器都维持了全网的拓扑结构图"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c2cuo9jmgsg0",
+                                                    "created": 1588078017282,
+                                                    "text": "直接使用IP数据报传送"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cuiag2azk0",
+                                    "created": 1588077549058,
+                                    "text": "外部网关协议EGP"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cv7ncejf40",
+                    "created": 1588079536239,
+                    "text": "CIDR",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cvfozkbts0",
+                            "created": 1588080166730,
+                            "text": "无分类编址方法"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cvgv6k2vk0",
+                            "created": 1588080258577,
+                            "text": "地址聚合"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cvgz8rwgg0",
+                            "created": 1588080267419,
+                            "text": "最长前缀匹配"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cvhyq4pe00",
+                    "created": 1588080344655,
+                    "text": "IPv6",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cvi2wtac80",
+                            "created": 1588080353767,
+                            "text": "首部格式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cvig9ph0g0",
+                                    "created": 1588080382844,
+                                    "text": "基本首部40字节"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvj0f5dqg0",
+                                            "created": 1588080426709,
+                                            "text": "版本/4位"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvj3uy8rs0",
+                                            "created": 1588080434195,
+                                            "text": "通信量类/1字节"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvjdp2j340",
+                                            "created": 1588080455607,
+                                            "text": "流标号/20位"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvjlnzx0o0",
+                                            "created": 1588080472957,
+                                            "text": "有效载荷长度/2字节"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvk25tizs0",
+                                            "created": 1588080508863,
+                                            "text": "下一个首部/1字节"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvk7a92fc0",
+                                            "created": 1588080520015,
+                                            "text": "跳数限制1字节"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvkb5g2s00",
+                                            "created": 1588080528431,
+                                            "text": "源地址/16字节"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvkmh3vzk0",
+                                            "created": 1588080553081,
+                                            "text": "目的地址/16字节"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvilpwf080",
+                                    "created": 1588080394708,
+                                    "text": "有效载荷"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvkrxb6so0",
+                                            "created": 1588080564945,
+                                            "text": "拓展首部"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2cvkvf8q000",
+                                            "created": 1588080572559,
+                                            "text": "数据"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cvl6trmt40",
+                            "created": 1588080597382,
+                            "text": "地址分类"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cvlvyot740",
+                                    "created": 1588080652099,
+                                    "text": "未指明地址"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvmij9t5s0",
+                                            "created": 1588080701233,
+                                            "text": "全0，可记为::/128"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvm2o8uow0",
+                                    "created": 1588080666705,
+                                    "text": "环回地址"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvmy9x4eo0",
+                                            "created": 1588080735496,
+                                            "text": "000...1（128位），可记为::1/128"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvm5nrzb40",
+                                    "created": 1588080673207,
+                                    "text": "多播地址"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvn5zgn8g0",
+                                            "created": 1588080752278,
+                                            "text": "11111111（8位），可记为FF00::/8"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvm8fto3c0",
+                                    "created": 1588080679257,
+                                    "text": "本地链路单播地址"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvnim22nk0",
+                                            "created": 1588080779766,
+                                            "text": "1111111010（10位），可记为FE80::/10"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvmeocmh40",
+                                    "created": 1588080692833,
+                                    "text": "全球单播地址"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvnyuzoyw0",
+                                            "created": 1588080815134,
+                                            "text": "除上述地址外其他的二进制前缀"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cvodzc45c0",
+                            "created": 1588080848049,
+                            "text": "与IPv4兼容"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cvosqropc0",
+                                    "created": 1588080880182,
+                                    "text": "双协议栈"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvq4v036o0",
+                                            "created": 1588080984924,
+                                            "text": "首部转换，IPv6首部中某些字段无法恢复"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvp6gn22w0",
+                                    "created": 1588080910045,
+                                    "text": "隧道"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2cvqj7x1nk0",
+                                            "created": 1588081016180,
+                                            "text": "互相封装"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cvruzfvi00",
+                    "created": 1588081120153,
+                    "text": "虚拟专用网VPN",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cvtlt2hb40",
+                            "created": 1588081256905,
+                            "text": "专用地址块"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2cvtqwdfq00",
+                                    "created": 1588081267989,
+                                    "text": "10.0.0.0到10.255.255.255，24位块"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvu2suecg0",
+                                    "created": 1588081293897,
+                                    "text": "172.16.0.0到172.31.255.255，20位块"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2cvudup4lc0",
+                                    "created": 1588081317953,
+                                    "text": "192.168.0.0到192.168.255.255，16位块"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2cvt5o76w00",
+                            "created": 1588081221782,
+                            "text": "在互联网中的路由器对目的地址是专用地址的数据报一律不转发"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cvtgrwmrk0",
+                            "created": 1588081245951,
+                            "text": "数据包在通过互联网时进行加密"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2cvsehy0rs0",
+                    "created": 1588081162631,
+                    "text": "网络地址转换NAT",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2cvxkoyxm80",
+                            "created": 1588081567937,
+                            "text": "使已经分配到本地IP地址（仅在专用网内使用的专用地址）能够和互联网上的主机通信"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cvy24j7w80",
+                            "created": 1588081605883,
+                            "text": "装有NAT软件的路由器将专用网内的专用地址和路由器的全球IP地址进行转换"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2cw02140f40",
+                            "created": 1588081762405,
+                            "text": "使用端口号让多个使用专用地址的主机同时使用路由器的IP地址，网络地址与端口号转换NAPT"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

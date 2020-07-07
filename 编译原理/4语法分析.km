@@ -1,0 +1,391 @@
+{
+    "root": {
+        "data": {
+            "id": "c2ztmyl293s0",
+            "created": 1590410972953,
+            "text": "语法分析"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3jbwskv8xk0",
+                    "created": 1592392162678,
+                    "text": "自上而下"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3jbxh0qctc0",
+                            "created": 1592392215880,
+                            "text": "递归向下子程序"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3jbxqb8z1c0",
+                            "created": 1592392236107,
+                            "text": "左递归：文法中存在非终结符P 文法中有P→Pa"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3jbzmrckuw0",
+                                    "created": 1592392385101,
+                                    "text": "直接消除：P→Pa|b 改写为 P→bP' P'→aP'|空"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jcebqt8dc0",
+                                    "created": 1592393536587,
+                                    "text": "彻底消除算法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3jcepillu00",
+                                            "created": 1592393566565,
+                                            "text": "将文法G的所有非终结符按任意顺序P1,P2,P3,...排列"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jcez0ffc00",
+                                            "created": 1592393587234,
+                                            "text": "直接消除左递归"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jcfs5en000",
+                                            "created": 1592393650662,
+                                            "text": "化简文法，去除无法到达的非终结符"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3jcgfhc7yg0",
+                            "created": 1592393701449,
+                            "text": "FIRST集"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3jcmwnksiw0",
+                                    "created": 1592394209017,
+                                    "text": "a的所有可能推导的开头终结符或可能的空"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3jcgju7vow0",
+                            "created": 1592393710935,
+                            "text": "FOLLOW集"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3jcw6g64ts0",
+                                    "created": 1592394935614,
+                                    "text": "所有句型中出现的紧跟在A之后的终结符或#"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jd132f5r40",
+                                    "created": 1592395320073,
+                                    "text": "若S→···A，则规定#∈FOLLOW(A)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3jbzfhq7480",
+                            "created": 1592392369282,
+                            "text": "LL(1)分析法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3jcha7t3a80",
+                                    "created": 1592393768353,
+                                    "text": "文法不含有左递归"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jchcz0tuw0",
+                                    "created": 1592393774352,
+                                    "text": "对文法中每一个非终结符A的各个产生式FIRST集两两不相交"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jcht8t7hc0",
+                                    "created": 1592393809773,
+                                    "text": "对文法中的每个非终结符A，若FIRST集中包含空，那么FIRST集交FOLLOW集为空"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jeu4ubk8o0",
+                                    "created": 1592400417608,
+                                    "text": "预测分析表，矩阵元素M[A,a]中存放着一条关于A的产生式，指出A面临输入符号a时应采用的候选，空白格为错误处理"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jexypfye00",
+                                    "created": 1592400717709,
+                                    "text": "可以根据预测分析表建立分析栈进行预测分析"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3jbwvf5c6o0",
+                    "created": 1592392168862,
+                    "text": "自下而上"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3jxuilxzbc0",
+                            "created": 1592454048664,
+                            "text": "移进-归约"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3jxumynhg00",
+                                    "created": 1592454058140,
+                                    "text": "输入符号依次入符号栈，将栈顶分一部分归约为产生式的左部符号"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jzczewrq80",
+                                    "created": 1592458316909,
+                                    "text": "需要刻画可规约串"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3jzd6bbeu00",
+                                            "created": 1592458331929,
+                                            "text": "算符优先分析中使用最左素短语来刻画可规约串"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3jzdfpkpx40",
+                                            "created": 1592458352383,
+                                            "text": "规范规约分析中采用句柄刻画可规约串"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jzgowiark0",
+                                    "created": 1592458607485,
+                                    "text": "使用不属于文法的#作为栈底符，也是输入串的结束符"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3jewcdp2q00",
+                            "created": 1592400590745,
+                            "text": "规范规约"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3jzef3wgsw0",
+                                    "created": 1592458429436,
+                                    "text": "假定abc是文发G的一个句型，若有S→aBc且B→b（经历若干步推导），则称b是巨型aBc相对于非终结符B的短语"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jzf8mgtxk0",
+                                    "created": 1592458493686,
+                                    "text": "若有B→b（直接推导）则称b是举行aBc相对于规则B→b的直接短语"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jewfeo96g0",
+                                    "created": 1592400597335,
+                                    "text": "最左直接短语称为句柄"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3jex0zald40",
+                                    "created": 1592400644294,
+                                    "text": "最右推导（也称规范推导）的逆过程，也称为最左规约"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3k0mmfv66g0",
+                            "created": 1592461893420,
+                            "text": "算符优先分析"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3k0modogls0",
+                                    "created": 1592461897642,
+                                    "text": "定义算符（终结符）之间的某种优先关系，籍此寻找可规约串进行规约"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3k0oea574g0",
+                            "created": 1592462032389,
+                            "text": "LR分析法",
+                            "layout_right_offset": {
+                                "x": 0,
+                                "y": 10
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3k0ojwwzyw0",
+                                    "created": 1592462044649,
+                                    "text": "从左到右扫描输入串，构造一个最右推导的逆过程"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k0wkxo5i00",
+                                    "created": 1592462673785,
+                                    "text": "LR(0)项目：文法G的每一个产生式的右部添加一个圆点"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k0xlixsls0",
+                                    "created": 1592462753435,
+                                    "text": "前缀：字的任意首部"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k0xrhuvmw0",
+                                    "created": 1592462766431,
+                                    "text": "活前缀：规范句型的一个前缀，不含句柄之后的任何符号"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k1qln1noo0",
+                                    "created": 1592465026244,
+                                    "text": "构造NFA"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3k1qoc0tb40",
+                                            "created": 1592465032108,
+                                            "text": "若状态i和j出自同一产生式，且状态j的圆点只落后状态i的圆点一个位置，则从状态i画一条标志为Xi的弧到状态j"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3k1rms8ye00",
+                                            "created": 1592465107100,
+                                            "text": "若状态i的原点之后的符号为非终结符，如i为X→a·bc，则从状态i画空弧到所有b→·d状态"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k2wh0jqq80",
+                                    "created": 1592468307472,
+                                    "text": "DFA，若A→·B属于项目集规范族，那么所有的B→·C也都属于该项目集规范族"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3k2xh30on40",
+                            "created": 1592468385985,
+                            "text": "SLR(1)"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3k3f3h70u00",
+                            "created": 1592469766923,
+                            "text": "LR(1)"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3k3f93uf6o0",
+                            "created": 1592469779176,
+                            "text": "LALR(1)"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

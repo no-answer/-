@@ -1,0 +1,81 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "多处理机"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3ol8the80o0",
+                    "created": 1592926294787,
+                    "text": "多处理分类"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ol8xj6ccg0",
+                            "created": 1592926303602,
+                            "text": "由多个独立的处理机组成，每个处理机都能够独立执行自己的程序"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3olbglul3s0",
+                    "created": 1592926501850,
+                    "text": "Cache一致性问题"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3olc6fjtvk0",
+                            "created": 1592926558066,
+                            "text": "在并i选哪个处理机和多处理机系统中，采用局部Cache会引起Cache与共享存储器之间的一致性问题"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3olbqaaetk0",
+                            "created": 1592926522919,
+                            "text": "原因"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3olbrksw9s0",
+                                    "created": 1592926525732,
+                                    "text": "共享可写的数据"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3olbuo3c680",
+                                    "created": 1592926532461,
+                                    "text": "进程迁移"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3olbvuzmcg0",
+                                    "created": 1592926535055,
+                                    "text": "I/O传输"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

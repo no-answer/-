@@ -1,0 +1,609 @@
+{
+    "root": {
+        "data": {
+            "id": "c3i7o5xrgoo0",
+            "created": 1592278642082,
+            "text": "web搜索"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3i950o9pb40",
+                    "created": 1592282783924,
+                    "text": "对搜索结果的经验性评价"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3i95c8eh940",
+                            "created": 1592282809086,
+                            "text": "页面质量良莠不齐"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i95f9w1tc0",
+                            "created": 1592282815707,
+                            "text": "正确率依旧重要，召回率不再那么重要"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i95qjtv6w0",
+                            "created": 1592282840252,
+                            "text": "模糊查询"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3i7ods5dk00",
+                    "created": 1592278659156,
+                    "text": "web文档集",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3i95ursmu00",
+                            "created": 1592282849441,
+                            "text": "内容多样"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i962upk9s0",
+                            "created": 1592282867032,
+                            "text": "异构"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i964npwk00",
+                            "created": 1592282870962,
+                            "text": "有很多重复记录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i9682vz8g0",
+                            "created": 1592282878410,
+                            "text": "增长速度快"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i96gddy7s0",
+                            "created": 1592282896459,
+                            "text": "内容可能是动态生成的"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3i96obbtww0",
+                    "created": 1592282913749,
+                    "text": "web与文档集的不同",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3i96sofspk0",
+                            "created": 1592282923249,
+                            "text": "规模（海量？动态？）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i96x73rcw0",
+                            "created": 1592282933084,
+                            "text": "相关性度量"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3i97251a0g0",
+                            "created": 1592282943843,
+                            "text": "重复"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3i98pt1xnc0",
+                                    "created": 1592283073726,
+                                    "text": "完全复制"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3i98r0fni00",
+                                    "created": 1592283076349,
+                                    "text": "近似重复"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3i98u1wjug0",
+                    "created": 1592283082968,
+                    "text": "相似性计算"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3i991199y80",
+                            "created": 1592283098166,
+                            "text": "搭叠Shingles（N元词N-Grams）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3i99di5qu80",
+                                    "created": 1592283125310,
+                                    "text": "给定正整数k及文档d的一个词项序列，可以定义文档d的k-shingle为d中所有k个连续词项构成的序列"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3i9a3y94ds0",
+                                    "created": 1592283182879,
+                                    "text": "若两个文档集的shingle集合几乎一样，那么他们满足近似重复"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3i9ahzuly00",
+                            "created": 1592283213451,
+                            "text": "Jaccard系数",
+                            "image": "",
+                            "imageTitle": "",
+                            "imageSize": ""
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ia1e513hc0",
+                                    "created": 1592285320889,
+                                    "text": "在文档的shingle集合上计算交集大小/病及大小"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia1vr30mw0",
+                                    "created": 1592285359228,
+                                    "text": "从shingles中选出一个子集（素描sketch）进行近似计算（抽样sample）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ia2apq9a00",
+                                            "created": 1592285391798,
+                                            "text": "为每篇文档生成素描向量sketch vector"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ia2ng55dk0",
+                                            "created": 1592285419516,
+                                            "text": "相同向量数》t（一般为80%）判定为近似"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3ia4gyydg00",
+                    "created": 1592285562145,
+                    "text": "web采集器"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ia4k1gkf40",
+                            "created": 1592285568827,
+                            "text": "1从已知的种子URL开始"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ia4omo3q80",
+                            "created": 1592285578816,
+                            "text": "2获取页面并解析"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ia4rcealc0",
+                                    "created": 1592285584725,
+                                    "text": "提取页面中包含的链接"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia4vi8xio0",
+                                    "created": 1592285593786,
+                                    "text": "将连接放入URL队列"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ia4zdp0800",
+                            "created": 1592285602218,
+                            "text": "3对队列中的URL，转2"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ia5f7vgyg0",
+                            "created": 1592285636695,
+                            "text": "必备功能",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ia5kic91c0",
+                                    "created": 1592285648211,
+                                    "text": "礼貌性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ia6q9f95c0",
+                                            "created": 1592285739097,
+                                            "text": "robots.txt"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia5noksww0",
+                                    "created": 1592285655119,
+                                    "text": "鲁棒性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia5ql4v6o0",
+                                    "created": 1592285661441,
+                                    "text": "分布式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia5rm92mw0",
+                                    "created": 1592285663685,
+                                    "text": "可拓展性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia5t27st40",
+                                    "created": 1592285666828,
+                                    "text": "性能和效率"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia5vdrv8g0",
+                                    "created": 1592285671880,
+                                    "text": "新鲜度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ia5xm93kw0",
+                                    "created": 1592285676746,
+                                    "text": "功能可拓展性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3iadgqdt340",
+                    "created": 1592286266904,
+                    "text": "连接服务器"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3iaditcskw0",
+                            "created": 1592286271437,
+                            "text": "将静态web看作静态HTML网页通过超链接互相连接而成的有向图，所有顶点和有向边的集和称作web图"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3iaex694w80",
+                            "created": 1592286381056,
+                            "text": "每个网页都存储类似倒排索引的邻接表保存该网页所指向的网页"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3ib7m17uxc0",
+                    "created": 1592288629368,
+                    "text": "锚文本"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ib7ovwc1k0",
+                            "created": 1592288635577,
+                            "text": "假设"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ib7ue36g80",
+                                    "created": 1592288647560,
+                                    "text": "A到B的链接表示A的作者对B的认可"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ib80x5fgg0",
+                                    "created": 1592288661774,
+                                    "text": "指向页面B的锚文本是对B的一个很好的描述"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ibmy8so6w0",
+                            "created": 1592289831410,
+                            "text": "锚：超链接周围的<a>标签中的文本"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ibnq60i9s0",
+                            "created": 1592289892192,
+                            "text": "在索引文档D的时候，也索引指向文档D的锚文本"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ibnz8gqx40",
+                            "created": 1592289911931,
+                            "text": "有副作用，需要根据锚文本所在页面的权威性来确定锚文本的权重"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3ibof4cipk0",
+                    "created": 1592289946510,
+                    "text": "PageRank"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ic5wxcpuo0",
+                            "created": 1592291317460,
+                            "text": "对web图中的每一个节点赋一个0-1之间的分支"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ic68cfstc0",
+                            "created": 1592291342317,
+                            "text": "查询词无关的排序"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ic6nyqmxs0",
+                            "created": 1592291376317,
+                            "text": "查询处理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ic76pqgao0",
+                                    "created": 1592291417132,
+                                    "text": "检索出所有满足文本查询词的页面"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ic7c5shxk0",
+                                    "created": 1592291428987,
+                                    "text": "将页面按照链接流行度进行排序"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ic80lxhqo0",
+                                            "created": 1592291482205,
+                                            "text": "无向流行度：赋予每个页面一个分数：出链书+入链数"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3ic8ingbuw0",
+                                            "created": 1592291521479,
+                                            "text": "邮箱流行度：页面分数=入链数"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ic7kiwvts0",
+                                    "created": 1592291447194,
+                                    "text": "更复杂：将连接流行当作静态得分，结合文本匹配的分数进行综合排序"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ic8wdwzz40",
+                            "created": 1592291551378,
+                            "text": "打分"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ic96g9uao0",
+                                    "created": 1592291573288,
+                                    "text": "从随机页面开始，从当前页等概率选择链接并进入"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ic8y71re80",
+                                    "created": 1592291555316,
+                                    "text": "在稳定状态下，每个页面都有一个访问概率（分数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ic9oxb5ig0",
+                                    "created": 1592291613500,
+                                    "text": "在随机游走过程中访问越频繁的网页越重要"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3icahk6vhc0",
+                            "created": 1592291675834,
+                            "text": "随机跳转"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3icaje3tgg0",
+                                    "created": 1592291679819,
+                                    "text": "遇到dead end时随机跳转到一个页面"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3icau3y4sg0",
+                                    "created": 1592291703150,
+                                    "text": "遇到非dead end时，以α（10% or 20%）概率跳转到随机页面，1-α概率从出链中选择"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3icbvsl4q80",
+                            "created": 1592291785180,
+                            "text": "采用混合过程（随机游走+随机跳转）时，会以稳定概率 f(v) 即页面v的PageRank值访问每个节点 v，取决于web图的结构和 α 的值，"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3icrd3xibk0",
+                    "created": 1592292998334,
+                    "text": "Markov链"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3icrhaht5s0",
+                            "created": 1592293007438,
+                            "text": "一个markov链有N个状态（N个Wweb网页）以及一个NxN的转移概率矩阵P，P的每一行的元素之和为1（从该页面跳转到所有出链的概率之和为1）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3icszuejfs0",
+                            "created": 1592293126188,
+                            "text": "如果某一行没有1，则用1/N代替每个元素"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ih6h1stqw0",
+                            "created": 1592305466815,
+                            "text": "稳态概率的计算"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

@@ -1,0 +1,841 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "第一章"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3k9eg3atw80",
+                    "created": 1592486642676,
+                    "text": "计算机系统结构"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3k9ryqfvfs0",
+                            "created": 1592487701991,
+                            "text": "定义"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ka2z39a880",
+                                    "created": 1592488564772,
+                                    "text": "程序设计者所看到的计算机系统的属性，即概念性结构和功能特性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ka2zys92o0",
+                                    "created": 1592488566678,
+                                    "text": "计算机系统结构"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ka3doauiw0",
+                                    "created": 1592488596519,
+                                    "text": "结论：计算机系统结构研究的是软、硬件之间的功能分配以及对传统机器级界面的确定"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3k9ex3ovjs0",
+                            "created": 1592486679705,
+                            "text": "虚拟计算机"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3k9tud6so00",
+                                    "created": 1592487849211,
+                                    "text": "第5级（虚拟机器）应用语言机器级M5，具有L5机器语言（应用语言）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k9ug2z4eg0",
+                                    "created": 1592487896483,
+                                    "text": "第4级（虚拟机器）高级语言机器级M4，具有L4机器语言（高级语言）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k9uu3qnog0",
+                                    "created": 1592487927004,
+                                    "text": "第3级（虚拟机器）汇编语言机器级M3，具有L3机器语言（汇编语言）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k9v6ttmeo0",
+                                    "created": 1592487954702,
+                                    "text": "第2级（虚拟机器）操作系统机器级M2，具有L2机器语言（作业控制语言）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ka1izx3680",
+                                    "created": 1592488451377,
+                                    "text": "软硬件分界面"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k9viigyao0",
+                                    "created": 1592487980137,
+                                    "text": "第1级（实际机器）传统机器语言机器级M1，具有L1机器语言（机器指令系统）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k9vy5rimw0",
+                                    "created": 1592488014198,
+                                    "text": "第0级（实际机器）微程序机器级M0，具有L0机器语言（微指令系统）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3k9gvzme880",
+                            "created": 1592486834010,
+                            "text": "语言实现基本技术"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3k9gyz4u5k0",
+                                    "created": 1592486840511,
+                                    "text": "翻译：先将N+1级程序全部转换成N级程序，再执行新产生的N级程序，不再访问N+1级程序"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3k9zppnozc0",
+                                            "created": 1592488309266,
+                                            "text": "L3-L5级"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3k9gzysbwg0",
+                                    "created": 1592486842667,
+                                    "text": "解释：每当一条N+1级指令被译码之后，就直接去执行一串等效的N级指令，再去取下一条N+1级的指令"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3k9zkj8av40",
+                                            "created": 1592488297994,
+                                            "text": "L0-L2级"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ka20fj2zk0",
+                            "created": 1592488489327,
+                            "text": "透明性：本来存在的事务或某种属性，从某种角度看不存在"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3ka8fpef1k0",
+                    "created": 1592488992760,
+                    "text": "计算机系统的定量原理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3ka8j89tpc0",
+                            "created": 1592489000432,
+                            "text": "哈夫曼压缩原理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ka8zp8p3s0",
+                                    "created": 1592489036286,
+                                    "text": "尽可能加速处理高概率事件远比加速处理低概率事件对性能的提高要显著"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ka8nm9ov40",
+                            "created": 1592489009985,
+                            "text": "Amdahl定律"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ka9epzkd40",
+                                    "created": 1592489068983,
+                                    "text": "系统中某一部件采用更快的执行方式之后，整个系统性能的提高与这种执行方式的使用频率或占总执行时间的比例有关"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kaa1ao5rs0",
+                                    "created": 1592489118123,
+                                    "text": "可改进部分的比例 Fe=可改进部分的执行时间/该金钱整个任务的执行时间"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kaaeeu4g80",
+                                    "created": 1592489146673,
+                                    "text": "改进部分的加速比 Se=改进前可改进部分的执行时间/改进后改进部分的执行时间"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kabkfjoxk0",
+                                    "created": 1592489238141,
+                                    "text": "整个系统的加速比 Sn=1/(1-Fe+Fe/Se)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ka8ryqd400",
+                            "created": 1592489019446,
+                            "text": "CPU性能公式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kahj8z7q00",
+                                    "created": 1592489705752,
+                                    "text": "程序执行的总指令条数IC：取决于指令集结构和编译技术"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kahw3cyr40",
+                                    "created": 1592489733710,
+                                    "text": "平局每条指令的时钟周期数CPI：取决于计算机组成和指令集结构"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kai6w0bl40",
+                                    "created": 1592489757210,
+                                    "text": "时钟主频fc：取决于硬件实现技术和计算机组成"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kaihgtjz40",
+                                    "created": 1592489780237,
+                                    "text": "CPU执行时间 Tcpu=ICxCPIx1/fc"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ka8uvk7fk0",
+                            "created": 1592489025785,
+                            "text": "访问的局部性原理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kaj6j50io0",
+                                    "created": 1592489834796,
+                                    "text": "时间局部性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kaj8ss0x40",
+                                            "created": 1592489839733,
+                                            "text": "程序中进其被访问的信息项很可能马上将再次被访问"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kajhgorts0",
+                                    "created": 1592489858593,
+                                    "text": "空间局部性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kajjc18qg0",
+                                            "created": 1592489862665,
+                                            "text": "在访问地址上相邻近的信息项很可能会被一起访问"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kaka1q70w0",
+                    "created": 1592489920815,
+                    "text": "计算机系统的评价标准"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kakdlynmw0",
+                            "created": 1592489928569,
+                            "text": "指令平均执行速度MIPS"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kali0u8t40",
+                                    "created": 1592490016540,
+                                    "text": "MIPS=指令条数/(执行时间x10^6)=Fz/CPI=IPCxFz"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kam81psxs0",
+                                    "created": 1592490073189,
+                                    "text": "Fz为处理器的工作主频"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kamcyc3q00",
+                                    "created": 1592490083869,
+                                    "text": "CPI为每条每条指令所需的平均时钟周期数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kampb9yqo0",
+                                    "created": 1592490110772,
+                                    "text": "IPC每个时钟周期平均执行的指令条数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kamxu1hbc0",
+                                    "created": 1592490129321,
+                                    "text": "依赖于指令集，因程序不同而变化，可能与性能相反"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kaobag20o0",
+                            "created": 1592490236976,
+                            "text": "每秒百万个浮点操作MFLOPS"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kapzdzu5s0",
+                                    "created": 1592490367797,
+                                    "text": "MFLOPS=程序的浮点操作次数/(执行时间x10^6)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kapo8h51c0",
+                                    "created": 1592490343519,
+                                    "text": "只能反应机器浮点操作的性能"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kaqd9br6w0",
+                            "created": 1592490397990,
+                            "text": "基准测试程序"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3kaqkolb1s0",
+                            "created": 1592490414150,
+                            "text": "峰值性能：理想情况下计算机系统可获得的最高理论性能值"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3kar02vvrc0",
+                            "created": 1592490447666,
+                            "text": "持续性能（实际性能）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kara6f2e00",
+                                    "created": 1592490469648,
+                                    "text": "算术性能平均值"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kavznjda00",
+                                            "created": 1592490838559,
+                                            "text": "n道程序运算速度或运算时间的算数平均值"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kare9p4l40",
+                                    "created": 1592490478553,
+                                    "text": "调和性能平均值"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kari6zy2o0",
+                                    "created": 1592490487097,
+                                    "text": "几何性能平均值"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kakepmc400",
+                            "created": 1592489930967,
+                            "text": "成本"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kb2golf140",
+                    "created": 1592491345813,
+                    "text": "可移植性"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kb2paupb40",
+                            "created": 1592491364573,
+                            "text": "系列机方法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kb2yzjwps0",
+                                    "created": 1592491385658,
+                                    "text": "系列机定义：具有相同的系统结构，但组成和实现技术不同的一系列计算机系统"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kb4pzr66w0",
+                                    "created": 1592491522807,
+                                    "text": "优点：兼容性好，可移植性好，便于实现机间通信"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kb5i25pvc0",
+                                    "created": 1592491583903,
+                                    "text": "缺点：限制了计算机系统结构的发展"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kb5v7u7ns0",
+                            "created": 1592491612544,
+                            "text": "模拟和仿真"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kb5xh95ls0",
+                                    "created": 1592491617467,
+                                    "text": "模拟：用机器语言程序解释实现软件移植的方法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kb6qsbhg00",
+                                            "created": 1592491681263,
+                                            "text": "速度慢，只适用于运行时间短，使用次数少，在时间上无约束的软件"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kb6aywpgg0",
+                                    "created": 1592491646833,
+                                    "text": "仿真：用微程序直接解释另一种机器指令的方法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kb71s8vds0",
+                                            "created": 1592491705203,
+                                            "text": "速度慢，只适用于系统结构差异不大的机器间，难以仿真存储系统、IO系统"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kb7z9tpio0",
+                            "created": 1592491778100,
+                            "text": "统一高级语言"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kb81humzk0",
+                                    "created": 1592491782939,
+                                    "text": "采用同一种不依赖于任何具体机器的高级语言编写系统软件和应用软件"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3kb8nu4hf40",
+                    "created": 1592491831570,
+                    "text": "并行性"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3kb9y5v50o0",
+                            "created": 1592491932412,
+                            "text": "计算机系统在同一时刻或者同一时间间隔内进行多种运算或操作"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kbe3wvcko0",
+                                    "created": 1592492258385,
+                                    "text": "同时性：多个事件同一时刻发生"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbe5yhpxs0",
+                                    "created": 1592492262837,
+                                    "text": "并发性：多个事件同一时间间隔内发生"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbeshs2k80",
+                            "created": 1592492311893,
+                            "text": "处理数据"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kbeuqxvds0",
+                                    "created": 1592492316800,
+                                    "text": "字串位串"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbezlss6o0",
+                                    "created": 1592492327373,
+                                    "text": "字串位并"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbf3z9l480",
+                                    "created": 1592492336894,
+                                    "text": "字并位串"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbf8lkc800",
+                                    "created": 1592492346950,
+                                    "text": "全并行"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbflnmfu00",
+                            "created": 1592492375373,
+                            "text": "执行程序"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kbfrbhlts0",
+                                    "created": 1592492387700,
+                                    "text": "指令内部并行"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbfxrpko00",
+                                    "created": 1592492401741,
+                                    "text": "指令级并行"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbg0mo93c0",
+                                    "created": 1592492407967,
+                                    "text": "线程级并行"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbg2mvz940",
+                                    "created": 1592492412333,
+                                    "text": "任务级或过程级并行"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbgaos3rc0",
+                                    "created": 1592492429862,
+                                    "text": "作业或程序级并行"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbh8rngnk0",
+                            "created": 1592492504046,
+                            "text": "提高并行性的技术途径"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kbhbwu2gw0",
+                                    "created": 1592492510890,
+                                    "text": "时间重叠"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbhdihg680",
+                                    "created": 1592492514376,
+                                    "text": "资源重复"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbhf2d5uo0",
+                                    "created": 1592492517755,
+                                    "text": "资源共享"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbiqg1sbs0",
+                            "created": 1592492620891,
+                            "text": "单机系统并行性"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kbitmkzj40",
+                                    "created": 1592492627816,
+                                    "text": "部件功能专用化"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbjcb6ax40",
+                                    "created": 1592492668485,
+                                    "text": "资源重复"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kbjh7m2ls0",
+                                            "created": 1592492679154,
+                                            "text": "单处理机模拟多处理机的功能（虚拟机）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3kbj22pqz40",
+                            "created": 1592492646206,
+                            "text": "多机系统并行性"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3kbjo862140",
+                                    "created": 1592492694425,
+                                    "text": "异构型多处理机（时间重叠）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kbl2xko4g0",
+                                            "created": 1592492804800,
+                                            "text": "功能专用化"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbjtfs42g0",
+                                    "created": 1592492705769,
+                                    "text": "同构性多处理机（资源重复）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kbl7wktaw0",
+                                            "created": 1592492815624,
+                                            "text": "机间互连"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbjxgzywg0",
+                                    "created": 1592492714550,
+                                    "text": "分布式系统（资源共享）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3kbk3xw36w0",
+                                    "created": 1592492728632,
+                                    "text": "耦合度：反应多机系统中各机器之间物理连接的紧密程度和交互作用能力的强弱"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3kbki0z8xk0",
+                                            "created": 1592492759294,
+                                            "text": "紧（直接）耦合系统"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3kbknxclgw0",
+                                            "created": 1592492772135,
+                                            "text": "松（间接）耦合系统"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

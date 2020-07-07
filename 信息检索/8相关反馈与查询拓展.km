@@ -1,0 +1,267 @@
+{
+    "root": {
+        "data": {
+            "id": "c3j509mrlb40",
+            "created": 1592372687121,
+            "text": "相关反馈及查询拓展"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3j52iwfds00",
+                    "created": 1592372864024,
+                    "text": "动机：提高召回率R"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3j52qe9l0g0",
+                            "created": 1592372880340,
+                            "text": "局部方法：对用户查询进行局部的即时的分析"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j53lu2ik00",
+                                    "created": 1592372948776,
+                                    "text": "相关反馈"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j53108o0o0",
+                            "created": 1592372903437,
+                            "text": "全局方法：进行一次性的全局分析来产生同义/近义词典"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j53o2mahk0",
+                                    "created": 1592372953647,
+                                    "text": "查询拓展"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3j50m1to9k0",
+                    "created": 1592372714153,
+                    "text": "相关反馈"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3j5175walc0",
+                            "created": 1592372760111,
+                            "text": "在初始检索结果的基础上，用户指定哪些文档相关或不相关，然后改进检索结果"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j548d3vwo0",
+                            "created": 1592372997817,
+                            "text": "显式相关反馈"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j54s1j3e80",
+                                    "created": 1592373040652,
+                                    "text": "用户显示参加交互过程"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j54e4ltuo0",
+                            "created": 1592373010363,
+                            "text": "隐式相关反馈"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j54whkld40",
+                                    "created": 1592373050329,
+                                    "text": "系统跟踪用户行为推测文档相关性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j54guit5k0",
+                            "created": 1592373016284,
+                            "text": "伪相关反馈"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j55209d740",
+                                    "created": 1592373062343,
+                                    "text": "系统假定返回文档的前k篇相关"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j567fpkvs0",
+                            "created": 1592373152526,
+                            "text": "核心概念：质心"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j58xuziyw0",
+                                    "created": 1592373366774,
+                                    "text": "将文档表示成高维空间中的点（向量）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j59yf4ehs0",
+                            "created": 1592373446356,
+                            "text": "基本理论：假定要找一个最优查询向量q，它与相关文档之间的相似度最大且同时又和不相关文档之间的相似度最小"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j5avq3qn40",
+                            "created": 1592373518853,
+                            "text": "最优的查询向量等于相关文档的质心向量和不相关文档的质心向量的差"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j51tpu6uo0",
+                            "created": 1592372809206,
+                            "text": "Rocchio算法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j5j0d3qqo0",
+                                    "created": 1592374155865,
+                                    "text": "将相关文档的质心移动一个量（相关文档质心和不相关文档质心的差异量）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3j5jqorvyo0",
+                                    "created": 1592374213167,
+                                    "text": "使得新查询向相关文档靠拢而原理不相关文档"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3j5laf7w8w0",
+                            "created": 1592374334489,
+                            "text": "假设"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j5kndoko00",
+                                    "created": 1592374284330,
+                                    "text": "1：用户对初始查询有充分的认识，知道使用哪些词项来表达"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3j5lbu9js00",
+                                    "created": 1592374337575,
+                                    "text": "2：相关文档的原型有一种良好的形式（词项分布相似，文档间形成簇）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3j50pyn7wg0",
+                    "created": 1592372722668,
+                    "text": "查询拓展"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3j51yc2lk00",
+                            "created": 1592372819258,
+                            "text": "通过在查询中加入同义或相关词项来提高检索结果"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3j5n18q1eo0",
+                            "created": 1592374471233,
+                            "text": "类型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3j5n2cttwo0",
+                                    "created": 1592374473658,
+                                    "text": "基于同义词词典"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3j5nga8yo00",
+                                            "created": 1592374503977,
+                                            "text": "通常提高召回率，显著降低正确率（歧义词项）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3j5nxue4qo0",
+                                            "created": 1592374542200,
+                                            "text": "创建并维护人工词典的开销非常大"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3j5n6r0vxc0",
+                                    "created": 1592374483224,
+                                    "text": "基于查询日志挖掘出的查询等价类"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

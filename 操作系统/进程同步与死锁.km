@@ -1,0 +1,414 @@
+{
+    "root": {
+        "data": {
+            "id": "c2mf9c0isc80",
+            "created": 1589050130113,
+            "text": "进程同步和死锁"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2mfzfco4f40",
+                    "created": 1589052174846,
+                    "text": "进程同步"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2mg0hmabdk0",
+                            "created": 1589052258145,
+                            "text": "临界区问题"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mg0jcac800",
+                                    "created": 1589052261894,
+                                    "text": "定义：多个进程共有的代码段"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mg0osqpuw0",
+                                    "created": 1589052273773,
+                                    "text": "要求"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mg0rfwn280",
+                                            "created": 1589052279527,
+                                            "text": "互斥"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mg0xs7wt40",
+                                                    "created": 1589052293332,
+                                                    "text": "最多只能有一个进程在临界区中执行"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mg0szv9nk0",
+                                            "created": 1589052282911,
+                                            "text": "前进"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mg173qs400",
+                                                    "created": 1589052313620,
+                                                    "text": "没有进程在临界区且有进程需要进入临界区，可在有限时间内选择一个进程进入临界区"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mg0vm423k0",
+                                            "created": 1589052288609,
+                                            "text": "有限等待"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mg1r0q0680",
+                                                    "created": 1589052356973,
+                                                    "text": "从一个进程做出进入临界区的请求到请求被允许，其他进程允许进入临界区的次数有上限"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mg2g0s08o0",
+                                    "created": 1589052411396,
+                                    "text": "解决办法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mg2iedyjc0",
+                                            "created": 1589052416572,
+                                            "text": "抢占内核"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mg2nj98940",
+                                                    "created": 1589052427751,
+                                                    "text": "允许处于内核模式的进程被抢占"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c2mg33h41s80",
+                                                            "created": 1589052462450,
+                                                            "text": "适合实时编程"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mg2k6jyg00",
+                                            "created": 1589052420452,
+                                            "text": "非抢占内核"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c2mg2tprzhc0",
+                                                    "created": 1589052441206,
+                                                    "text": "不允许处于内核模式的进程被抢占"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mg3f5vfv40",
+                            "created": 1589052487891,
+                            "text": "信号量"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mg3hj27a80",
+                                    "created": 1589052493042,
+                                    "text": "定义：一个整数变量，只能通过两个标准原子操作wait和signal访问"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mg3zpaz8g0",
+                                    "created": 1589052532602,
+                                    "text": "互斥锁：二进制信号量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mg9wwyy600",
+                                    "created": 1589052996720,
+                                    "text": "自旋锁：循环等待信号量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mgai5fsb40",
+                                    "created": 1589053042945,
+                                    "text": "原子操作的保证"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mgal5y9hk0",
+                                            "created": 1589053049506,
+                                            "text": "禁止中断"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mgbplfmn40",
+                            "created": 1589053137513,
+                            "text": "管程"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mgbxu60lk0",
+                                    "created": 1589053155456,
+                                    "text": "确保一次只有一个进程在管程内活动的抽象数据类型"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2mgd1gsqr40",
+                    "created": 1589053241719,
+                    "text": "死锁"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2mgd2tkdx40",
+                            "created": 1589053244668,
+                            "text": "必要条件"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mgdapybgo0",
+                                    "created": 1589053261863,
+                                    "text": "互斥"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mgdksy4200",
+                                            "created": 1589053283812,
+                                            "text": "至少一个资源处于非共享模式，被申请使用后其他进程必须等待释放"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mgddg6gww0",
+                                    "created": 1589053267803,
+                                    "text": "占有并等待"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mgdy3285s0",
+                                            "created": 1589053312722,
+                                            "text": "一个进程至少占有一个资源并且等待另一个被其他进程占有的资源"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mgdgmt77c0",
+                                    "created": 1589053274734,
+                                    "text": "非抢占"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mgemdzmsg0",
+                                            "created": 1589053365625,
+                                            "text": "资源不能被抢占，只能等待被释放"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mgdijx0oo0",
+                                    "created": 1589053278913,
+                                    "text": "循环等待"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mgenpf9a00",
+                                            "created": 1589053368494,
+                                            "text": "进程之间循环等待"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mgf4q0jpk0",
+                            "created": 1589053405535,
+                            "text": "处理方法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mgf6qtze00",
+                                    "created": 1589053409938,
+                                    "text": "死锁预防"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mgf8o2mc00",
+                                    "created": 1589053414124,
+                                    "text": "死锁避免"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mgg2cbhq00",
+                                            "created": 1589053478717,
+                                            "text": "安全状态：系统能按照某个顺序为每个进程分配资源，并且能避免死锁"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c2mggfk1i7k0",
+                                            "created": 1589053507482,
+                                            "text": "银行家算法"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mgfclrcz40",
+                                    "created": 1589053422692,
+                                    "text": "忽视，认为系统中不发生死锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mgfoe1bfs0",
+                                            "created": 1589053448346,
+                                            "text": "被大多数操作系统采用"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2mggtiraq00",
+                            "created": 1589053537880,
+                            "text": "死锁检测"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2mgh0yemy80",
+                            "created": 1589053554063,
+                            "text": "死锁恢复"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2mgh2li5y80",
+                                    "created": 1589053557637,
+                                    "text": "终止所有死锁进程"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mgh8kvqsg0",
+                                    "created": 1589053570660,
+                                    "text": "一次终止一个进程直到取消死锁循环"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2mghji1kyo0",
+                                    "created": 1589053594433,
+                                    "text": "资源抢占"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c2mghm3x0ts0",
+                                            "created": 1589053600109,
+                                            "text": "选择牺牲品/回滚（控制饥饿现象）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

@@ -1,0 +1,163 @@
+{
+    "root": {
+        "data": {
+            "id": "c3mpt3oav1s0",
+            "created": 1592736048782,
+            "text": "文本分类和朴素贝叶斯分类器"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3mptflrouo0",
+                    "created": 1592736074750,
+                    "text": "文本分类"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mptvteqdk0",
+                            "created": 1592736110041,
+                            "text": "给定分类体系，将一篇文档分到其中一个或多个类别（标签）的过程"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mpu720ki80",
+                            "created": 1592736134506,
+                            "text": "给定文档d∈X和一个固定类别集合C={c1,c2,...,cj}，其中X表示文档空间"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mpv0v0yi80",
+                            "created": 1592736199386,
+                            "text": "分类方法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mpv3qxio80",
+                                    "created": 1592736205669,
+                                    "text": "手工方法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mpv5bshw80",
+                                    "created": 1592736209107,
+                                    "text": "规则方法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mpv8yt7j40",
+                                    "created": 1592736217030,
+                                    "text": "机器学习方法"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3mpvrfmkzc0",
+                                            "created": 1592736257228,
+                                            "text": "通过有监督的学习，得到分类函数γ"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3mpvzd4tg80",
+                                            "created": 1592736274492,
+                                            "text": "然后将其用于对新文档的分类"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3mpweyk08g0",
+                            "created": 1592736308439,
+                            "text": "学习"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3mpwg1nmlc0",
+                                    "created": 1592736310803,
+                                    "text": "有监督：利用一组已知类别的样本调整分类器的参数，使其达到所要求性能的过程"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3mpwx1bcg80",
+                                    "created": 1592736347788,
+                                    "text": "无监督：学习样本中不带有类别信息"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mptikqrnk0",
+                    "created": 1592736081218,
+                    "text": "朴素贝叶斯"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3mpxnvrcxk0",
+                            "created": 1592736406225,
+                            "text": "是一个概率分类器，文档d属于类别c的概率计算如下"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3mpxymt2o00",
+                            "created": 1592736429628,
+                            "text": "目标时寻找最佳的类别（具有最大后验概率的类别）"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3mptk63x3k0",
+                    "created": 1592736084687,
+                    "text": "朴素贝叶斯的生成模型"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c3mptn9uk1k0",
+                    "created": 1592736091445,
+                    "text": "特征选择"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c3mptp155c80",
+                    "created": 1592736095271,
+                    "text": "文本分类评价"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

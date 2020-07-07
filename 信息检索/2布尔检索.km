@@ -1,0 +1,396 @@
+{
+    "root": {
+        "data": {
+            "id": "c2dj5ellra00",
+            "created": 1588147067114,
+            "text": "布尔检索"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c2djcjzoets0",
+                    "created": 1588147627398,
+                    "text": "IR核心问题：确定文档和查询之间的相关度"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c2djd7b6wkw0",
+                    "created": 1588147678160,
+                    "text": "信息检索模型定义：描述信息检索中文档、查询和他们之间关系（匹配函数）的数学模型"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c2djdtrn12o0",
+                    "created": 1588147727044,
+                    "text": "布尔模型"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2djdzclj880",
+                            "created": 1588147739195,
+                            "text": "文档：关键词bag of words的集合"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dje7pr57k0",
+                            "created": 1588147757405,
+                            "text": "查询：关键词的布尔组合，使用与或非连接"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2djei6npeo0",
+                            "created": 1588147780195,
+                            "text": "相关度计算：当且仅当一个文档满足布尔查询式时，才能被检索出来"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2djewiafwg0",
+                            "created": 1588147811373,
+                            "text": "检索策略：二值匹配"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2djf5hm5nk0",
+                            "created": 1588147830923,
+                            "text": "优点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2djfav08g00",
+                                    "created": 1588147842617,
+                                    "text": "查询简单"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2djfe35mao0",
+                                    "created": 1588147849640,
+                                    "text": "可以使用复杂的布尔表达式方便的控制查询结果"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2djfqmzxdk0",
+                                    "created": 1588147876961,
+                                    "text": "经过训练的用户可以容易的写出布尔查询式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2djg1ozv0w0",
+                                    "created": 1588147901027,
+                                    "text": "可以通过拓展来包含排序功能"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2djg9g73fc0",
+                                    "created": 1588147917909,
+                                    "text": "实现方法有效"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2djf7y0rvk0",
+                            "created": 1588147836269,
+                            "text": "缺点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2djgcy11ag0",
+                                    "created": 1588147925517,
+                                    "text": "不支持部分匹配，完全匹配会导致结果太多/太少"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2djgpuz6g00",
+                                    "created": 1588147953631,
+                                    "text": "刚性，与意味着全部，或意味着任何一个"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2djgz143bs0",
+                                    "created": 1588147973593,
+                                    "text": "原则上所有匹配文档都会被返回"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2djh6h76tk0",
+                                    "created": 1588147989803,
+                                    "text": "不考虑索引词的权重"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2dji15rq3k0",
+                    "created": 1588148056592,
+                    "text": "信息检索的基本假设"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2djivaxr740",
+                            "created": 1588148122208,
+                            "text": "集合：固定数量的文档"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2djj17gs3k0",
+                            "created": 1588148135059,
+                            "text": "目标：找到与用户信息需求相关的含有信息量的文档，帮助用户完成任务"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2djk2q3qc00",
+                    "created": 1588148216727,
+                    "text": "衡量标准"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2djjnis8m80",
+                            "created": 1588148183633,
+                            "text": "查准率：返回的能满足用户信息需求的文档占总的返回文档的百分比"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2djk5nlmdc0",
+                            "created": 1588148223106,
+                            "text": "召回率：返回的能满足用户信息需求的文档占总的能满足用户信息需求的文档的百分比"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2djq2a4wsg0",
+                    "created": 1588148685947,
+                    "text": "倒排索引",
+                    "progress": 1
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2djq4rguzs0",
+                            "created": 1588148691348,
+                            "text": "定义：对每一个词项，存储所有包含这个词项的文档的一个列表。一个文档用一个序列号docID来表示"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2djr5244z40",
+                            "created": 1588148770356,
+                            "text": "倒排记录表时按docID排序的变长数组"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2dl5qigxpk0",
+                    "created": 1588152735266,
+                    "text": "建立索引的步骤"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2dl5ulh3eo0",
+                            "created": 1588152744154,
+                            "text": "词条序列Token Sequence"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dl6mkwyeg0",
+                                    "created": 1588152805070,
+                                    "text": "{term，docID}对序列"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2dl649o0480",
+                            "created": 1588152765208,
+                            "text": "排序"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dl68enx880",
+                                    "created": 1588152774218,
+                                    "text": "先按词条排序"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dl6c2kqps0",
+                                    "created": 1588152782194,
+                                    "text": "再按docID排序"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2dl78358800",
+                            "created": 1588152851885,
+                            "text": "词典和倒排表"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dl7enueg80",
+                                    "created": 1588152866197,
+                                    "text": "合并同意文档中多次出现的词"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dl7xezjso0",
+                                    "created": 1588152907021,
+                                    "text": "分割成词典和倒排表"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dl84bvjko0",
+                                    "created": 1588152922070,
+                                    "text": "记录词汇的文档频率"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2dl8vnj2400",
+                    "created": 1588152981548,
+                    "text": "查询处理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2dl908534g0",
+                            "created": 1588152991502,
+                            "text": "合并符合条件的倒排记录表（求交集）"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c2dlkscctmo0",
+                    "created": 1588153914712,
+                    "text": "形式化表示"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c2dlkwmak200",
+                            "created": 1588153924020,
+                            "text": "定义：用Qdnf表示查询Q的析取范式，Qcc表示Qdnf的任意合取分量"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dllfh6n340",
+                            "created": 1588153965070,
+                            "text": "文献Dj和查询Q的相似度为sim（Dj，Q）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c2dllv8curc0",
+                                    "created": 1588153999365,
+                                    "text": "1 建议看看ppt问问dalao"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c2dlm1o4rz40",
+                                    "created": 1588154013379,
+                                    "text": "0 otherwise"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c2dlm783d880",
+                            "created": 1588154025470,
+                            "text": "若相似度sim（Dj，Q）=1，表示文献Dj与Q相关，否则不相关"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c2dlmy14t400",
+                            "created": 1588154083822,
+                            "text": "sim（Dj，q）为该模型的匹配函数"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

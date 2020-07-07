@@ -1,0 +1,599 @@
+{
+    "root": {
+        "data": {
+            "id": "c3k9b1v51jc0",
+            "created": 1592486376615,
+            "text": "互连网络"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3oiax0nc4g0",
+                    "created": 1592917995880,
+                    "text": "基本概念"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oib1t5gk80",
+                            "created": 1592918006311,
+                            "text": "互连网络的作用"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oib5f6oy00",
+                                    "created": 1592918014173,
+                                    "text": "互联网络是一种由开关元件按照一定的拓扑结构和控制方式构成的网络，用来实现计算机系统中节点的相互连接"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oic1vjxgo0",
+                                    "created": 1592918084820,
+                                    "text": "在拓扑上，互连网络是输入节点到输出节点之间的一组互联或映射"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oici8rx880",
+                                    "created": 1592918120448,
+                                    "text": "节点：处理器、存储模块或其他设备"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oicybb45k0",
+                            "created": 1592918155430,
+                            "text": "互联函数"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oidjuyce80",
+                                    "created": 1592918202330,
+                                    "text": "将互连网络的n个输入端和n个输出端分别用整数0,1,...,n来表示，则互连网络表示相互连接的输出短号和输入短号之间的一一对应关系"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oigep6ha00",
+                                    "created": 1592918426189,
+                                    "text": "在互联函数的作用下，输入端x连接到输出端f(x)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oik4yb8cg0",
+                                    "created": 1592918718430,
+                                    "text": "设n=long2N，则可以用n位二进制来表示N个输入端和输出端的二进制地址，互联函数表示为f(xn-1xn-2...x0)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oih40joi80",
+                                    "created": 1592918481296,
+                                    "text": "恒等函数，相同编号的输入输出端一一对应互连所实现的置换"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oiiweh4dc0",
+                                            "created": 1592918621453,
+                                            "text": "I(xn-1,xn-2...x0)=xn-1xn-2...x0"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oiib6g3sw0",
+                                    "created": 1592918575255,
+                                    "text": "交换函数：实现二进制地址编码中第0位互反的输入端与输出端之间的连接"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oiirxrc6w0",
+                                            "created": 1592918611735,
+                                            "text": "Ck(xn-1xn-2...x0)=xn-1xn-2...xk取反...x0)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oil2segc00",
+                                    "created": 1592918792084,
+                                    "text": "洗牌函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oildlfi5s0",
+                                    "created": 1592918815607,
+                                    "text": "蝶式互联函数"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oiqdcbisw0",
+                                            "created": 1592919206877,
+                                            "text": "蝶式变换和交换变换的多级组合可作为构成方体多级网络的基础"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oiq7fqxtc0",
+                                    "created": 1592919194023,
+                                    "text": "反位序函数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oiqvunrx40",
+                            "created": 1592919247168,
+                            "text": "互连网络的特性",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oiqzsam4o0",
+                                    "created": 1592919255732,
+                                    "text": "网络规模"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oir12ww5c0",
+                                    "created": 1592919258551,
+                                    "text": "节点度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oir1w0qps0",
+                                    "created": 1592919260311,
+                                    "text": "距离"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oir6zeupk0",
+                                    "created": 1592919271400,
+                                    "text": "网络直径"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oir8sfcdc0",
+                                    "created": 1592919275331,
+                                    "text": "等分宽度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oira5umq80",
+                                    "created": 1592919278319,
+                                    "text": "节点之间的线长"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oircnpxmo0",
+                                    "created": 1592919283753,
+                                    "text": "对称性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oiro5lj6o0",
+                            "created": 1592919308779,
+                            "text": "互连网络的性能参数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oirub9elk0",
+                            "created": 1592919322182,
+                            "text": "消息总时延=发送方开销+飞行时间+消息长度/频宽+接收方开销"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oitvyew7s0",
+                    "created": 1592919482487,
+                    "text": "互连网络的种类"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oj0kqyssw0",
+                            "created": 1592920006641,
+                            "text": "静态互连网络"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oj0pe4gx40",
+                                    "created": 1592920016749,
+                                    "text": "节点之间有固定通路，且在运行中不能改变的网络"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj0n7hwu00",
+                            "created": 1592920011995,
+                            "text": "动态互连网络"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oj0ww604w0",
+                                    "created": 1592920033077,
+                                    "text": "由交换开关构成，可按运行程序的要求动态的改变连接状态的网络"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oiu5dx2so0",
+                    "created": 1592919503016,
+                    "text": "静态互连网络"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oj1grsp5c0",
+                            "created": 1592920076350,
+                            "text": "不能实现任意节点到节点之间的互连"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj1srh8co0",
+                            "created": 1592920102451,
+                            "text": "线性阵列"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj1w2fyxs0",
+                            "created": 1592920109644,
+                            "text": "环和带弦环"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj2it2g2o0",
+                            "created": 1592920159143,
+                            "text": "循环移数网络"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oj2qg03200",
+                                    "created": 1592920175767,
+                                    "text": "再换上每个节点到所有与其距离为2的整数幂的节点上都增加一条附加链"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj3fugl280",
+                            "created": 1592920231061,
+                            "text": "树形和星形"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj46wxmeo0",
+                            "created": 1592920289984,
+                            "text": "胖形树"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj513b7gw0",
+                            "created": 1592920355673,
+                            "text": "网格形和环网形"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj59qwdgo0",
+                            "created": 1592920374514,
+                            "text": "超立方体"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj5itj0c00",
+                            "created": 1592920394264,
+                            "text": "带环立方体k-CCC"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj5nzkg7c0",
+                            "created": 1592920405513,
+                            "text": "k元n-立方体网络"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oiu7dqcg00",
+                    "created": 1592919507358,
+                    "text": "动态互连网络"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3oj5z4m1i80",
+                            "created": 1592920429762,
+                            "text": "总线网络"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oj61b241c0",
+                                    "created": 1592920434506,
+                                    "text": "由一组导线和插座构成，常用于实现处理机模块、存储模块和外围设备之间的互连"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3oj6fq9g2w0",
+                                    "created": 1592920465900,
+                                    "text": "结构简单，实现成本低，带宽较窄"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oj6nk8vew0",
+                                            "created": 1592920482950,
+                                            "text": "可以采用多总线或多层次总线加大带宽"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj6yg009s0",
+                            "created": 1592920506638,
+                            "text": "交叉开关网络"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oj724w3140",
+                                    "created": 1592920514674,
+                                    "text": "单级开关网络"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oj79uuqzk0",
+                                            "created": 1592920531481,
+                                            "text": "交叉点开关能在对偶（源，目的）之间形成动态连接，同时实现多个对偶之间的无阻塞连接"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oj7pwl10g0",
+                                            "created": 1592920566414,
+                                            "text": "带宽和互联性能最好，但是需要的硬件数量巨大"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3oj93xsa340",
+                            "created": 1592920675326,
+                            "text": "多级互连网络"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3oj9h23i3k0",
+                                    "created": 1592920703885,
+                                    "text": "采用aXb开关模块和级间连接构成的通用多级互连网络结构"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3oj9s50sq80",
+                                            "created": 1592920728006,
+                                            "text": "每一级都用了多个aXb开关"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3oj9ycy5pk0",
+                                            "created": 1592920741546,
+                                            "text": "相邻各级开关之间都有固定的级间连接"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ojb6jp3bs0",
+                            "created": 1592920837733,
+                            "text": "控制方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ojb8xu2u00",
+                                    "created": 1592920842941,
+                                    "text": "级控制"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ojbmf060o0",
+                                            "created": 1592920872277,
+                                            "text": "每一级的所有开关只用一个控制信号控制"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ojbagtl2g0",
+                                    "created": 1592920846266,
+                                    "text": "单元控制"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ojbsnv7280",
+                                            "created": 1592920885874,
+                                            "text": "每一个开关都有一个独立的控制信号，可以各自处于不同的状态"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3ojbc3tduo0",
+                                    "created": 1592920849833,
+                                    "text": "部分级控制"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3ojc08ck9c0",
+                                            "created": 1592920902350,
+                                            "text": "第i级的开关分别用i+1个信号控制，0<=i<=n-1，n为级数"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3ojcl6xdwo0",
+                            "created": 1592920947976,
+                            "text": "多级立方体网络"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3ok4i92ba00",
+                            "created": 1592923135772,
+                            "text": "Omega网络（多级混洗交换网络）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3ok4pd5fnc0",
+                                    "created": 1592923151256,
+                                    "text": "级间互连采用均匀洗牌连接方式"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3oiu9o18p40",
+                    "created": 1592919512335,
+                    "text": "阵列处理机"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c3oiubteijk0",
+                    "created": 1592919517013,
+                    "text": "脉动处理机"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c3oiue4drc80",
+                    "created": 1592919522030,
+                    "text": "消息传递机制"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

@@ -1,0 +1,149 @@
+{
+    "root": {
+        "data": {
+            "id": "c3wn73zpdtc0",
+            "created": 1593744282807,
+            "text": "数据结构"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3wn79fke280",
+                    "created": 1593744294650,
+                    "text": "树"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3wn7agu2x40",
+                            "created": 1593744296903,
+                            "text": "二叉树"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3wnbrj2mjs0",
+                                    "created": 1593744647500,
+                                    "text": "二叉树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wnbujw5k00",
+                                            "created": 1593744654080,
+                                            "text": "每个节点最多有两棵子树的树"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wn8jo3z1s0",
+                                    "created": 1593744395298,
+                                    "text": "满二叉树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wn8uimbk80",
+                                            "created": 1593744418911,
+                                            "text": "数重只存在度为0的节点和度为2的节点，且度为0的节点在同一层上"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wn8mfavj40",
+                                    "created": 1593744401296,
+                                    "text": "完全二叉树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wn9b41umw0",
+                                            "created": 1593744455035,
+                                            "text": "对一颗具有n个结点的二叉树按层编号，如果编号为i(1<=i<=n)的结点与同样深度的满二叉树中编号为i的结点在二叉树中位置完全相同"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wn7bhydl40",
+                                    "created": 1593744299148,
+                                    "text": "森林转化成二叉树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wn7hkwvyw0",
+                                            "created": 1593744312387,
+                                            "text": "将森林中的每棵树都转化成二叉树（每个结点的右子树为兄弟节点，左子树为子节点）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wn7ytpn2o0",
+                                            "created": 1593744349924,
+                                            "text": "将各二叉树的根节点视作兄弟节点合并成一棵新的二叉树"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wnfwfmft40",
+                                    "created": 1593744971632,
+                                    "text": "二叉树遍历"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wnfycxu280",
+                                            "created": 1593744975824,
+                                            "text": "前序遍历：节点-左子树-右子树"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wng5gko8g0",
+                                            "created": 1593744991281,
+                                            "text": "中序遍历：左子树-节点-右子树"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wng9y22a00",
+                                            "created": 1593745001045,
+                                            "text": "后序遍历-左子树-右子树-节点"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wnghoq6n40",
+                                            "created": 1593745017895,
+                                            "text": "层次遍历"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

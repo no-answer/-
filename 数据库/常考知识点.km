@@ -1,0 +1,862 @@
+{
+    "root": {
+        "data": {
+            "id": "c3vxuh9zm3k0",
+            "created": 1593672765245,
+            "text": "常考知识点"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c3vxum875ls0",
+                    "created": 1593672776020,
+                    "text": "Mysql"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3vxunmavkg0",
+                            "created": 1593672779050,
+                            "text": "索引"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3vxupbmz0g0",
+                                    "created": 1593672782759,
+                                    "text": "B树/B+树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3vzuyq7beo0",
+                                            "created": 1593678445450,
+                                            "text": "B树"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3vzv24o00o0",
+                                                    "created": 1593678452855,
+                                                    "text": "多路平衡查找树"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3vzvimp4tc0",
+                                                    "created": 1593678488774,
+                                                    "text": "定义"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3vzvjjpyx40",
+                                                            "created": 1593678490771,
+                                                            "text": "每个节点最多有m-1个关键字（m为B树阶数）"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3vzvpizzt40",
+                                                            "created": 1593678503788,
+                                                            "text": "根节点至少1个关键字"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3vzvud9z740",
+                                                            "created": 1593678514326,
+                                                            "text": "非根节点至少有m/2个关键字"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3vzw4aygls0",
+                                                            "created": 1593678535953,
+                                                            "text": "每个节点中的关键字按升序排列，左子树关键字<关键字<右子树关键字"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3vzwxl97e00",
+                                                            "created": 1593678599703,
+                                                            "text": "所有叶子节点在同一层"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3vzx33xths0",
+                                                            "created": 1593678611716,
+                                                            "text": "每个节点都存有索引和数据"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3vzyo6uao00",
+                                                    "created": 1593678735968,
+                                                    "text": "插入：判断当前结点key的个数是否小于等于m-1，如果满足则直接插入，若不满足，用节点中间的key将节点分为左右两部分，中间节点放到父节点中"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3vzv07egu80",
+                                            "created": 1593678448667,
+                                            "text": "B+树"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3w003417i80",
+                                                    "created": 1593678846815,
+                                                    "text": "定义"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c3w004q27wo0",
+                                                            "created": 1593678850323,
+                                                            "text": "相同点"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c3w008jquh40",
+                                                                    "created": 1593678858648,
+                                                                    "text": "根节点至少一个元素"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c3w00avlle80",
+                                                                    "created": 1593678863719,
+                                                                    "text": "非根节点至少有m/2个关键字，至多有m-1个关键字"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c3w006zxf4o0",
+                                                            "created": 1593678855273,
+                                                            "text": "不同点"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c3w00r3ooqo0",
+                                                                    "created": 1593678899036,
+                                                                    "text": "B+树内部节点（非叶子节点）不存储数据，只存储索引，数据都存在叶子节点"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c3w014przns0",
+                                                                    "created": 1593678928670,
+                                                                    "text": "内部节点中的key升序排列，左子树中的key<=节点key<右子树key"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c3w01txcna80",
+                                                                    "created": 1593678983548,
+                                                                    "text": "每个叶子节点都有相邻叶子节点的指针，叶子节点本身按照关键字大小升序链接"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c3w027twpls0",
+                                                                    "created": 1593679013815,
+                                                                    "text": "父节点存有右子树第一个元素的索引"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3w0498az000",
+                                                    "created": 1593679173590,
+                                                    "text": "插入：当节点元素数量大于m-1的时候，按中间元素分裂成左右两部分，中间元素分裂到父节点当做索引存储，但是，本身中间元素还是分裂右边这一部分的。"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3w06scajs00",
+                                            "created": 1593679371918,
+                                            "text": "B+树的优势"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3w06w33k1k0",
+                                                    "created": 1593679380070,
+                                                    "text": "单一节点存储的元素更多，IO次数更少，更适合作为数据库的底层数据结构"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3w078vfl680",
+                                                    "created": 1593679407904,
+                                                    "text": "所有查询都需要查找到叶子节点，查询性能稳定"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3w07goj01k0",
+                                                    "created": 1593679424901,
+                                                    "text": "所有叶子节点形成了一个有序链表，便于查找"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxuuiy86o0",
+                                    "created": 1593672794085,
+                                    "text": "索引失效条件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wu8vs57q00",
+                                    "created": 1593764169433,
+                                    "text": "聚集/非聚集索引"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxuxns4rs0",
+                            "created": 1593672800907,
+                            "text": "SQL语法"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxv1m5l080",
+                            "created": 1593672809516,
+                            "text": "关系数据库三范式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxv75og880",
+                            "created": 1593672821581,
+                            "text": "存储引擎"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxvbdh6og0",
+                            "created": 1593672830759,
+                            "text": "锁"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3vxvehs1aw0",
+                                    "created": 1593672837550,
+                                    "text": "行锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmy1yeshk0",
+                                            "created": 1593743573097,
+                                            "text": "锁定指定记录，其他进程可以对表中其他记录进行操作"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxvheadcw0",
+                                    "created": 1593672843869,
+                                    "text": "表锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmww0rkf40",
+                                            "created": 1593743481815,
+                                            "text": "表共享读锁"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3wmxnthf4w0",
+                                                    "created": 1593743542324,
+                                                    "text": "锁定表，其他进程可以读不可以写"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wmwyl6cqw0",
+                                            "created": 1593743487403,
+                                            "text": "表独占写锁"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3wmxubcbzc0",
+                                                    "created": 1593743556465,
+                                                    "text": "锁定表，其他进程不能读也不能写"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxvj7yx7c0",
+                                    "created": 1593672847840,
+                                    "text": "页级锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmyfwcb5s0",
+                                            "created": 1593743603447,
+                                            "text": "行锁和表锁的折中，一次锁定相邻的一组记录"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxvmpapag0",
+                                    "created": 1593672855418,
+                                    "text": "意向锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmzbl9jn40",
+                                            "created": 1593743672434,
+                                            "text": "在事务A申请行锁（写锁）之后，数据库会自动给事务A申请表的意向排他锁，此时事务B无法申请表的写锁，被阻塞（这使得行锁和表锁可以共存）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wn0e7sewo0",
+                                            "created": 1593743756514,
+                                            "text": "当一个事务在需要获取资源的锁定时，如果该资源已经被排他锁占用，则数据库会自动给该事务申请一个该表的意向锁。如果自己需要一个共享锁定，就申请一个意向共享锁。如果需要的是某行（或者某些行）的排他锁定，则申请一个意向排他锁。"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wn0yyffyg0",
+                                            "created": 1593743801661,
+                                            "text": "意向锁是表锁"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxvo5zyhs0",
+                                    "created": 1593672858605,
+                                    "text": "读锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmu7vqtu80",
+                                            "created": 1593743272540,
+                                            "text": "共享锁（S锁），事务T对数据对象A加上S锁之后，事务T可以读A但是不能修改A，其他事务可以对A再加上S锁，而不能加X锁，直到T释放A上的S锁"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxvpeu0b40",
+                                    "created": 1593672861316,
+                                    "text": "写锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmv3x31go0",
+                                            "created": 1593743342278,
+                                            "text": "排他锁（X锁），事务T对数据对象A加上X锁，事务T可以读A也可以修改A，其他事务不能对A加任何锁，直到T释放A上的锁"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxvqb56f40",
+                                    "created": 1593672863270,
+                                    "text": "悲观锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmazi9t140",
+                                            "created": 1593741765392,
+                                            "text": "假定每次获取数据都认为会被其他线程修改，每次进行数据操作（无论读写）都会加锁"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wmbiux9ew0",
+                                            "created": 1593741807516,
+                                            "text": "实现：synchronized"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wmcx4hsbk0",
+                                            "created": 1593741916934,
+                                            "text": "问题：多线程竞争，引起性能问题，一个线程获取锁会导致其他线程被阻塞"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxvrviwrs0",
+                                    "created": 1593672866679,
+                                    "text": "乐观锁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmc4jdgfc0",
+                                            "created": 1593741854707,
+                                            "text": "假定数据操作一般不冲突，读取时不加锁，在变更数据时才检测是否冲突，发生冲突则返回错误信息，由用户类决定如何做"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wmcu6ihi80",
+                                            "created": 1593741910526,
+                                            "text": "实现：CAS"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3wmegfsr0w0",
+                                                    "created": 1593742037340,
+                                                    "text": "存在ABA问题"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3wmeinzv2g0",
+                                                    "created": 1593742042190,
+                                                    "text": "循环时间长开销大"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c3wmeynjp2w0",
+                                                    "created": 1593742076991,
+                                                    "text": "只能保证一个共享变量的原子操作"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxvues2e80",
+                            "created": 1593672872197,
+                            "text": "隔离级别"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3vxvyrxhco0",
+                                    "created": 1593672881699,
+                                    "text": "读取未提交内容（脏读）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmgw0lvts0",
+                                            "created": 1593742227979,
+                                            "text": "所有事物都可以读取其他未提交事务的执行结果"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxw1gtn080",
+                                    "created": 1593672887558,
+                                    "text": "读取提交内容"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmheeymzk0",
+                                            "created": 1593742268029,
+                                            "text": "一个事务只能看见已经提交事务所做的改变（大多数数据库的默认隔离级别）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3wmj385rhc0",
+                                                    "created": 1593742400401,
+                                                    "text": "不可重复读"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wml8hi7y80",
+                                    "created": 1593742568578,
+                                    "text": "可重读"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmlagjbwg0",
+                                            "created": 1593742572873,
+                                            "text": "确保同一事务的多个实例在并发读取数据时，会看到同样的数据行"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3wmlrvvwm80",
+                                                    "created": 1593742610807,
+                                                    "text": "Mysql的默认隔离级别"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3vxw3egmq00",
+                                            "created": 1593672891769,
+                                            "text": "幻读"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3wmhqs79hs0",
+                                                    "created": 1593742294951,
+                                                    "text": "当用户读取某一范围的数据行时，另一个事务又在该范围插入了新行，用户再次读取时，会发现新的幻影行"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wmly5gi940",
+                                    "created": 1593742624446,
+                                    "text": "可串行化"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmm3vgcdk0",
+                                            "created": 1593742636902,
+                                            "text": "最高的隔离级别，通过强制事务排序，使之不可能相互冲突，从而解决幻读问题"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxw5iy5fc0",
+                            "created": 1593672896393,
+                            "text": "事物的ACID理论"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3wmf8l40z40",
+                                    "created": 1593742098612,
+                                    "text": "原子性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmffvn4ps0",
+                                            "created": 1593742114486,
+                                            "text": "事务是不可分割的，要么做完，要么不做"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wmf9wx7mw0",
+                                    "created": 1593742101502,
+                                    "text": "一致性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmfomrt400",
+                                            "created": 1593742133540,
+                                            "text": "事务执行的结果必须是使数据库从一个一致性状态变成另一个一致性状态"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wmfb9jnc00",
+                                    "created": 1593742104443,
+                                    "text": "隔离性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmg7hhcmo0",
+                                            "created": 1593742174579,
+                                            "text": "事务的执行不能被其他事务干扰"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wmfcermxc0",
+                                    "created": 1593742106935,
+                                    "text": "持续性"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wmgdjxwbc0",
+                                            "created": 1593742187789,
+                                            "text": "事务一旦提交，对数据库中数据的改变应该是永久性的"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxw9zg2mo0",
+                            "created": 1593672906098,
+                            "text": "查询优化"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3vxwbsy4mo0",
+                                    "created": 1593672910059,
+                                    "text": "explain"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxwdpvoag0",
+                                    "created": 1593672914227,
+                                    "text": "慢查询"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxwepn0v40",
+                                    "created": 1593672916389,
+                                    "text": "show profile"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxwi72d9s0",
+                            "created": 1593672923973,
+                            "text": "分布式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3vxwk11f940",
+                                    "created": 1593672927962,
+                                    "text": "分库分表"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxwngn3p40",
+                                    "created": 1593672935436,
+                                    "text": "读写分离"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c3vxwr66v8w0",
+                    "created": 1593672943511,
+                    "text": "Redis"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c3vxwthoork0",
+                            "created": 1593672948560,
+                            "text": "特点"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxwwu6sbk0",
+                            "created": 1593672955846,
+                            "text": "底层数据结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3vxx11wr3c0",
+                                    "created": 1593672965020,
+                                    "text": "跳表"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxx4g49u80",
+                                    "created": 1593672972410,
+                                    "text": "字典"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxx6wf3fk0",
+                            "created": 1593672977749,
+                            "text": "数据淘汰策略"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxx9i7hzs0",
+                            "created": 1593672983420,
+                            "text": "持久化方式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3vxxlkbeew0",
+                                    "created": 1593673009669,
+                                    "text": "AOF"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c3vxxipongw0",
+                                    "created": 1593673003463,
+                                    "text": "RDB"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxxbtwqyw0",
+                            "created": 1593672988481,
+                            "text": "哨兵模式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c3vxxgmqmoo0",
+                            "created": 1593672998931,
+                            "text": "集群同步方式"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}
