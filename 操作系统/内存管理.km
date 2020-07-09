@@ -15,65 +15,262 @@
                 "children": [
                     {
                         "data": {
-                            "id": "c3wnm859vls0",
-                            "created": 1593745467313,
-                            "text": "基本硬件"
+                            "id": "c40h2bz3doo0",
+                            "created": 1594133221530,
+                            "text": "背景"
                         },
                         "children": [
                             {
                                 "data": {
-                                    "id": "c3wnmbqmbow0",
-                                    "created": 1593745475134,
-                                    "text": "CPU能访问的只有内存和处理器内的寄存器"
+                                    "id": "c3wnm859vls0",
+                                    "created": 1593745467313,
+                                    "text": "基本硬件"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wnmbqmbow0",
+                                            "created": 1593745475134,
+                                            "text": "CPU能访问的只有内存和处理器内的寄存器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wnmj6y5j40",
+                                            "created": 1593745491359,
+                                            "text": "CPU和内存之间还有Cache"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wnmrvevcw0",
+                                            "created": 1593745510252,
+                                            "text": "基地址寄存器还有最小的合法物理地址，界限地址寄存器决定了范围i的大小"
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             },
                             {
                                 "data": {
-                                    "id": "c3wnmj6y5j40",
-                                    "created": 1593745491359,
-                                    "text": "CPU和内存之间还有Cache"
+                                    "id": "c3wo532llrc0",
+                                    "created": 1593746945186,
+                                    "text": "将指令与数据绑定到内存地址"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c3wo5bcwv3k0",
+                                            "created": 1593746963224,
+                                            "text": "编译时"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c40doqh6uug0",
+                                                    "created": 1594123692671,
+                                                    "text": "编译时就知道进程在内存中的驻留地址，可以直接生成绝对代码"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wo5cvtl940",
+                                            "created": 1593746966544,
+                                            "text": "加载时"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c40dp0pojhc0",
+                                                    "created": 1594123714953,
+                                                    "text": "编译时不知道进程驻留地址，则需生成可重定位代码"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c3wo5eyuonk0",
+                                            "created": 1593746971081,
+                                            "text": "执行时"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c40gzqdbgq80",
+                                                    "created": 1594133017773,
+                                                    "text": "进程在执行时可以从一个内存段移到另一个内存段，则只能在执行时绑定"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c40h0799szc0",
+                                                            "created": 1594133054534,
+                                                            "text": "需要特定硬件，大多数计算机操作系统采用这种方法"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "data": {
-                                    "id": "c3wnmrvevcw0",
-                                    "created": 1593745510252,
-                                    "text": "基地址寄存器还有最小的合法物理地址，界限地址寄存器决定了范围i的大小"
+                                    "id": "c40h0jnt2ag0",
+                                    "created": 1594133081534,
+                                    "text": "地址空间"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c40h0nfqqd40",
+                                            "created": 1594133089753,
+                                            "text": "逻辑地址空间"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c40h0qtzgg00",
+                                                    "created": 1594133097145,
+                                                    "text": "程序生成的所有逻辑地址的集合"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c40h1gw7iyo0",
+                                                            "created": 1594133153876,
+                                                            "text": "用户只生成逻辑地址，并且认为进程的地址空间为0到max"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c40h0oyn6280",
+                                            "created": 1594133093073,
+                                            "text": "物理地址空间"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c40h0zu45rs0",
+                                                    "created": 1594133116744,
+                                                    "text": "与逻辑地址相对应的所有物理地址的集合"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c40h2rvrdy00",
+                                            "created": 1594133256157,
+                                            "text": "由内存管理单元MMU进行逻辑地址到物理地址的映射（重定位寄存器（基地址寄存器的推广）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c40h3n61els0",
+                                    "created": 1594133324259,
+                                    "text": "动态加载/链接"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c40h3ribr3s0",
+                                            "created": 1594133333709,
+                                            "text": "子程序只有在调用的时候才被加载到内存中"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c40hd9ejlw80",
+                                            "created": 1594134077940,
+                                            "text": "静态链接"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c40hdo4v6u00",
+                                                    "created": 1594134110007,
+                                                    "text": "由加载程序将库合并到二进制程序镜像中"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c40hdau07u80",
+                                            "created": 1594134081052,
+                                            "text": "动态链接"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c40heck7xow0",
+                                                    "created": 1594134163178,
+                                                    "text": "将链接延迟到运行时，避免了磁盘空间和内存空间的浪费"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c40hj7uzzsw0",
+                                                    "created": 1594134544766,
+                                                    "text": "二进制镜像中对每一个库程序的引用都有一个存根，执行时先检查所需子程序是否已在内存中，不在则装入，存根会使用子程序地址来替换自己并执行子程序"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c40hjuakysw0",
+                                                    "created": 1594134593598,
+                                                    "text": "共享库：动态连接可以直接使用新版本库替代旧版本库而无需重新链接，可以使用版本号区分链接的库版本"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
                         "data": {
-                            "id": "c3wo532llrc0",
-                            "created": 1593746945186,
-                            "text": "将指令与数据绑定到内存地址"
+                            "id": "c40h2jvxz8o0",
+                            "created": 1594133238754,
+                            "text": "交换"
                         },
                         "children": [
                             {
                                 "data": {
-                                    "id": "c3wo5bcwv3k0",
-                                    "created": 1593746963224,
-                                    "text": "编译时"
+                                    "id": "c40i7ypjs5k0",
+                                    "created": 1594136483950,
+                                    "text": "进程可以暂时从内存中交换到备份存储上，当需要执行的时候再调回内存中"
                                 },
                                 "children": []
                             },
                             {
                                 "data": {
-                                    "id": "c3wo5cvtl940",
-                                    "created": 1593746966544,
-                                    "text": "加载时"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "c3wo5eyuonk0",
-                                    "created": 1593746971081,
-                                    "text": "执行时"
+                                    "id": "c40ij3qe9nc0",
+                                    "created": 1594137356891,
+                                    "text": "内存管理器"
                                 },
                                 "children": []
                             }

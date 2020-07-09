@@ -1,0 +1,2559 @@
+{
+    "root": {
+        "data": {
+            "id": "c40zi73efrc0",
+            "created": 1594185244712,
+            "text": "数据类型和STL"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c4131l2usjk0",
+                    "created": 1594195227403,
+                    "text": "数据类型",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c40zj0d5icg0",
+                            "created": 1594185308428,
+                            "text": "基本数据类型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c412tupkzxc0",
+                                    "created": 1594194621455,
+                                    "text": "布尔型bool"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c412z4z0fe00",
+                                            "created": 1594195035613,
+                                            "text": "1个字节"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c412ty9cpc80",
+                                    "created": 1594194629180,
+                                    "text": "字符型char"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c412yki6em80",
+                                            "created": 1594194991060,
+                                            "text": "1个字节"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c40zj361jp40",
+                                    "created": 1594185314529,
+                                    "text": "整型int"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c412yo3gngg0",
+                                            "created": 1594194998877,
+                                            "text": "4个字节"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c412tzpus340",
+                                    "created": 1594194632355,
+                                    "text": "浮点型float"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c412yqob0a00",
+                                            "created": 1594195004491,
+                                            "text": "4个字节"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c412wqxg5g00",
+                                    "created": 1594194848316,
+                                    "text": "双浮点型double"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c412yuszxxs0",
+                                            "created": 1594195013482,
+                                            "text": "8个字节"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c412ucow2j40",
+                                    "created": 1594194660595,
+                                    "text": "无类型void"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c412upvvaow0",
+                                    "created": 1594194689315,
+                                    "text": "宽字符型wchar_t"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c412yyblw2o0",
+                                            "created": 1594195021138,
+                                            "text": "2或4个字节"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c412y4lrvmo0",
+                                    "created": 1594194956449,
+                                    "text": "类型修饰符"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c412y6ecwds0",
+                                            "created": 1594194960354,
+                                            "text": "signed"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c412y95s7w80",
+                                            "created": 1594194966366,
+                                            "text": "unsigned"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c412yceez9c0",
+                                            "created": 1594194973418,
+                                            "text": "short"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c412znfao340",
+                                                    "created": 1594195075780,
+                                                    "text": "容量减半"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c412ydm21wo0",
+                                            "created": 1594194976057,
+                                            "text": "long"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c412zekdv540",
+                                                    "created": 1594195056497,
+                                                    "text": "容量加倍"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4131nybo540",
+                            "created": 1594195233659,
+                            "text": "结构体struct"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c413250sw0w0",
+                                    "created": 1594195270814,
+                                    "text": "struct typeName {;};"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c414g08927s0",
+                                    "created": 1594199178589,
+                                    "text": "字节对齐：C++4字节对齐"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c414zw0bl6g0",
+                            "created": 1594200736685,
+                            "text": "typedef为现有类型创建别名"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c41503sn8io0",
+                                    "created": 1594200753636,
+                                    "text": "typedef int INT"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c415gyh6hw00",
+                    "created": 1594202074249,
+                    "text": "类class",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c415h64lks80",
+                            "created": 1594202090903,
+                            "text": "访问修饰符"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c415hguxkfs0",
+                                    "created": 1594202114263,
+                                    "text": "public"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c415hzuopjc0",
+                                            "created": 1594202155607,
+                                            "text": "可直接访问"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c415hiwphz40",
+                                    "created": 1594202118724,
+                                    "text": "protected"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c415idf8ins0",
+                                            "created": 1594202185148,
+                                            "text": "可以被基类和派生类访问"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c415hlyzzts0",
+                                    "created": 1594202125393,
+                                    "text": "private"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c415ilyb2c00",
+                                            "created": 1594202203715,
+                                            "text": "只能被自己访问"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c415ivul4f40",
+                            "created": 1594202225258,
+                            "text": "继承"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c415ix29kfk0",
+                                    "created": 1594202227899,
+                                    "text": "public"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c415jxh5w680",
+                                            "created": 1594202307164,
+                                            "text": "基类的公有/保护/私有成员是派生类的共有/保护/私有成员"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c415j3ngm4w0",
+                                    "created": 1594202242241,
+                                    "text": "protected"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c415jmhvcm80",
+                                            "created": 1594202283262,
+                                            "text": "基类的公有和保护成员称为派生类的保护成员"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c415j62frfk0",
+                                    "created": 1594202247500,
+                                    "text": "private"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c415j8t4nsg0",
+                                            "created": 1594202253468,
+                                            "text": "基类的公有和保护成员会成为派生类的私有成员"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c415mggj0bs0",
+                            "created": 1594202505213,
+                            "text": "重载"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c415mhus0pk0",
+                                    "created": 1594202508251,
+                                    "text": "函数重载：同名函数形参（个数、类型、顺序）必须不一样"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c415mwz78f40",
+                                    "created": 1594202541170,
+                                    "text": "运算符重载：Box operator+(const Box& a){}"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c415peb484o0",
+                                            "created": 1594202735624,
+                                            "text": "重载为非成员函数（不使用this指针）的时候需要传递更多参数：Box operator+(const Box& a, const Box& b){}",
+                                            "layout_right_offset": {
+                                                "x": 38,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c415qaxx4bc0",
+                            "created": 1594202806660,
+                            "text": "多态"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c415qfnfabs0",
+                                    "created": 1594202816910,
+                                    "text": "调用成员函数时，会根据调用函数的对象类型来执行不同的函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c416opdr5ww0",
+                                    "created": 1594205502474,
+                                    "text": "需要在基类中使用关键字virtual声明虚函数"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c416pnylv2w0",
+                                            "created": 1594205577746,
+                                            "text": "派生类中重新定义虚函数时，会告诉编译器不要静态链接到该函数，而是在执行时进行动态链接"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c416qi2o1ps0",
+                                            "created": 1594205643295,
+                                            "text": "纯虚函数：virtual int f() = 0"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c416qwhl6g00",
+                                                    "created": 1594205674672,
+                                                    "text": "=0告诉编译器，函数没有主体（定义）"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c416susat5s0",
+                            "created": 1594205827694,
+                            "text": "抽象"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c416sx7hlm00",
+                                    "created": 1594205832966,
+                                    "text": "只向外界表现必要的信息（接口）而不呈现底层细节，是以重依赖于接口和实现分离的编程技术"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c416xnj9ba00",
+                                    "created": 1594206203731,
+                                    "text": "优点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c416xphidwg0",
+                                            "created": 1594206207979,
+                                            "text": "类的内部受到保护，数据抽象视图中只展示公有成员"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4173toceaw0",
+                                            "created": 1594206687284,
+                                            "text": "在对类进行修改时，不涉及公有成员的修改只影响类的内部实现，不会影响外部访问"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c41794id8ww0",
+                                    "created": 1594207102688,
+                                    "text": "抽象类"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4179e6a5cw0",
+                                            "created": 1594207123725,
+                                            "text": "至少包含一个纯虚函数的类，不能用于实例化对象，只能作为接口使用"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4179l1or800",
+                                            "created": 1594207138685,
+                                            "text": "可以为其他类提供一个用于继承的适当基类，为派生类提供适当的、通用的、标准化的接口"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c41798b6u0g0",
+                                    "created": 1594207110961,
+                                    "text": "具体类"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4179a6xntk0",
+                                            "created": 1594207115058,
+                                            "text": "可以用于实例化对象的类"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4174nbm6hc0",
+                            "created": 1594206751818,
+                            "text": "封装"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4176btd8xs0",
+                                    "created": 1594206883498,
+                                    "text": "将数据和操作数据的函数绑定在一起，避免受到外界的干扰和误用，从而确保安全"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c41771j82fc0",
+                                    "created": 1594206939481,
+                                    "text": "把一个类定义为另一个类的友元类，会暴露实现细节，从而降低封装性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c415eo363ds0",
+                    "created": 1594201894906,
+                    "text": "STL"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c417plggx5s0",
+                            "created": 1594208393405,
+                            "text": "容器",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4189kzejdk0",
+                                    "created": 1594209959657,
+                                    "text": "定义：封装数据结构的模板类"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c418jp7h7y00",
+                                    "created": 1594210752494,
+                                    "text": "序列容器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c418jwnzxkg0",
+                                            "created": 1594210768730,
+                                            "text": "元素在容器中的位置与容器的值无关"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41a1k491mg0",
+                                            "created": 1594214973080,
+                                            "text": "array<T,N>数组容器",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41a36nolvk0",
+                                                    "created": 1594215100508,
+                                                    "text": "表示可以存储N个T类型的元素，定长，不能增删元素",
+                                                    "image": "",
+                                                    "imageTitle": "",
+                                                    "imageSize": ""
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41aqj86v1s0",
+                                                    "created": 1594216930245,
+                                                    "text": "常用成员函数汇总",
+                                                    "expandState": "expand",
+                                                    "priority": 1
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41em8y4pd40",
+                                                            "created": 1594227878852,
+                                                            "text": " ",
+                                                            "image": "",
+                                                            "imageTitle": "",
+                                                            "imageSize": ""
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41entkbeew0",
+                                                    "created": 1594228002093,
+                                                    "text": "支持迭代器的成员函数",
+                                                    "expandState": "expand",
+                                                    "priority": 1
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41enx565000",
+                                                            "created": 1594228009885,
+                                                            "text": "",
+                                                            "image": "",
+                                                            "imageTitle": "",
+                                                            "imageSize": ""
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41eonxhde00",
+                                                    "created": 1594228068193,
+                                                    "text": "访问元素的方式",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41eorzdxmw0",
+                                                            "created": 1594228077015,
+                                                            "text": "array[index]"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41ep55kg6o0",
+                                                                    "created": 1594228105687,
+                                                                    "text": "有可能越界"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41t5ghbtpk0",
+                                                                            "created": 1594268879708,
+                                                                            "text": "为了保证性能，不检查是否越界"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41eow4jhao0",
+                                                            "created": 1594228086034,
+                                                            "text": "array.at(index)"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41ep8fe0o00",
+                                                                    "created": 1594228112811,
+                                                                    "text": "可以有效避免越界"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41epjw7tdk0",
+                                                            "created": 1594228137773,
+                                                            "text": "array.get(n)"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41epoqvmmg0",
+                                                                    "created": 1594228148334,
+                                                                    "text": "只能访问模板参数指定的元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41eqwcien40",
+                                                            "created": 1594228243244,
+                                                            "text": "array.data()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41t6mhb2ts0",
+                                                                    "created": 1594268971132,
+                                                                    "text": "返回指向容器首个元素的指针"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41a1mwqfj40",
+                                            "created": 1594214979155,
+                                            "text": "vector<T>向量容器",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41a47fisw80",
+                                                    "created": 1594215180555,
+                                                    "text": "可变长，在尾部增删效率最高O(1)，在其他位置为O(n)线性阶"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41ev280iu80",
+                                                    "created": 1594228569490,
+                                                    "text": "成员函数",
+                                                    "expandState": "expand",
+                                                    "priority": 1
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41ev7qyyfc0",
+                                                            "created": 1594228581520,
+                                                            "text": " ",
+                                                            "image": "",
+                                                            "imageTitle": "",
+                                                            "imageSize": ""
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41evj6sr1k0",
+                                                            "created": 1594228606421,
+                                                            "text": "",
+                                                            "image": "",
+                                                            "imageTitle": "",
+                                                            "imageSize": ""
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41ewygke8w0",
+                                                    "created": 1594228718028,
+                                                    "text": "支持迭代器的成员函数",
+                                                    "expandState": "expand",
+                                                    "priority": 1
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41ex1m0ehc0",
+                                                            "created": 1594228724887,
+                                                            "text": "",
+                                                            "image": "",
+                                                            "imageTitle": "",
+                                                            "imageSize": ""
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41exf24rgg0",
+                                                    "created": 1594228754160,
+                                                    "text": "访问元素的方式",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41exhdmq8g0",
+                                                            "created": 1594228759209,
+                                                            "text": "vector[index]"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41t4x09urs0",
+                                                                    "created": 1594268837318,
+                                                                    "text": "有可能越界"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41t505fgmw0",
+                                                            "created": 1594268844160,
+                                                            "text": "vector.at(index)"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41t54m8v740",
+                                                                    "created": 1594268853884,
+                                                                    "text": "可以有效避免越界"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41t5a1fkq00",
+                                                            "created": 1594268865686,
+                                                            "text": "vector.front()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41t5wnvopc0",
+                                                                    "created": 1594268914933,
+                                                                    "text": "返回容器第一个元素得因引用，可籍此修改"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41t66cerag0",
+                                                            "created": 1594268936007,
+                                                            "text": "vector.back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41t6ag8pps0",
+                                                                    "created": 1594268944946,
+                                                                    "text": "返回容器最后一个元素的引用，可籍此修改"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41t6ju3rq80",
+                                                            "created": 1594268965375,
+                                                            "text": "vector.data()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41t6mhb2ts0",
+                                                                    "created": 1594268971132,
+                                                                    "text": "返回指向容器首个元素的指针"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41tfz6aepk0",
+                                                    "created": 1594269704041,
+                                                    "text": "可变长",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41ey8xbjqo0",
+                                                            "created": 1594228819173,
+                                                            "text": "vector容器可以随着存储元素的增加，自行申请更多的存储空间"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41eyloq9k80",
+                                                            "created": 1594228846952,
+                                                            "text": "初始化vector时不能使用迭代器"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41tg5mutjs0",
+                                                            "created": 1594269718104,
+                                                            "text": "size()返回容器大小，capacity()返回容器当前能够容纳的元素数量"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41tgojdd6g0",
+                                                            "created": 1594269759252,
+                                                            "text": "容器大小超过capacity()大小时，需要重新分配内存，导致迭代器失效"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41th83kcw00",
+                                                            "created": 1594269801832,
+                                                            "text": "可以使用reserve(int)函数分配空间，参数小于当前capacity()时不作为"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41tia4t3vk0",
+                                                    "created": 1594269884624,
+                                                    "text": "底层实现",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41tic0b0ww0",
+                                                            "created": 1594269888706,
+                                                            "text": "三个迭代器"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41tif9uagw0",
+                                                                    "created": 1594269895813,
+                                                                    "text": "_Myfirst"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41tiot4zo00",
+                                                                            "created": 1594269916571,
+                                                                            "text": "容器对象起始字节位置"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41tiitw3cg0",
+                                                                    "created": 1594269903555,
+                                                                    "text": "_Mylast"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41tiuoryuw0",
+                                                                            "created": 1594269929368,
+                                                                            "text": "当前最后一个元素末尾字节位置"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41til85gps0",
+                                                                    "created": 1594269908771,
+                                                                    "text": "_Myend"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41tj02hxuo0",
+                                                                            "created": 1594269941081,
+                                                                            "text": "整个容器所占用内存空间的末尾字节"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41tjf6rnnk0",
+                                                            "created": 1594269973991,
+                                                            "text": "扩容"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41tjh9wtr40",
+                                                                    "created": 1594269978535,
+                                                                    "text": "完全弃用现有内存空间，重新申请更大的内存空间"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41tjro2x7s0",
+                                                                    "created": 1594270001159,
+                                                                    "text": "将旧内存空间中的数据，按原有顺序移动到新的内存空间"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41tk2n6lc80",
+                                                                    "created": 1594270025050,
+                                                                    "text": "将旧的内存空间释放"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41u799lwsw0",
+                                                    "created": 1594271841842,
+                                                    "text": "增删元素",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41u7cm9rpk0",
+                                                            "created": 1594271849138,
+                                                            "text": "push_back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41u7sch86w0",
+                                                                    "created": 1594271883374,
+                                                                    "text": "先创建新元素，再将元素拷贝或移动到容器中"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41u7gr388g0",
+                                                            "created": 1594271858137,
+                                                            "text": "emplace_back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41u7y7xpi00",
+                                                                    "created": 1594271896160,
+                                                                    "text": "直接在容器尾部创建新元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41u8if5cw00",
+                                                            "created": 1594271940132,
+                                                            "text": "insert()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41u8khileo0",
+                                                                    "created": 1594271944629,
+                                                                    "text": "在容器的指定位置插入一个或多个元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41u8wi18680",
+                                                            "created": 1594271970782,
+                                                            "text": "emplace()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41u8ybonu80",
+                                                                    "created": 1594271974751,
+                                                                    "text": "在容器指定位置之前插入一个元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41u99e9im80",
+                                                            "created": 1594271998852,
+                                                            "text": "删除",
+                                                            "priority": 1
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41a1w3fj3k0",
+                                            "created": 1594214999151,
+                                            "text": "deque<T>双端队列容器",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41a505xkh40",
+                                                    "created": 1594215243102,
+                                                    "text": "可变长，头尾增删均为O(1)，其他位置为O(n)线性阶"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41w18xj83k0",
+                                                    "created": 1594277013147,
+                                                    "text": "常用成员函数汇总",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41w1fazbds0",
+                                                    "created": 1594277027021,
+                                                    "text": "支持迭代器的成员函数",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41w1iefgv40",
+                                                    "created": 1594277033759,
+                                                    "text": "访问元素的方式",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wbkdi3xk0",
+                                                            "created": 1594277821699,
+                                                            "text": "deque[index]"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wbs5824w0",
+                                                                    "created": 1594277838612,
+                                                                    "text": "有可能越界"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wbvnxh0w0",
+                                                            "created": 1594277846274,
+                                                            "text": "deque.at(index)"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wbzopddc0",
+                                                                    "created": 1594277855028,
+                                                                    "text": "有效避免越界"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wc46gpsg0",
+                                                            "created": 1594277864809,
+                                                            "text": "deque.front()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wcawcc4g0",
+                                                                    "created": 1594277879434,
+                                                                    "text": "返回容器第一个元素的引用"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wc7m2q7s0",
+                                                            "created": 1594277872283,
+                                                            "text": "deque.back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wcimz6cw0",
+                                                                    "created": 1594277896282,
+                                                                    "text": "返回容器最后一个元素的引用"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41w2pdkn200",
+                                                    "created": 1594277127309,
+                                                    "text": "底层实现",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41w2rflrg80",
+                                                            "created": 1594277131786,
+                                                            "text": "deque容器使用一段段等长的连续空间构成，不一定连续"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41w34his4g0",
+                                                            "created": 1594277160200,
+                                                            "text": "使用数组m存储各个连续空间的首地址"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41w3kxyeb40",
+                                                            "created": 1594277196022,
+                                                            "text": "迭代器包含四个指针"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41w58c56r40",
+                                                                    "created": 1594277325310,
+                                                                    "text": "cur"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41w58c56r40",
+                                                                            "created": 1594277325310,
+                                                                            "text": "指向正在遍历的元素"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41w5abtg4g0",
+                                                                    "created": 1594277329644,
+                                                                    "text": "first"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41w96p18wg0",
+                                                                            "created": 1594277635193,
+                                                                            "text": "指向当前连续空间的首地址"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41w5bewsug0",
+                                                                    "created": 1594277332008,
+                                                                    "text": "last"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41w9c8tw9k0",
+                                                                            "created": 1594277647273,
+                                                                            "text": "指向当前连续空间的末尾地址"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41w5cpm0q00",
+                                                                    "created": 1594277334832,
+                                                                    "text": "node"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "c41w9gcdwio0",
+                                                                            "created": 1594277656196,
+                                                                            "text": "二级指针，用于指向m数组中存储的指向当前连续空间的指针"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wajt696o0",
+                                                            "created": 1594277742105,
+                                                            "text": "start迭代器记录m数组中首个连续空间的信息"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wb3jonxc0",
+                                                                    "created": 1594277785067,
+                                                                    "text": "cur指针指向首个元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wasvohxc0",
+                                                            "created": 1594277761848,
+                                                            "text": "finish迭代器记录着m数组中最后一个连续空间的信息"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wb72017k0",
+                                                                    "created": 1594277792705,
+                                                                    "text": "cur指针指向最后一个元素的下一个位置"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41a229ysmw0",
+                                            "created": 1594215012607,
+                                            "text": "list<T>链表容器",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41a5m5zsi80",
+                                                    "created": 1594215290995,
+                                                    "text": "双向链表，增删均为O(1)，但是访问为O(n)线性阶"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41wqek4q1s0",
+                                                    "created": 1594278984501,
+                                                    "text": "常用成员函数汇总",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41wqi7tda00",
+                                                    "created": 1594278992465,
+                                                    "text": "迭代器函数",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41wqms2m9s0",
+                                                    "created": 1594279002396,
+                                                    "text": "访问元素的方式",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wr3y3l7k0",
+                                                            "created": 1594279039765,
+                                                            "text": "list.front()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wrb9c4rc0",
+                                                                    "created": 1594279055682,
+                                                                    "text": "返回容器第一个元素的引用"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wr5zv1i80",
+                                                            "created": 1594279044225,
+                                                            "text": "list.back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wri6eg800",
+                                                                    "created": 1594279070742,
+                                                                    "text": "返回容器最后一个元素的引用"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wrrtior40",
+                                                            "created": 1594279091731,
+                                                            "text": "使用迭代器"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41ws86ar3k0",
+                                                    "created": 1594279127332,
+                                                    "text": "增删元素",
+                                                    "priority": null,
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wtts35n40",
+                                                            "created": 1594279252726,
+                                                            "text": "push_front()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wuasgchc0",
+                                                                    "created": 1594279289754,
+                                                                    "text": "向容器首个元素前添加新元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wtql5ylk0",
+                                                            "created": 1594279245778,
+                                                            "text": "push_back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wuk2769s0",
+                                                                    "created": 1594279309934,
+                                                                    "text": "向容器最后一个元素后添加新元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wtxlng6w0",
+                                                            "created": 1594279261044,
+                                                            "text": "emplace_front()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wuqoqqw80",
+                                                                    "created": 1594279324358,
+                                                                    "text": "在容器首个元素前直接生成新元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wu13fd9c0",
+                                                            "created": 1594279268650,
+                                                            "text": "emplace_back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wuvm3s5k0",
+                                                                    "created": 1594279335082,
+                                                                    "text": "在容器最后一个元素后直接生成新元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wu4f84t40",
+                                                            "created": 1594279275893,
+                                                            "text": "emplace()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wv07h8sg0",
+                                                                    "created": 1594279345082,
+                                                                    "text": "在容器指定位置直接生成新元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wu5xsymg0",
+                                                            "created": 1594279279194,
+                                                            "text": "insert()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wv4imhb40",
+                                                                    "created": 1594279354463,
+                                                                    "text": "在容器指定位置插入新元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wu7p5img0",
+                                                            "created": 1594279283024,
+                                                            "text": "splice()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wvag4fts0",
+                                                                    "created": 1594279367373,
+                                                                    "text": "将其他list容器存储的多个元素添加到当前list容器的指定位置处"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wvtvwiow0",
+                                                            "created": 1594279409686,
+                                                            "text": "pop_front()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wwgiufkw0",
+                                                                    "created": 1594279458962,
+                                                                    "text": "删除容器头部元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wvx0vl540",
+                                                            "created": 1594279416517,
+                                                            "text": "pop_back()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wwngr9iw0",
+                                                                    "created": 1594279474073,
+                                                                    "text": "删除容器尾部元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wvyymheo0",
+                                                            "created": 1594279420734,
+                                                            "text": "erase()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wwpnizuw0",
+                                                                    "created": 1594279478836,
+                                                                    "text": "删除指定位置处元素，或容器中某个区域内的多个元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41ww1luyw80",
+                                                            "created": 1594279426493,
+                                                            "text": "clear()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wwyguw340",
+                                                                    "created": 1594279498024,
+                                                                    "text": "删除容器中所有元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41ww3bltzc0",
+                                                            "created": 1594279430226,
+                                                            "text": "remove(val)"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wx1rzjts0",
+                                                                    "created": 1594279505227,
+                                                                    "text": "删除容器中所有等于val的元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41ww7doy080",
+                                                            "created": 1594279439059,
+                                                            "text": "unique()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wx6269uo0",
+                                                                    "created": 1594279514550,
+                                                                    "text": "删除容器中相邻的重复元素，只保留一份"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wwakf40g0",
+                                                            "created": 1594279445996,
+                                                            "text": "remove_if()"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41wxd0kwi00",
+                                                                    "created": 1594279529691,
+                                                                    "text": "删除容器中满足条件的元素"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41wqp1wya00",
+                                                    "created": 1594279007344,
+                                                    "text": "底层实现"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41wqqf5g6o0",
+                                                            "created": 1594279010321,
+                                                            "text": "带有头结点的双向循环链表"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41a61vi7cg0",
+                                            "created": 1594215325189,
+                                            "text": "forward_list<T>正向链表容器"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41a6bjat0w0",
+                                                    "created": 1594215346219,
+                                                    "text": "单向链表"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c41xcyjae740",
+                                    "created": 1594280751997,
+                                    "text": "有序关联式容器",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c418k7r7i400",
+                                            "created": 1594210792869,
+                                            "text": "键值对元素按key大小顺序存储"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41xd10ljfs0",
+                                            "created": 1594280757398,
+                                            "text": "pair<key, value>"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41xdzgtyj40",
+                                                    "created": 1594280832390,
+                                                    "text": "键值对模板类"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41xe3z080w0",
+                                            "created": 1594280842196,
+                                            "text": "map<K,V>",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41xensezbs0",
+                                                    "created": 1594280885333,
+                                                    "text": "容器会按照各键值对的大小，按既定规则进行排序"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41xfdivahk0",
+                                                    "created": 1594280941352,
+                                                    "text": "各个键值对中，key不能重复也不能被修改（key会用const修饰）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41xh6mtcbk0",
+                                                    "created": 1594281083082,
+                                                    "text": "常用成员方法",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41xhr6z0xc0",
+                                                    "created": 1594281127836,
+                                                    "text": "迭代器相关成员方法",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41xi0s500g0",
+                                                    "created": 1594281148707,
+                                                    "text": "获取key对应value的方法",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41xi8oap680",
+                                                            "created": 1594281165889,
+                                                            "text": "map[key]"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41xidms10g0",
+                                                                    "created": 1594281176681,
+                                                                    "text": "当map容器中包含该key的键值对时，返回对应的value"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41xjf6x9rk0",
+                                                                    "created": 1594281258440,
+                                                                    "text": "否则插入一个包含key的键值对，其中value为默认值"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41xq6e4vrs0",
+                                                            "created": 1594281787834,
+                                                            "text": "map.ar(key)"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41xqcdrhv40",
+                                                                    "created": 1594281800873,
+                                                                    "text": "返回容器中包含该key的键值对中对应的value，不包含时不插入"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41xsu1ou480",
+                                                    "created": 1594281996053,
+                                                    "text": "增删元素",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41xt0pmhr40",
+                                                            "created": 1594282010561,
+                                                            "text": "map[key]=value"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41xtybbbfs0",
+                                                                    "created": 1594282083706,
+                                                                    "text": "key存在则修改，不存在则插入"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41xuan7b340",
+                                                            "created": 1594282110546,
+                                                            "text": "map.insert()"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41y0vms2aw0",
+                                                            "created": 1594282626418,
+                                                            "text": "map.emplace()"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41y10f4r0o0",
+                                                            "created": 1594282636840,
+                                                            "text": "map.emplace_hint()"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41y1khgtjk0",
+                                                            "created": 1594282680516,
+                                                            "text": "map.erase(key)"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41y2ufwvbk0",
+                                            "created": 1594282780554,
+                                            "text": "multimap<K,V>"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41y301ojsg0",
+                                                    "created": 1594282792755,
+                                                    "text": "可以同时存储>=2个key相同的键值对"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41y3bjss2o0",
+                                            "created": 1594282817795,
+                                            "text": "set<K>",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41y3xrw77s0",
+                                                    "created": 1594282866173,
+                                                    "text": "key和value必须相等"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41y8ogm65s0",
+                                                    "created": 1594283237721,
+                                                    "text": "常用成员方法",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41y8s0aqhs0",
+                                                    "created": 1594283245442,
+                                                    "text": "迭代器相关成员方法",
+                                                    "priority": 1
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c41y8xw3t8w0",
+                                                    "created": 1594283258249,
+                                                    "text": "增删元素"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41yvfs9fu80",
+                                                            "created": 1594285021210,
+                                                            "text": "set.insert()"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41yvp6dcg00",
+                                                            "created": 1594285041654,
+                                                            "text": "set.emplace()"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41yvrl31s80",
+                                                            "created": 1594285046898,
+                                                            "text": "set.emplace_hint()"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41yw1332ps0",
+                                                            "created": 1594285067577,
+                                                            "text": "set.erase()"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41yz22sfns0",
+                                            "created": 1594285304828,
+                                            "text": "multiset<K>"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41yz64ar080",
+                                                    "created": 1594285313627,
+                                                    "text": "可以同时存储多个key相同的元素"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41z9qreiqo0",
+                                            "created": 1594286142201,
+                                            "text": "可以重载关系运算符或调用自定义函数对象类来自定义排序规则"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41zd1hiyg00",
+                                            "created": 1594286400641,
+                                            "text": "底层实现"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41zd3xkx0g0",
+                                                    "created": 1594286405965,
+                                                    "text": "红黑树"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c41zbhnmh280",
+                                    "created": 1594286279110,
+                                    "text": "无序关联式容器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c41zbswq4ls0",
+                                            "created": 1594286303605,
+                                            "text": "哈希容器，也存储键值对元素，但是不进行排序，元素位置由哈希函数决定，通过指定键查找对应值速度快(O(1))，遍历慢"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41zd90ai1s0",
+                                            "created": 1594286417013,
+                                            "text": "unordered_map"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41zpgrlx8w0",
+                                            "created": 1594287374272,
+                                            "text": "unordered_multimap"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41zpgrlx8w0",
+                                            "created": 1594287374272,
+                                            "text": "unordered_set"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41zpgrlx8w0",
+                                            "created": 1594287374272,
+                                            "text": "unordered_multiset"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c41zdtms2lc0",
+                                            "created": 1594286461909,
+                                            "text": "底层实现",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c41zdwrzvs00",
+                                                    "created": 1594286468754,
+                                                    "text": "采用链地址法解决冲突的哈希表",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c41zsiy7cio0",
+                                                            "created": 1594287614117,
+                                                            "text": "链表节点存储键值对，vector存储链表头结点，链表称为桶"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41zt9ytxr40",
+                                                            "created": 1594287672928,
+                                                            "text": "存储过程"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41ztdiite80",
+                                                                    "created": 1594287680649,
+                                                                    "text": "将key代入哈希函数，得到哈希值H"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41ztkqkvvs0",
+                                                                    "created": 1594287696374,
+                                                                    "text": "H%n即为应该存储的同的编号"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41ztzgkehs0",
+                                                                    "created": 1594287728420,
+                                                                    "text": "建立一个新节点存储键值对，将节点链接到对应编号的桶上"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c41zutp45y00",
+                                                            "created": 1594287794241,
+                                                            "text": "负载因子"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c41zux2h0wo0",
+                                                                    "created": 1594287801579,
+                                                                    "text": "容器存储的总键值对数/桶数"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c417pnfn7f40",
+                            "created": 1594208397709,
+                            "text": "算法"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4189y9u6ls0",
+                                    "created": 1594209988586,
+                                    "text": "被设计成模板函数的数据结构算法"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c417poywfb40",
+                            "created": 1594208401050,
+                            "text": "迭代器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c418aangyu80",
+                                    "created": 1594210015532,
+                                    "text": "在STL容器中，通过迭代器对数据进行读写，容器迭代器的功能强弱，决定了容器是否支持STL的某种算法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c418xntq2400",
+                                    "created": 1594211846584,
+                                    "text": "正向迭代器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c419ijgbnps0",
+                                            "created": 1594213482714,
+                                            "text": "支持++p，p++，*p操作，可被赋值或复制，可用==和!=运算符比较"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c418xqvv6480",
+                                    "created": 1594211853243,
+                                    "text": "双向迭代器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c419j5gwtzk0",
+                                            "created": 1594213530638,
+                                            "text": "具有正向迭代器的全部功能，还可以--p或p--操作"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c418xuruifs0",
+                                    "created": 1594211861708,
+                                    "text": "随机访问迭代器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c419jkw4bhc0",
+                                            "created": 1594213564210,
+                                            "text": "具有双向迭代器的全部功能，若i是一个整型或常量，支持p+=/-=/+/-i操作，也能p[i]返回p后面第i个元素的引用"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c419kkfivsw0",
+                                            "created": 1594213641570,
+                                            "text": "随机访问迭代器之间可以用<,>,<=,>=运算符进行比较，p1-p2返回p1所指向的元素与p2所指向的元素的序号之差"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c418xyjmy600",
+                                    "created": 1594211869918,
+                                    "text": "输入迭代器"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c418xzyz20g0",
+                                    "created": 1594211873022,
+                                    "text": "输出迭代器"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c417ppzkce00",
+                            "created": 1594208403267,
+                            "text": "函数对象"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c418aohwks00",
+                                    "created": 1594210045670,
+                                    "text": "如果一个类将()重载为成员函数，这个类就成为函数对象类，类的对象是函数对象"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c417prrwv9s0",
+                            "created": 1594208407158,
+                            "text": "适配器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c418b4s428w0",
+                                    "created": 1594210081116,
+                                    "text": "使一个类的接口适配成用户指定的形式，从而使本不能一起工作的两个类工作在一起"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c418bnpaek80",
+                                            "created": 1594210122304,
+                                            "text": "容易、迭代器、函数均有适配器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c421m3xncw00",
+                                    "created": 1594292753467,
+                                    "text": "stack<T>"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c421ml83qso0",
+                                            "created": 1594292791104,
+                                            "text": "封装了deuqe<T>容器的适配器模板，先进后出，栈"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c421qrudhbc0",
+                                            "created": 1594293118968,
+                                            "text": "成员函数",
+                                            "priority": 1
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c421m8bt1qo0",
+                                    "created": 1594292763030,
+                                    "text": "queue<T>"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c421n1gujqw0",
+                                            "created": 1594292826462,
+                                            "text": "封装了deque<T>容器的适配器模板，先进先出，队列"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c421r4mc1rk0",
+                                            "created": 1594293146780,
+                                            "text": "成员函数",
+                                            "priority": 1
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c421ma4k1u80",
+                                    "created": 1594292766945,
+                                    "text": "priority_queue<T>"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c421nbleh880",
+                                            "created": 1594292848505,
+                                            "text": "封装了vector<T>容器的适配器模板，优先队列/堆"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c421r7it6e80",
+                                            "created": 1594293153098,
+                                            "text": "成员函数",
+                                            "priority": 1
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c421rcp1n6o0",
+                                            "created": 1594293164358,
+                                            "text": "自定义排序"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c421rhmqs6o0",
+                                                    "created": 1594293175103,
+                                                    "text": "函数对象",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c421s1nkc5s0",
+                                                            "created": 1594293218688,
+                                                            "text": "class cmp\n{\npublic:\n\t//重载 () 运算符\n\tbool operator()(T a, T b)\n\t{\n\t    return a > b;\n\t}\n};"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c421rqo1y3c0",
+                                                    "created": 1594293194773,
+                                                    "text": "重载运算符"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c421rapsjls0",
+                                            "created": 1594293160050,
+                                            "text": "底层实现"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c421tn75ok80",
+                                                    "created": 1594293343950,
+                                                    "text": "堆"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c417pt9f7ls0",
+                            "created": 1594208410394,
+                            "text": "内存分配器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c418bthce2w0",
+                                    "created": 1594210134884,
+                                    "text": "为容器类模板提供自定义的内存申请和释放功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c418c2nf9iw0",
+                                            "created": 1594210154843,
+                                            "text": "通常高级用户才有改变内存分配策略的需求"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}
