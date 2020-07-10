@@ -12,7 +12,138 @@
                     "created": 1594361383407,
                     "text": "static"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42w2lysqq00",
+                            "created": 1594378679842,
+                            "text": "static变量的内存只分配一次，其值在下次被调用时维持上次的值"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42x608dmqo0",
+                            "created": 1594381767099,
+                            "text": "static变量只能被模块内函数调用，不能被模块外函数访问"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42x6i7f7bc0",
+                            "created": 1594381806223,
+                            "text": "类中的static成员变量为整个类共有，而非只属于某个对象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42x6rssb4g0",
+                            "created": 1594381827106,
+                            "text": "static定义的静态局部变量分配在数据段上，普通的局部变量分配在栈上，会因为函数栈帧的释放而被释放"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42x7bm7gxs0",
+                            "created": 1594381870244,
+                            "text": "类中static修饰的变量和成员函数只能通过类名访问，不能通过this指针访问"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42x8kckwww0",
+                            "created": 1594381967617,
+                            "text": "静态函数不能被其他文件所用，其他文件中可以定义同名函数，不冲突"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42x8v3khug0",
+                            "created": 1594381991017,
+                            "text": "静态局部变量"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xbt87rds0",
+                                    "created": 1594382222036,
+                                    "text": "在全局数据区分配内存（局部变量在栈区分配内存）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xpmj1fsw0",
+                                    "created": 1594383304552,
+                                    "text": "静态局部变量在程序执行到该对象的声明处时被首次初始化，此后不再改变"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xq1u3mlk0",
+                                    "created": 1594383337872,
+                                    "text": "若没有显式初始化一个静态局部变量，那么会被程序自动初始化为0"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xqe6qo9s0",
+                                    "created": 1594383364758,
+                                    "text": "始终驻留在全局数据区，直到程序运行结束，但是作用域为局部作用域"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42x8z8k65s0",
+                            "created": 1594382000026,
+                            "text": "静态成员函数"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xqxz3afc0",
+                                    "created": 1594383407831,
+                                    "text": "静态成员之间可以互相访问，包括静态成员函数访问静态数据成员和静态成员函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xrtyrdpk0",
+                                    "created": 1594383477468,
+                                    "text": "非静态成员函数可以任意访问静态成员函数和静态数据成员"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xs0w66w00",
+                                    "created": 1594383492549,
+                                    "text": "静态成员函数不能访问非静态成员函数和非静态数据成员"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xs9kzbeg0",
+                                    "created": 1594383511464,
+                                    "text": "可以用class.f()或class->f()调用静态成员函数，也可以用class::f()调用"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "data": {
@@ -53,7 +184,132 @@
                     "created": 1594361486585,
                     "text": "new"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42w1c56o3c0",
+                            "created": 1594378580096,
+                            "text": "调用构造函数，按照数据类型分配大小，返回的便是指定对象的指针"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42w1wsinoo0",
+                            "created": 1594378625043,
+                            "text": "分配的内存使用delete销毁，可重载，在给数组分配空间时，new多次调用构造函数"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pzemex8w0",
+                    "created": 1594361502104,
+                    "text": "malloc"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42rjq4aom00",
+                            "created": 1594365915523,
+                            "text": "用于动态分配内存的函数，malloc(size)，size为需分配的字节数，返回指向内存块的指针"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42rob97ejs0",
+                            "created": 1594366274989,
+                            "text": "为了减少内存碎片和系统调用的开销，malloc采用内存池的方式，先申请大块内存作为堆区，然后将堆区分为多个内存块，以块作为内存管理的基本单位"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42rolbzeeg0",
+                            "created": 1594366296925,
+                            "text": "用户申请内存时，直接从堆区分配一块合适的空闲块"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pzkz8uh40",
+                    "created": 1594361515941,
+                    "text": "realloc"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42tq6d09ds0",
+                            "created": 1594372063283,
+                            "text": "更改以前分配区的长度（增加或减少），增加长度时，可能需要将以前分配区的内容移到另一个足够大的区域，新增区域初始地址不确定"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42tsms7xfc0",
+                            "created": 1594372255760,
+                            "text": "realloc(void *ptr, size_t new_size)，ptr为指向原来地址的指针。扩大时不初始化新增区块，减小时直接去除截断部分"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42ttvfe04o0",
+                            "created": 1594372352939,
+                            "text": "原来的内存块无法扩大缩小时，开辟新的内存空间并复制原内容"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42tunnfn480",
+                            "created": 1594372414376,
+                            "text": "第一个参数为空时等价于malloc"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42sxub36zk0",
+                    "created": 1594369842849,
+                    "text": "calloc"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42tpq1um1c0",
+                            "created": 1594372027780,
+                            "text": "为指定长度的对象，分配能容纳指定个数的存储空间，该存储空间中每一位都初始化为0"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42sm97m4xk0",
+                    "created": 1594368934921,
+                    "text": "free"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42twmybygg0",
+                            "created": 1594372569586,
+                            "text": "释放之前调用calloc(),malloc(),realloc()分配的内存空间"
+                        },
+                        "children": []
+                    }
+                ]
             },
             {
                 "data": {
@@ -79,31 +335,6 @@
                         "children": []
                     }
                 ]
-            },
-            {
-                "data": {
-                    "id": "c42pzemex8w0",
-                    "created": 1594361502104,
-                    "text": "malloc"
-                },
-                "children": [
-                    {
-                        "data": {
-                            "id": "c42rjq4aom00",
-                            "created": 1594365915523,
-                            "text": "用于动态分配内存的函数。为了减少内存碎片和系统调用的开销，malloc采用内存池的方式，先申请大块内存作为堆区，然后将"
-                        },
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "data": {
-                    "id": "c42pzkz8uh40",
-                    "created": 1594361515941,
-                    "text": "realloc"
-                },
-                "children": []
             },
             {
                 "data": {
@@ -334,7 +565,134 @@
                     "created": 1594361534357,
                     "text": "内存分配"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42xcvkg9140",
+                            "created": 1594382305494,
+                            "text": "代码段"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xx5x0x880",
+                                    "created": 1594383895306,
+                                    "text": "空间大小在编译完成后就已确定"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xe40n8uo0",
+                                    "created": 1594382402252,
+                                    "text": "程序机器码"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xe7mpkug0",
+                                    "created": 1594382410116,
+                                    "text": "常量区"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42xdz573ts0",
+                            "created": 1594382391643,
+                            "text": "数据段"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xyaeeg5c0",
+                                    "created": 1594383983427,
+                                    "text": "存储初始化的全局变量和静态变量"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42xecpoybc0",
+                                    "created": 1594382421180,
+                                    "text": "静态区（全局区）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42xv7mpjjs0",
+                            "created": 1594383742307,
+                            "text": "bss段"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xvccs5c00",
+                                    "created": 1594383752591,
+                                    "text": "存储未初始化的全局变量和静态变量"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42xz2sszco0",
+                            "created": 1594384045248,
+                            "text": "rodata段"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xz7j7z280",
+                                    "created": 1594384055553,
+                                    "text": "常量区"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42xefuu6uo0",
+                            "created": 1594382428022,
+                            "text": "堆"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xf2ua0dk0",
+                                    "created": 1594382478054,
+                                    "text": "内存分配空间"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42xeh6f5400",
+                            "created": 1594382430899,
+                            "text": "栈"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42xeyehjrk0",
+                                    "created": 1594382468392,
+                                    "text": "局部变量"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "data": {
@@ -342,7 +700,157 @@
                     "created": 1594361479524,
                     "text": "智能指针"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42vnsayfnc0",
+                            "created": 1594377518176,
+                            "text": "主要用于管理在堆上分配的内存，将普通的指针封装成一个栈对象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42vo3wpvyg0",
+                            "created": 1594377543436,
+                            "text": "当栈对象的生命周期结束后，在析构函数中自动释放掉申请的内存，防止内存泄漏"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42voqyvhz40",
+                            "created": 1594377593632,
+                            "text": "shared_ptr<T>"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42vr8830w00",
+                                    "created": 1594377787923,
+                                    "text": "允许多个指针指向同一个对象"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42vtio3lco0",
+                                    "created": 1594377967387,
+                                    "text": "采用引用计数法，记录当前内存资源被多少个智能指针引用，当引用计数为0时，自动释放引用的内存资源"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42vr300olc0",
+                            "created": 1594377776551,
+                            "text": "unique_ptr<T>"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42vrcli1l40",
+                                    "created": 1594377797441,
+                                    "text": "独占所指向的对象"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42zr8aw37k0",
+                                    "created": 1594389072532,
+                                    "text": "不允许复制一个unique_ptr对象，在转移时会将源指针置空，将对象所有权转移给目标指针"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42y16yufhk0",
+                            "created": 1594384211049,
+                            "text": "weak_ptr<T>"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42y1bn2vw00",
+                                    "created": 1594384221221,
+                                    "text": "不控制指向对象生存期的智能指针，指向由shared_ptr管理的对象，但是不改变shared_ptr的引用计数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42w03fe6o80",
+                            "created": 1594378482758,
+                            "text": "智能指针支持的方法",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42w0d5p2c80",
+                                    "created": 1594378503940,
+                                    "text": "",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/shared_ptr%E5%92%8Cunique_ptr%E9%83%BD%E6%94%AF%E6%8C%81%E7%9A%84%E6%96%B9%E6%B3%95.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 79
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42w0k6jm140",
+                                    "created": 1594378519229,
+                                    "text": " ",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/shared_ptr%E7%89%B9%E6%9C%89%E7%9A%84%E6%96%B9%E6%B3%95.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 79
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42w0u8sm5c0",
+                                    "created": 1594378541133,
+                                    "text": "",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/unique_ptr%E7%89%B9%E6%9C%89%E7%9A%84%E6%96%B9%E6%B3%95.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 85
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42y2a86obs0",
+                                    "created": 1594384296508,
+                                    "text": " ",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/weak_ptr%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 90
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "data": {
@@ -350,7 +858,302 @@
                     "created": 1594364351647,
                     "text": "从源文件到可执行文件的过程"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42ybmpwo9k0",
+                            "created": 1594385028979,
+                            "text": "预处理",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42ynzgwgg80",
+                                    "created": 1594385997102,
+                                    "text": "对源代码文件中文件包含关系（头文件）、预编译语句（宏定义）进行分析和替换，生成预编译文件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42z37xhpcw0",
+                                    "created": 1594387190982,
+                                    "text": "",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/%E9%A2%84%E5%A4%84%E7%90%86.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 116
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42ynvv9zkg0",
+                            "created": 1594385989264,
+                            "text": "编译",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42yo7fnmow0",
+                                    "created": 1594386014441,
+                                    "text": "将经过预处理后的预编译文件转换成特定汇编代码，生成汇编文件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42yon3a46w0",
+                                    "created": 1594386048521,
+                                    "text": "词法分析"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42yoolcgew0",
+                                    "created": 1594386051791,
+                                    "text": "语法分析"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42yorkumg00",
+                                    "created": 1594386058291,
+                                    "text": "语义分析和中间代码生成"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42yotommq00",
+                                    "created": 1594386062873,
+                                    "text": "中间代码优化"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42yowam7k80",
+                                    "created": 1594386068556,
+                                    "text": "目标代码生成"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42z2zny6y00",
+                                    "created": 1594387172991,
+                                    "text": "",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/%E7%BC%96%E8%AF%91.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 149
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42ynwt1tjk0",
+                            "created": 1594385991307,
+                            "text": "汇编",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42yoagd40o0",
+                                    "created": 1594386021014,
+                                    "text": "将编译阶段生成的汇编文件转换成机器码，生成可重定位目标文件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42z2reqf6o0",
+                                    "created": 1594387155019,
+                                    "text": "",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/%E6%B1%87%E7%BC%96.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 41
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42ynxo17400",
+                            "created": 1594385993180,
+                            "text": "链接",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42yofb0zao0",
+                                    "created": 1594386031576,
+                                    "text": "将多个目标文件及所需要的库连接成最终的可执行文件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42yqkh9pz40",
+                                    "created": 1594386199565,
+                                    "text": "静态链接"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42yqm15cg80",
+                                    "created": 1594386202944,
+                                    "text": "动态链接"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42z2igwrqo0",
+                                    "created": 1594387135561,
+                                    "text": "",
+                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/C++/%E9%93%BE%E6%8E%A5.png?raw=true",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 193
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42yba9fow00",
+                    "created": 1594385001861,
+                    "text": "C++新特性"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42z6zt9g9k0",
+                            "created": 1594387486769,
+                            "text": "Lambda表达式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42z74jj53c0",
+                            "created": 1594387497064,
+                            "text": "auto"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42zkxg262w0",
+                                    "created": 1594388578715,
+                                    "text": "auto a = b，自动类型推断，定义值为b的b类型变量a"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42z7b61iko0",
+                            "created": 1594387511486,
+                            "text": "decltype"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42zn7z7uu80",
+                                    "created": 1594388758370,
+                                    "text": "decltype(a) b = c，自动判断a的类型并定义值为c的a类型变量b"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42zlie9ymo0",
+                            "created": 1594388624320,
+                            "text": "nullptr"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42zln5zcuo0",
+                                    "created": 1594388634702,
+                                    "text": "字面空指针，可转换成任意其他指针类型"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42z7rnvbfc0",
+                            "created": 1594387547393,
+                            "text": "智能指针"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42zmgfypeo0",
+                            "created": 1594388698432,
+                            "text": "范围for语句"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42zm7944go0",
+                                    "created": 1594388678427,
+                                    "text": "for (num : nums) sentence"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42zocvekhc0",
+                            "created": 1594388847387,
+                            "text": "右值引用"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42zog78an40",
+                                    "created": 1594388854633,
+                                    "text": "&&a，只能绑定在将要销毁的对象（临时对象）上，更加方便移动操作"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

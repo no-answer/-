@@ -1,0 +1,179 @@
+{
+    "root": {
+        "data": {
+            "id": "c4307c2njzs0",
+            "created": 1594390334568,
+            "text": "常考知识点"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c4307mrlv8g0",
+                    "created": 1594390357845,
+                    "text": "select/poll/epoll"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c430zriije80",
+                            "created": 1594392562375,
+                            "text": "select/poll"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c430zwn18io0",
+                                    "created": 1594392573533,
+                                    "text": "select/poll每次都需要重复传递全部的监听fd进来，涉及用户空间和内核直接的数据拷贝"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43100eb1ow0",
+                                    "created": 1594392581712,
+                                    "text": "fd事件回调函数是pollwake，只是将本进程唤醒，本进程需要重新遍历全部的fd检查事件，然后保存事件，拷贝到用户空间，函数返回"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43103kclfc0",
+                                    "created": 1594392588608,
+                                    "text": "每次循环都是对全部的监测的fd进行轮询检测，可能发生事件的fd很少，这样效率很低"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43106qun0w0",
+                                    "created": 1594392595531,
+                                    "text": "当有事件发生，需要返回时，也需要将全部fd的事件进行返回，而其中可能只有很少的fd有事件发生"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4310e5qxpk0",
+                                    "created": 1594392611669,
+                                    "text": "select/poll返回时，会将该进程从全部监听的fd的等待队列里移除掉，这样就需要select/poll每次都要重新传入全部监听的fd，然后重新将本进程挂载到全部的监测fd的等待队列，大量重复劳动，效率很低"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4310h5n58w0",
+                            "created": 1594392618193,
+                            "text": "epoll"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4310llqhew0",
+                                    "created": 1594392627874,
+                                    "text": "每次累加添加，不需要每次传入全部的监测fd"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4310p443vk0",
+                                    "created": 1594392635515,
+                                    "text": "每个fd只将本进程挂载到自己的等待队列一次，直到该fd被从epoll移除，不需要重复挂载"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4310uu04r40",
+                                    "created": 1594392647965,
+                                    "text": "fd事件回调函数是ep_epoll_callback，该函数将发生事件的fd加入到epoll专门的就绪队列rdllist中，同时唤醒本进程"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4310z8yp5s0",
+                                    "created": 1594392657576,
+                                    "text": "本进程不需要遍历每一个fd去监测事件是否发生，而只需要判断epoll中的就绪队列rdllist是否为空即可"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43112ppjfk0",
+                                    "created": 1594392665119,
+                                    "text": "epoll返回时，只返回就绪队列rdllist中的项，避免了无关项的操作，应用层也就不需要再次重复遍历"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43116lo6t40",
+                                    "created": 1594392673582,
+                                    "text": "epoll内部使用红黑树存储监测fd，支持大量fd的快速查询、修改和删除操作"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4311c8znl40",
+                            "created": 1594392685876,
+                            "text": "相同点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4311omdgg00",
+                                    "created": 1594392712807,
+                                    "text": "主要监测流程是一样的，都需要将当前进程挂载到对应fd的队列中去。如果fd有事件发生，调用挂载的回调函数，该回调函数基本的作用是唤醒本进程"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4311ru2ef40",
+                                    "created": 1594392719802,
+                                    "text": "主事件检测循环是一样的，循环检测是否有事件发生，有则处理事件后返回；没有则调用schedule_timeout睡眠一会。不同的是，select/poll直接检测每个fd，而epoll只需检测就绪队列rdllist是否有数据即可"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4311egw5xs0",
+                            "created": 1594392690707,
+                            "text": "epoll优点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4311w3iqmw0",
+                                    "created": 1594392729081,
+                                    "text": "select/poll把fd的监听列表放在用户空间，由用户空间管理，导致在用户空间和内核空间之间频繁重复拷贝大量fd；epoll在内核建立fd监听列表（实际是红黑树），每次通过epoll_ctl增删改即可"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4311zchrxs0",
+                                    "created": 1594392736154,
+                                    "text": "select/poll每当有fd内核事件时，都唤醒当前进程，然后遍历监听列表全部fd，检查所有就绪fd并返回；epoll在有fd内核事件时，通过回调把该fd放到就绪队列中，只需返回该就绪队列即可，不需要每次遍历全部监听fd"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

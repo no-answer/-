@@ -393,6 +393,106 @@
                         ]
                     }
                 ]
+            },
+            {
+                "data": {
+                    "id": "c43093lmk3c0",
+                    "created": 1594390472852,
+                    "text": "Hash表"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c43095n3mxs0",
+                            "created": 1594390477295,
+                            "text": "散列表，通过散列函数来讲一组关键字映射到一个有限连续地址空间中"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c430dnlns3k0",
+                            "created": 1594390829847,
+                            "text": "布隆过滤器"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c430dt1spgg0",
+                                    "created": 1594390841706,
+                                    "text": "概率型数据结构，高效插入和查询，用于判断key一定不存在或可能存在于列表中"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c430enesujs0",
+                                    "created": 1594390907796,
+                                    "text": "样例"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c430fboyphs0",
+                                            "created": 1594390960654,
+                                            "text": "布隆过滤器是一个bit向量或bit数组"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c430et5sqds0",
+                                            "created": 1594390920313,
+                                            "text": "插入：使用多个哈希函数生成多个哈希值，将列表中每个哈希值指向的bit置为1"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c430fmhn1mg0",
+                                            "created": 1594390984155,
+                                            "text": "查询：若哈希函数返回值对应的位上有一个为0则必定不存在，否则可能存在"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c430g8cf1lk0",
+                                            "created": 1594391031729,
+                                            "text": "哈希函数个数和布隆过滤器长度需要选择"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c430h7rpl0g0",
+                                                    "created": 1594391108841,
+                                                    "text": "k为哈希函数个数，m为布隆过滤器长度，n为插入元素个数，p为误报率"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c430hili1gg0",
+                                                    "created": 1594391132410,
+                                                    "text": "m=-(nln(p))/((ln2)^2)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c430hxdd0qo0",
+                                                    "created": 1594391164569,
+                                                    "text": "k=mln2/n"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
