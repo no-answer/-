@@ -151,6 +151,14 @@
                                             "text": "对任意节点，若左子树不空，则左子树上所有节点值小于根节点值，若右子树不空，则右子树上所有节点值大于跟节点值"
                                         },
                                         "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c42prgn7j0w0",
+                                            "created": 1594360879592,
+                                            "text": "可能很不平衡"
+                                        },
+                                        "children": []
                                     }
                                 ]
                             },
@@ -172,9 +180,103 @@
                                                 "data": {
                                                     "id": "c42pgl9wl1s0",
                                                     "created": 1594360027666,
-                                                    "text": "插入后若失去平衡需要进行旋转"
+                                                    "text": "插入后若失去平衡需要进行旋转",
+                                                    "expandState": "collapse"
                                                 },
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c42pjjairio0",
+                                                            "created": 1594360258442,
+                                                            "text": "LL旋转"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c42pjvusd4g0",
+                                                                    "created": 1594360285789,
+                                                                    "text": "",
+                                                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/AVL%E6%A0%91%E4%B8%AD%E7%9A%84LL%E6%97%8B%E8%BD%AC.png?raw=true",
+                                                                    "imageTitle": "",
+                                                                    "imageSize": {
+                                                                        "width": 200,
+                                                                        "height": 146
+                                                                    }
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c42pjt8s0t40",
+                                                            "created": 1594360280105,
+                                                            "text": "LR旋转"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c42pjvusd4g0",
+                                                                    "created": 1594360285789,
+                                                                    "text": "",
+                                                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/AVL%E6%A0%91%E4%B8%AD%E7%9A%84LR%E6%97%8B%E8%BD%AC.png?raw=true",
+                                                                    "imageTitle": "",
+                                                                    "imageSize": {
+                                                                        "width": 200,
+                                                                        "height": 111
+                                                                    }
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c42pmee6hmw0",
+                                                            "created": 1594360482872,
+                                                            "text": "RR旋转"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c42pjvusd4g0",
+                                                                    "created": 1594360285789,
+                                                                    "text": "",
+                                                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/AVL%E6%A0%91%E4%B8%AD%E7%9A%84RL%E6%97%8B%E8%BD%AC.png?raw=true",
+                                                                    "imageTitle": "",
+                                                                    "imageSize": {
+                                                                        "width": 200,
+                                                                        "height": 110
+                                                                    }
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c42pmgm69qw0",
+                                                            "created": 1594360487709,
+                                                            "text": "RL旋转"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c42pjvusd4g0",
+                                                                    "created": 1594360285789,
+                                                                    "text": "",
+                                                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/AVL%E6%A0%91%E4%B8%AD%E7%9A%84RR%E6%97%8B%E8%BD%AC.png?raw=true",
+                                                                    "imageTitle": "",
+                                                                    "imageSize": {
+                                                                        "width": 200,
+                                                                        "height": 115
+                                                                    }
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -244,6 +346,30 @@
                                                 "children": []
                                             }
                                         ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c42ppo4t27s0",
+                                            "created": 1594360739166,
+                                            "text": "旋转变色规则",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c42pr5d0li80",
+                                                    "created": 1594360855031,
+                                                    "text": "",
+                                                    "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%A2%E9%BB%91%E6%A0%91%E6%97%8B%E8%BD%AC%E5%8F%98%E8%89%B2%E8%A7%84%E5%88%99.png?raw=true",
+                                                    "imageTitle": "",
+                                                    "imageSize": {
+                                                        "width": 200,
+                                                        "height": 199
+                                                    }
+                                                },
+                                                "children": []
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -261,23 +387,6 @@
                                     "id": "c42oujdruw00",
                                     "created": 1594358299535,
                                     "text": "数据库部分"
-                                },
-                                "children": []
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
-                            "id": "c42oumig85k0",
-                            "created": 1594358306348,
-                            "text": "红黑树"
-                        },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "c42owmp4sm80",
-                                    "created": 1594358463480,
-                                    "text": "自平衡二叉查找树"
                                 },
                                 "children": []
                             }

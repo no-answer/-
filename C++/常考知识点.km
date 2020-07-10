@@ -1,0 +1,360 @@
+{
+    "root": {
+        "data": {
+            "id": "c42pxfdlpt40",
+            "created": 1594361347020,
+            "text": "常考知识点"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c42pxw3do9s0",
+                    "created": 1594361383407,
+                    "text": "static"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c42pxzt5tb40",
+                    "created": 1594361391496,
+                    "text": "const"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42qulpgjmw0",
+                            "created": 1594363946815,
+                            "text": "被const修饰的变量在初始化之后就无法被修改"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qv6urk8g0",
+                            "created": 1594363992848,
+                            "text": "函数声明中，若形参被const修饰，则在函数内部参数值不能改变"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qvkteka00",
+                            "created": 1594364023241,
+                            "text": "若用const修饰一个成员函数，则该函数称为常函数，不能修改类的成员变量"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pz7hrlxs0",
+                    "created": 1594361486585,
+                    "text": "new"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c42pxrl7lpk0",
+                    "created": 1594361373601,
+                    "text": "delete和delete[]的区别"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42q7fcp3000",
+                            "created": 1594362130606,
+                            "text": "delete释放new分配的单个对象指针指向的内存，调用一次析构函数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42q7mavmu80",
+                            "created": 1594362145734,
+                            "text": "delete[]释放new分配的对象数组指针指向的内存，逐个调用析构函数"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pzemex8w0",
+                    "created": 1594361502104,
+                    "text": "malloc"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42rjq4aom00",
+                            "created": 1594365915523,
+                            "text": "用于动态分配内存的函数。为了减少内存碎片和系统调用的开销，malloc采用内存池的方式，先申请大块内存作为堆区，然后将"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pzkz8uh40",
+                    "created": 1594361515941,
+                    "text": "realloc"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c42pyl9wkiw0",
+                    "created": 1594361438221,
+                    "text": "析构函数"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42qw4jl5vk0",
+                            "created": 1594364066183,
+                            "text": "没有返回类型的成员函数，没有参数，无法重载，不能用public等修饰"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qwk8oj340",
+                            "created": 1594364100352,
+                            "text": "不能手动调用，只有类对象生命周期结束时才能自动调用并释放构造时分配的资源"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pxjk0oo00",
+                    "created": 1594361356115,
+                    "text": "指针和引用的区别"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42qj1dbjkw0",
+                            "created": 1594363040539,
+                            "text": "指针有自己的空间（sizeof(*)p=4)，引用只是一个别名，sizeof(&p)为被引用对象的大小"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qjmr1v2g0",
+                            "created": 1594363087082,
+                            "text": "指针可以被初始化为NULL，引用必须被初始化为一个已有对象的引用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qjznivz40",
+                            "created": 1594363115167,
+                            "text": "作为参数传递时，指针需要解引用才可以对对象进行操作，直接对引用的修改都会改变引用所指向的对象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qkiqkhr40",
+                            "created": 1594363156710,
+                            "text": "指针可以重新指向其他的对象，引用只能指向初始化时的对象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qkt2qc2o0",
+                            "created": 1594363179213,
+                            "text": "指针可以有多级指针，引用只能有一级"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42ql0ke2740",
+                            "created": 1594363195518,
+                            "text": "指针和引用使用++运算符的意义不一样"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42ql6znem80",
+                            "created": 1594363209502,
+                            "text": "若返回动态内存分配的对象或内存，必须使用指针，引用可能引起内存泄漏"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pz1nhlzs0",
+                    "created": 1594361473871,
+                    "text": "野指针"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42qy57c0nk0",
+                            "created": 1594364224347,
+                            "text": "指向被释放的内存或没有访问权限的内存的指针"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qyjk7vtk0",
+                            "created": 1594364255601,
+                            "text": "成因"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42qyksbh5s0",
+                                    "created": 1594364258267,
+                                    "text": "指针变量没有初始化"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42qynihlwo0",
+                                    "created": 1594364264203,
+                                    "text": "指针被free或delete之后没有被重新置为NULL"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42qywdfnd40",
+                                    "created": 1594364283489,
+                                    "text": "指针操作超越了变量的作用范围"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42qz2uki7c0",
+                            "created": 1594364297586,
+                            "text": "避免"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42qz4rgooo0",
+                                    "created": 1594364301751,
+                                    "text": "对指针进行初始化"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42qzbjgyvc0",
+                                    "created": 1594364316506,
+                                    "text": "在指针使用结束之后释放内存，将指针置为NULL"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pz2wwxg80",
+                    "created": 1594361476618,
+                    "text": "内存泄漏"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c42qx0blxy80",
+                            "created": 1594364135357,
+                            "text": "访问已经释放的内存"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qx6nmdb40",
+                            "created": 1594364149144,
+                            "text": "访问没有权限访问的内存"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c42qxaecvzs0",
+                            "created": 1594364157291,
+                            "text": "成因"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42qxbshjeo0",
+                                    "created": 1594364160322,
+                                    "text": "在类的构造函数/析构函数中没有匹配的调用new和delete函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42qxn9c69s0",
+                                    "created": 1594364185286,
+                                    "text": "没有正确的清楚嵌套的对象指针"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c42qxstng880",
+                                    "created": 1594364197398,
+                                    "text": "在释放对象数组时使用了delete而非delete[]"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c42pztftho80",
+                    "created": 1594361534357,
+                    "text": "内存分配"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c42pz48zbq80",
+                    "created": 1594361479524,
+                    "text": "智能指针"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c42qzrondeg0",
+                    "created": 1594364351647,
+                    "text": "从源文件到可执行文件的过程"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}
