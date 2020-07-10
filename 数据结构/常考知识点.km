@@ -136,6 +136,150 @@
                                         "children": []
                                     }
                                 ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c42oxe300rc0",
+                                    "created": 1594358523092,
+                                    "text": "二叉搜索树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c42oxx4nbko0",
+                                            "created": 1594358564550,
+                                            "text": "对任意节点，若左子树不空，则左子树上所有节点值小于根节点值，若右子树不空，则右子树上所有节点值大于跟节点值"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c42ox02vb140",
+                                    "created": 1594358492609,
+                                    "text": "AVL树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c42ox1qeki00",
+                                            "created": 1594358496209,
+                                            "text": "任意节点的两个子树高度差最大为1的二叉搜索树"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c42pgl9wl1s0",
+                                                    "created": 1594360027666,
+                                                    "text": "插入后若失去平衡需要进行旋转"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c42p3afffe00",
+                                    "created": 1594358985321,
+                                    "text": "红黑树"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c42p6aggijc0",
+                                            "created": 1594359220476,
+                                            "text": "每个节点都带有颜色属性的二叉查找树"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c42p6i3u2e80",
+                                                    "created": 1594359237127,
+                                                    "text": "节点是黑色或红色，"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c42p6nmlf400",
+                                                    "created": 1594359249145,
+                                                    "text": "根节点和叶子节点都是黑色，叶子节点是NULL节点"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c42p6xhbp1s0",
+                                                    "created": 1594359270594,
+                                                    "text": "每个红色节点的两个子节点都是黑色（从根到叶子的路径上不能有两个连续的红色节点）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c42p7com0x40",
+                                                    "created": 1594359303687,
+                                                    "text": "从任意节点到每个叶子的所有路径都包含相同数目的黑色节点"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c42pejf97gg0",
+                                            "created": 1594359866908,
+                                            "text": "不追求绝对平衡，只需保证最长路径不超过最短路径的2倍"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c42peum1ktc0",
+                                                    "created": 1594359891263,
+                                                    "text": "降低了插入和旋转的次数，在经常增删的结构中性能比AVL树更优"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42ouga4k740",
+                            "created": 1594358292784,
+                            "text": "B/B+树"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42oujdruw00",
+                                    "created": 1594358299535,
+                                    "text": "数据库部分"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c42oumig85k0",
+                            "created": 1594358306348,
+                            "text": "红黑树"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c42owmp4sm80",
+                                    "created": 1594358463480,
+                                    "text": "自平衡二叉查找树"
+                                },
+                                "children": []
                             }
                         ]
                     }
