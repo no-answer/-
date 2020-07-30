@@ -1,0 +1,38 @@
+{
+    "root": {
+        "data": {
+            "id": "c4jt694zv7s0",
+            "created": 1596097021309,
+            "text": "形式化关系查询语言"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c4jt6r6r3g00",
+                    "created": 1596097060597,
+                    "text": "关系代数"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c4jt6ufg6g80",
+                    "created": 1596097067654,
+                    "text": "元组关系演算"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c4jt6x51aao0",
+                    "created": 1596097073554,
+                    "text": "域关系演算"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

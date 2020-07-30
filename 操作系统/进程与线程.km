@@ -44,7 +44,7 @@
                             "id": "c2mfdrpd8hc0",
                             "created": 1589050477723,
                             "text": "进程控制块PCB",
-                            "expandState": "collapse"
+                            "expandState": "expand"
                         },
                         "children": [
                             {
@@ -110,7 +110,7 @@
                             "id": "c2mfftk2ttc0",
                             "created": 1589050638485,
                             "text": "进程调度",
-                            "expandState": "collapse"
+                            "expandState": "expand"
                         },
                         "children": [
                             {

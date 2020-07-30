@@ -22,6 +22,124 @@
                         "children": [
                             {
                                 "data": {
+                                    "id": "c44eiv5duc80",
+                                    "created": 1594532293593,
+                                    "text": "顺序/散列索引"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c44eiyfo4nc0",
+                                            "created": 1594532300745,
+                                            "text": "顺序索引"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c44ej31qf1c0",
+                                                    "created": 1594532310787,
+                                                    "text": "基于值的顺序排序"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c44ej04cvmw0",
+                                            "created": 1594532304415,
+                                            "text": "散列索引"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c44ej82oz9s0",
+                                                    "created": 1594532321729,
+                                                    "text": "通过散列函数将值平均分布到若干散列桶中"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3wu8vs57q00",
+                                    "created": 1593764169433,
+                                    "text": "聚集/非聚集索引"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c44eyere3k80",
+                                            "created": 1594533511745,
+                                            "text": "聚集索引"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c44eyt4kwgg0",
+                                                    "created": 1594533543018,
+                                                    "text": "根据主键建立的索引"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c44ezox4uyg0",
+                                                    "created": 1594533612224,
+                                                    "text": "通过聚集索引可以直接查找到所需要的数据"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c44eyg8n1zk0",
+                                            "created": 1594533514965,
+                                            "text": "非聚集索引"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c44ez2uocq80",
+                                                    "created": 1594533564187,
+                                                    "text": "由主键之外的字段建立的索引，非聚集索引之间相互独立"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c44f0hv4es00",
+                                                    "created": 1594533675229,
+                                                    "text": "每建立一个新索引，表就会复制一份用于生成索引"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c44ezy6i50g0",
+                                                    "created": 1594533632382,
+                                                    "text": "通过非聚集索引可以查到记录对应的主键值，可再使用主键值查找到需要的索引"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c44f16iw7q80",
+                                            "created": 1594533728910,
+                                            "text": "覆盖索引查询（复合索引/多字段索引查询）可以不使用聚集索引就能查询出所需要的数据"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
                                     "id": "c3vxupbmz0g0",
                                     "created": 1593672782759,
                                     "text": "B树/B+树"
@@ -241,14 +359,6 @@
                                     "id": "c3vxuuiy86o0",
                                     "created": 1593672794085,
                                     "text": "索引失效条件"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "c3wu8vs57q00",
-                                    "created": 1593764169433,
-                                    "text": "聚集/非聚集索引"
                                 },
                                 "children": []
                             }
@@ -630,7 +740,7 @@
                         "data": {
                             "id": "c3vxw5iy5fc0",
                             "created": 1593672896393,
-                            "text": "事物的ACID理论"
+                            "text": "事务的ACID理论"
                         },
                         "children": [
                             {

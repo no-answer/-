@@ -17,9 +17,260 @@
                         "data": {
                             "id": "c3vxtoxqpx40",
                             "created": 1593672703554,
-                            "text": "关系数据库由表构成，每个表有唯一的名字"
+                            "text": "关系数据库由表(table)的集合构成，每个表有唯一的名字"
                         },
                         "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b2drc1pcw0",
+                            "created": 1595208959846,
+                            "text": "关系指代表，元组指代行，属性指代列，关系实例用于表示一个关系的特定实例"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b2e9q3b680",
+                            "created": 1595208999877,
+                            "text": "每个属性都有允许取值的集合，称作域"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4b2fy3yvk80",
+                    "created": 1595209131323,
+                    "text": "数据库模式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4b2g0tpelc0",
+                            "created": 1595209137233,
+                            "text": "数据库的逻辑设计"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b2g3lzpjc0",
+                            "created": 1595209143297,
+                            "text": "数据库实例"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b2g5q7qw00",
+                                    "created": 1595209147906,
+                                    "text": "给定时刻数据库中数据的一个快照"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4b2qldpqb40",
+                    "created": 1595209965620,
+                    "text": "关系"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4b2qobyjiw0",
+                            "created": 1595209972044,
+                            "text": "对应程序设计语言中的变量的概念"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b2qtf0r1c0",
+                            "created": 1595209983113,
+                            "text": "关系模式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b2quqsjbk0",
+                                    "created": 1595209986002,
+                                    "text": "对应程序设计语言中类型定义的概念"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4b2vaizbvk0",
+                    "created": 1595210333815,
+                    "text": "码"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4b2wrhjw2g0",
+                            "created": 1595210449098,
+                            "text": "整个关系的一种性质，任意两个元组都不允许同时在码属性上有相同的值，码的指定代表了被奸魔十五的现实约束"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b2vbxneqw0",
+                            "created": 1595210336879,
+                            "text": "超码"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b2vf57cp40",
+                                    "created": 1595210343866,
+                                    "text": "一个或多个属性的集合，能在关系中唯一的标识一个元组"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4b2vtf9fio0",
+                            "created": 1595210374949,
+                            "text": "候选码"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b2vxw9jds0",
+                                    "created": 1595210384684,
+                                    "text": "任意真子集都不能成为超码的最小超码"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4b2w72js800",
+                            "created": 1595210404655,
+                            "text": "主码"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b2wbdt3sw0",
+                                    "created": 1595210414043,
+                                    "text": "被数据库设计者选中的主要用来在一个关系中区分不同元组的候选码，主码应该选择从不变化或极少变化的属性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4b41ckjuq00",
+                                    "created": 1595213629558,
+                                    "text": "若关系模式r1在属性中包括另一个关系模式r2的主码，这个属性在r1上称作参照r2的外码，r1也称为外码依赖的参照关系，r2叫做外码的被参照关系"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4b41y7eppk0",
+                                    "created": 1595213676653,
+                                    "text": "参照完整性约束"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4b44e24hl40",
+                                            "created": 1595213867890,
+                                            "text": "在参照关系中任意特定元组在特定属性上的取值必然等于被参照关系中的某个元组在特定属性上的取值"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4b4avc5wz40",
+                    "created": 1595214375687,
+                    "text": "关系运算"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4b4b7xr2400",
+                            "created": 1595214403114,
+                            "text": "连接"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b4ba6ao1s0",
+                            "created": 1595214407984,
+                            "text": "自然连接"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b4blh64fk0",
+                            "created": 1595214432586,
+                            "text": "笛卡尔积"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b4bva21680",
+                            "created": 1595214453924,
+                            "text": "并"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b4bwtr3g00",
+                            "created": 1595214457292,
+                            "text": "交"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b4bxysizk0",
+                            "created": 1595214459773,
+                            "text": "差"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4b4cu861wg0",
+                            "created": 1595214529997,
+                            "text": "关系代数"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b4cz44j6o0",
+                                    "created": 1595214540637,
+                                    "text": "提供了一组运算，以一个或多个关系为输入，返回一个关系作为输出"
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             }

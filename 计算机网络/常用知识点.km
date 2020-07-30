@@ -174,9 +174,281 @@
                 "data": {
                     "id": "c3wu7tqudjc0",
                     "created": 1593764086636,
-                    "text": "HTTP/HTTPS"
+                    "text": "HTTP/HTTPS",
+                    "expandState": "expand"
                 },
                 "children": [
+                    {
+                        "data": {
+                            "id": "c43ktzhdjko0",
+                            "created": 1594448531734,
+                            "text": "HTTP基于TCP/IP通信协议来传递数据，属于应用层协议"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c43kvlyzpuw0",
+                            "created": 1594448659052,
+                            "text": "HTTP特点"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c43kvqd5un40",
+                                    "created": 1594448668616,
+                                    "text": "HTTP协议工作于客户端-服务端架构上，浏览器作为HTTP客户端通过URL向HTTP服务端（Web服务器）发送所有请求"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43kwd9fm3s0",
+                                    "created": 1594448718457,
+                                    "text": "Web服务器受到请求后，向客户端发送相应信息，默认端口号为80"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43kwnd7n5c0",
+                                    "created": 1594448740453,
+                                    "text": "无连接"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c43kwwepdnc0",
+                                            "created": 1594448760135,
+                                            "text": "每次连接只处理一个请求，，服务器处理完客户端的请求，并且收到客户端应答之后即断开连接（HTTP1.1支持长连接）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c43kwpmzt1s0",
+                                    "created": 1594448745398,
+                                    "text": "媒体独立"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c43kxsvvxww0",
+                                            "created": 1594448830831,
+                                            "text": "只要客户端和服务器直到如何处理数据内容，任何类型的数据都可以通过HTTP发送，客户端及服务器指定使用适合的MIME-type内容类型"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c43kwqy9o1s0",
+                                    "created": 1594448748257,
+                                    "text": "无状态"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c43kyf2dau80",
+                                            "created": 1594448879112,
+                                            "text": "无状态指协议对事务处理无记忆，后续处理若需要前面的信息则必须重传"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c43nxwhx6ns0",
+                            "created": 1594457302023,
+                            "text": "消息结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c43nxxyqfv40",
+                                    "created": 1594457305216,
+                                    "text": "请求报文格式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c43ogpsemzk0",
+                                            "created": 1594458776339,
+                                            "text": " ",
+                                            "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87%E6%A0%BC%E5%BC%8F.png?raw=true",
+                                            "imageTitle": "",
+                                            "imageSize": {
+                                                "width": 200,
+                                                "height": 70
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c43oggaspwg0",
+                                    "created": 1594458755683,
+                                    "text": "响应消息格式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c43ogjccjco0",
+                                            "created": 1594458762307,
+                                            "text": "",
+                                            "image": "https://github.com/no-answer/Learning-notes/blob/master/%E5%9B%BE%E7%89%87/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E5%93%8D%E5%BA%94%E6%B6%88%E6%81%AF%E6%A0%BC%E5%BC%8F.png?raw=true",
+                                            "imageTitle": "",
+                                            "imageSize": {
+                                                "width": 200,
+                                                "height": 89
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c43qtc2e0f40",
+                            "created": 1594465407421,
+                            "text": "常用请求方式（Action）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c43qti5vi7k0",
+                                    "created": 1594465420693,
+                                    "text": "GET"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c43qtqht0ag0",
+                                            "created": 1594465438828,
+                                            "text": "请求指定的页面消息，并返回实体主体"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43qyg8hxhc0",
+                                            "created": 1594465808318,
+                                            "text": "一般用于请求，请求参数会拼在URL后面，容易被攻击者盗取，请求的URL有长度限制"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43qzruba000",
+                                            "created": 1594465911946,
+                                            "text": "GET请求会被浏览器主动cache，反复回退/前进无害"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43r0ntdypk0",
+                                            "created": 1594465981547,
+                                            "text": "GET请求过程中，浏览器将http header和data一起发送出去，服务器响应200（返回数据）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c43qtjubf600",
+                                    "created": 1594465424347,
+                                    "text": "POST"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c43qu0wv3g00",
+                                            "created": 1594465461507,
+                                            "text": "向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43qu6qnr3s0",
+                                            "created": 1594465474192,
+                                            "text": "POST 请求可能会导致新的资源的建立和/或已有资源的修改"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43qz2kg5800",
+                                            "created": 1594465856930,
+                                            "text": "一般用于表单的提交，参数放在请求体body中，对用户不可见，请求数据长度无限制"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43r04nphpk0",
+                                            "created": 1594465939845,
+                                            "text": "POST请求不会被浏览器cache，刷新时需要再次提交表单请求"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43r15jccuw0",
+                                            "created": 1594466020122,
+                                            "text": "POST请请求中，浏览器先发送http header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c43r36ha6bc0",
+                            "created": 1594466178903,
+                            "text": "安全/幂等"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c43r3917zbs0",
+                                    "created": 1594466184462,
+                                    "text": "安全：请求方法不会破坏服务器上的资源"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43r3ev8yg80",
+                                    "created": 1594466197161,
+                                    "text": "幂等：多次执行相同的操作，结果是相同的"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43r3kq45rc0",
+                                    "created": 1594466209912,
+                                    "text": "GET方法是安全且幂等的，因为GET只读，不改变服务器上的数据，POST方法会修改服务器上的资源，不安全且不幂等"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
                     {
                         "data": {
                             "id": "c434o6epkpk0",
@@ -195,7 +467,15 @@
                                         "data": {
                                             "id": "c434oe3rv8o0",
                                             "created": 1594402955620,
-                                            "text": "请求已被接受，正在处理"
+                                            "text": "信息，服务器收到请求，需要请求者继续执行操作"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c43r2575f6w0",
+                                            "created": 1594466097749,
+                                            "text": "100 continue 继续，客户端应继续请求"
                                         },
                                         "children": []
                                     }
@@ -212,7 +492,7 @@
                                         "data": {
                                             "id": "c434onljars0",
                                             "created": 1594402976285,
-                                            "text": "请求已被成功处理"
+                                            "text": "成功，操作被成功接收并处理"
                                         },
                                         "children": []
                                     },
@@ -237,7 +517,7 @@
                                         "data": {
                                             "id": "c434ptrhow00",
                                             "created": 1594403068070,
-                                            "text": "重定向，要完成请求必须进一步处理"
+                                            "text": "重定向，需要进一步的操作以完成请求"
                                         },
                                         "children": []
                                     },
@@ -245,7 +525,7 @@
                                         "data": {
                                             "id": "c434q137vt40",
                                             "created": 1594403084016,
-                                            "text": "301 永久重定向"
+                                            "text": "301 Moved Permanently 永久重定向"
                                         },
                                         "children": []
                                     },
@@ -253,7 +533,7 @@
                                         "data": {
                                             "id": "c434q4u2d800",
                                             "created": 1594403092170,
-                                            "text": "302 临时重定向"
+                                            "text": "302 Found 临时重定向"
                                         },
                                         "children": []
                                     }
@@ -270,7 +550,7 @@
                                         "data": {
                                             "id": "c434q9sofzc0",
                                             "created": 1594403102970,
-                                            "text": "客户端错误，请求不合法"
+                                            "text": "客户端错误，请求包含语法错误或无法完成请求"
                                         },
                                         "children": []
                                     },
@@ -303,7 +583,7 @@
                                         "data": {
                                             "id": "c434qe3fm7c0",
                                             "created": 1594403112327,
-                                            "text": "服务器错误，无法处理合法的请求"
+                                            "text": "服务器错误，服务器在处理请求的过程中发生了错误"
                                         },
                                         "children": []
                                     },
@@ -311,7 +591,7 @@
                                         "data": {
                                             "id": "c434ra0cvm80",
                                             "created": 1594403181798,
-                                            "text": "500 服务器发生预期之外的错误"
+                                            "text": "500 Internal Server Error 服务器内部错误，无法完成请求"
                                         },
                                         "children": []
                                     },
@@ -319,7 +599,7 @@
                                         "data": {
                                             "id": "c434rg8j0400",
                                             "created": 1594403195353,
-                                            "text": "503 服务器当前无法处理客户端的请求，一段时间后可能恢复正常"
+                                            "text": "503 Service Unavailable 服务器当前无法处理客户端的请求，一段时间后可能恢复正常"
                                         },
                                         "children": []
                                     }
@@ -538,6 +818,47 @@
                                         ]
                                     }
                                 ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c43r4nbkcps0",
+                            "created": 1594466293926,
+                            "text": "HTTP/HTTPS"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c43r4r71om00",
+                                    "created": 1594466302360,
+                                    "text": "地址栏上的协议开头不同http:// https://"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43r5b5oe8o0",
+                                    "created": 1594466345813,
+                                    "text": "HTTP未经加密，HTTPS采用对称加密+非对称加密+摘要算法+签名对数据进行加密"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43r63ftnjk0",
+                                    "created": 1594466407377,
+                                    "text": "HTTP端口为80，HTTPS端口为443"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c43r68y5n340",
+                                    "created": 1594466419369,
+                                    "text": "HTTPS协议必须到CA申请证书"
+                                },
+                                "children": []
                             }
                         ]
                     },

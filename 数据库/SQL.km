@@ -1,0 +1,1912 @@
+{
+    "root": {
+        "data": {
+            "id": "c4b4dq9yh4g0",
+            "created": 1595214599763,
+            "text": "SQL"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c4b4dz1m0kg0",
+                    "created": 1595214618849,
+                    "text": "SQL"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4b4ea13tnc0",
+                            "created": 1595214642763,
+                            "text": "SQL查询语言概览"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b4eerw5g00",
+                                    "created": 1595214653090,
+                                    "text": "SQL：结构化查询语言"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4b4faghg680",
+                                    "created": 1595214722057,
+                                    "text": "SQL组成"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4b4eo3p65k0",
+                                            "created": 1595214673395,
+                                            "text": "数据定义语言DDL"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4fi3iowg0",
+                                                    "created": 1595214738687,
+                                                    "text": "SQL DDL提供关系模式，删除关系，以及修改关系模式的命令"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4excxzhs0",
+                                            "created": 1595214693545,
+                                            "text": "数据操作语言DML"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4fp00i3s0",
+                                                    "created": 1595214753713,
+                                                    "text": "SQL DML提供从数据库查询信息，以及在数据库中插入元组，删除元组，修改元组的能力"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4f215tag0",
+                                            "created": 1595214703716,
+                                            "text": "完整性"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4g61nm6o0",
+                                                    "created": 1595214790817,
+                                                    "text": "SQL DDL包含定义完整性约束的命令，保存在数据库中的数据必须满足所定义的完整性约束，破坏完整性约束的更新不被允许"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4k698vcg0",
+                                            "created": 1595215104733,
+                                            "text": "视图定义"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4k847v9c0",
+                                                    "created": 1595215108783,
+                                                    "text": "SQL DDL包括定义视图的命令"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4kcl6j8g0",
+                                            "created": 1595215118515,
+                                            "text": "事务控制"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4ke5kcnc0",
+                                                    "created": 1595215121925,
+                                                    "text": "SQL包括定义事务的开始和结束的命令"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4kkywmmw0",
+                                            "created": 1595215136760,
+                                            "text": "嵌入式SQL和动态SQL"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4kqhrhrc0",
+                                                    "created": 1595215148784,
+                                                    "text": "定义SQL语句如何嵌入到通用编程语言"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4kxfk0ug0",
+                                            "created": 1595215163888,
+                                            "text": "授权"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4kyqfbog0",
+                                                    "created": 1595215166723,
+                                                    "text": "SQL DDL包括定义对关系和视图的访问权限的命令"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4b4le62nlk0",
+                            "created": 1595215200320,
+                            "text": "SQL数据定义"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4b4lg5d5ls0",
+                                    "created": 1595215204630,
+                                    "text": "基本类型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4b4lish6eo0",
+                                            "created": 1595215210381,
+                                            "text": "char(n)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4m6viveg0",
+                                                    "created": 1595215262808,
+                                                    "text": "固定长度的字符串，用户指定长度n"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4b4oe1aa3k0",
+                                                            "created": 1595215435123,
+                                                            "text": "字符串不够长自动填充空格"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4ll7ysj40",
+                                            "created": 1595215215672,
+                                            "text": "verchar(n)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4me8ig5c0",
+                                                    "created": 1595215278831,
+                                                    "text": "可变长度的字符串，用户指定最大长度n"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4ln1g83s0",
+                                            "created": 1595215219631,
+                                            "text": "int"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4mkr5l140",
+                                                    "created": 1595215293019,
+                                                    "text": "整数类型"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4lntupb40",
+                                            "created": 1595215221348,
+                                            "text": "smallint"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4mnflanc0",
+                                                    "created": 1595215298850,
+                                                    "text": "小整数类型"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4lpcxb6w0",
+                                            "created": 1595215224678,
+                                            "text": "numeric(p,d)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4n13hjc80",
+                                                    "created": 1595215328593,
+                                                    "text": "定点数，精度由用户指定，这个数由p位数字（加上一个符号位），其中d位在小数点右边"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4lr5zauo0",
+                                            "created": 1595215228612,
+                                            "text": "real, double precision"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4nhcix7k0",
+                                                    "created": 1595215363968,
+                                                    "text": "浮点数和双精度浮点数"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b4lsz9bfk0",
+                                            "created": 1595215232559,
+                                            "text": "float(n)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4nlkk8dk0",
+                                                    "created": 1595215373161,
+                                                    "text": "精度至少为n位的浮点数"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4b4q18eu5s0",
+                                    "created": 1595215563984,
+                                    "text": "基本模式定义"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4b4q4160q80",
+                                            "created": 1595215570076,
+                                            "text": "create table r (A1 D1, A2 D2, ..., An Dn, <完整性约束i>, ..., <完整性约束k>);"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b4ra2y9cw0",
+                                                    "created": 1595215661609,
+                                                    "text": "r为关系名（表名），Ai为属性名，Di是属性Ai的域"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4b6ff0eq680",
+                                            "created": 1595220374189,
+                                            "text": "完整性约束"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4b6fhdaya80",
+                                                    "created": 1595220379322,
+                                                    "text": "primary key(Aj1, Aj2, ..., Ajm) : primary-key"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4b9s0zviow0",
+                                                            "created": 1595229825745,
+                                                            "text": "属性A构成关系的主码"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4b9rdmgn0o0",
+                                                    "created": 1595229774868,
+                                                    "text": "foreign key(Ak1, Ak2, ..., Akm) references : s"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4b9s8a6lqg0",
+                                                            "created": 1595229841606,
+                                                            "text": "任意元组在属性A上的取值必须对应于关系s中某元组在主码属性上的取值"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4b9ry8gynk0",
+                                                    "created": 1595229819735,
+                                                    "text": "not null"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4b9tjlazbk0",
+                                                            "created": 1595229944587,
+                                                            "text": "属性上的非空约束"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jjnpi9jgo0",
+                                            "created": 1596070178032,
+                                            "text": "insert into r values (A1,A2,...,An)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jjo9mqdwg0",
+                                                    "created": 1596070221837,
+                                                    "text": "将数据元组插入关系r"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jjqogr8kw0",
+                                            "created": 1596070410856,
+                                            "text": "delete from r"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jjqvfyv200",
+                                                    "created": 1596070426046,
+                                                    "text": "删除关系r中所有元组"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jjrhhr41k0",
+                                            "created": 1596070474043,
+                                            "text": "drop table r"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jjrkef5yw0",
+                                                    "created": 1596070480372,
+                                                    "text": "删除关系r"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jjwyoa8n40",
+                                            "created": 1596070903264,
+                                            "text": "alter table r add A D"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jjx79hfsw0",
+                                                    "created": 1596070921961,
+                                                    "text": "为关系r添加一个域为D的属性A"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jjxknl7l40",
+                                            "created": 1596070951111,
+                                            "text": "alter table r drop A"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jjxq7mcrk0",
+                                                    "created": 1596070963206,
+                                                    "text": "删除关系r中的属性A"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jjy4egi940",
+                            "created": 1596070994095,
+                            "text": "SQL查询基本结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jk5hzn9200",
+                                    "created": 1596071572223,
+                                    "text": "select子句"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jk5q7fihs0",
+                                            "created": 1596071590108,
+                                            "text": "用于列出查询结果中所需要的属性"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jk21vgo4g0",
+                                            "created": 1596071302049,
+                                            "text": "select子句中可以对属性进行算术运算"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jk18fg7og0",
+                                            "created": 1596071237954,
+                                            "text": "使用distinct修饰可返回关系r上所有属性A并且去重，默认不去重，可使用all显式指明不去重"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jk5vh1mzc0",
+                                    "created": 1596071601574,
+                                    "text": "from子句"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jk5xidqhs0",
+                                            "created": 1596071606008,
+                                            "text": "在查询求值中需要访问的关系列表"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jk65m3grk0",
+                                    "created": 1596071623647,
+                                    "text": "where子句"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jk68x0vzk0",
+                                            "created": 1596071630838,
+                                            "text": "作用在from子句中关系属性上的谓词"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jkcesnw6g0",
+                                    "created": 1596072113820,
+                                    "text": "典型句式"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jkch95opk0",
+                                            "created": 1596072119171,
+                                            "text": "select A1,A2,...,An from r1,r2,...,rn where P"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jkdnj6vow0",
+                                    "created": 1596072211202,
+                                    "text": "连接join"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jkdshonoo0",
+                                            "created": 1596072221995,
+                                            "text": "笛卡尔积r1,r2"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jkeof3tgo0",
+                                                    "created": 1596072291496,
+                                                    "text": "对所有元组都进行连接"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jkdtnn3ls0",
+                                            "created": 1596072224532,
+                                            "text": "自然连接r1 natural joinr2"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jkeb0efso0",
+                                                    "created": 1596072262309,
+                                                    "text": "只考虑在两个关系模式中都出现的属性上取值相同的元组对，产生一个关系作为结果"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jkhy7vk2g0",
+                                            "created": 1596072547919,
+                                            "text": "r1 join r2 using(A1,A2,...,An)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jkideeyc00",
+                                                    "created": 1596072580967,
+                                                    "text": "只需要在属性A1,A2,...,An取值相同即可"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jkjb43aqo0",
+                                    "created": 1596072654353,
+                                    "text": "更名运算as"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jkjvhru8o0",
+                                            "created": 1596072698716,
+                                            "text": "为结果关系中的属性名或关系名创建相关名称"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jklla68740",
+                                    "created": 1596072833217,
+                                    "text": "字符串运算"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jkmgkm7ag0",
+                                            "created": 1596072901329,
+                                            "text": "可使用like操作符实现模式匹配"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jkpepliy00",
+                                                    "created": 1596073132369,
+                                                    "text": "SQL标准中大小写敏感，MYSQL中大小写不敏感"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4jkpvjooe00",
+                                                    "created": 1596073169016,
+                                                    "text": "not like可搜索不匹配项，similar to更强，类似正则表达式"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jkln7izl40",
+                                            "created": 1596072837410,
+                                            "text": "百分号%"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jklsrnuhs0",
+                                                    "created": 1596072849512,
+                                                    "text": "匹配任意子串"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jkly59o4g0",
+                                            "created": 1596072861218,
+                                            "text": "下划线_"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jklz4deow0",
+                                                    "created": 1596072863341,
+                                                    "text": "匹配任意字符"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jknaxvd5s0",
+                                            "created": 1596072967433,
+                                            "text": "escape"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jknvnzvnk0",
+                                                    "created": 1596073012549,
+                                                    "text": "关键字用于定义转义字符（使得关系中能够包含特殊模式的字符%_）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4jkoaa0f680",
+                                                    "created": 1596073044355,
+                                                    "text": "like 'ab\\%\\\\cd%' escape '\\'"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4jkokjb8og0",
+                                                            "created": 1596073066685,
+                                                            "text": "匹配所有以ab%\\cd开头的字串"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jkqosla6g0",
+                                    "created": 1596073232682,
+                                    "text": "排序"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jkqpx473s0",
+                                            "created": 1596073235132,
+                                            "text": "order by A1,A2,...,An"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jkqx2k6cg0",
+                                                    "created": 1596073250699,
+                                                    "text": "按A1升序排列，A1相同则按A2升序排列，以此类推"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jkrx9abjc0",
+                                            "created": 1596073329470,
+                                            "text": "desc"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jks7v1d3c0",
+                                                    "created": 1596073352553,
+                                                    "text": "降序排列"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4jksj886xk0",
+                                                            "created": 1596073377295,
+                                                            "text": "select * from r order by A1 desc, A2 asc"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jks9zuzxk0",
+                                            "created": 1596073357198,
+                                            "text": "asc"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jksbfh1f40",
+                                                    "created": 1596073360319,
+                                                    "text": "升序排列"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4jksdsdrqg0",
+                                                            "created": 1596073365453,
+                                                            "text": "默认升序"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jkwsmpba80",
+                                    "created": 1596073711218,
+                                    "text": "where子句谓词"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jkwwtdtdc0",
+                                            "created": 1596073720329,
+                                            "text": "between"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jkx3zhscg0",
+                                                    "created": 1596073735936,
+                                                    "text": "属性取值在某个范围中间"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c4jkxca5ezk0",
+                                                            "created": 1596073753994,
+                                                            "text": "where A between D1 and D2"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "c4jkz7wnw2w0",
+                                                                    "created": 1596073901200,
+                                                                    "text": "not between"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jl1ka32t40",
+                                            "created": 1596074084861,
+                                            "text": "可使用记号(v1,v2,...,vn)来表示一个n维元组"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jl32s0eso0",
+                                                    "created": 1596074203492,
+                                                    "text": "元组上可使用比较运算符，按字典序比较"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jl3rn0lyo0",
+                            "created": 1596074257609,
+                            "text": "集合运算"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jl3wgzc680",
+                                    "created": 1596074268128,
+                                    "text": "union"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jl45u09h40",
+                                            "created": 1596074288507,
+                                            "text": "并集，自动去重"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jl6r69h8o0",
+                                                    "created": 1596074491689,
+                                                    "text": "union all可保留所有重复"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jl3xz9dfs0",
+                                    "created": 1596074271410,
+                                    "text": "intersect"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jl4aoagzk0",
+                                            "created": 1596074299045,
+                                            "text": "交集，自动去重"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jl799nbu00",
+                                                    "created": 1596074531075,
+                                                    "text": "intersect all可保留所有重复"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jl4101f3c0",
+                                    "created": 1596074277988,
+                                    "text": "except"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jl4cbkbmw0",
+                                            "created": 1596074302629,
+                                            "text": "集合差，自动去重"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jl7ih0v0w0",
+                                                    "created": 1596074551112,
+                                                    "text": "except all可保留所有重复"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jl8josimo0",
+                            "created": 1596074632123,
+                            "text": "空值"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jl8orx0aw0",
+                                    "created": 1596074643196,
+                                    "text": "表达式中有输入为空，则结果也为空"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jl90x7po00",
+                                    "created": 1596074669638,
+                                    "text": "涉及空值的比较运算结果视为unknown 既不是is null，也不是is not null"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jl9kxiykw0",
+                                    "created": 1596074713192,
+                                    "text": "设及空值的布尔运算中必定能确定结果则返回结果，否则返回unknown"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jlcn98k4g0",
+                            "created": 1596074953346,
+                            "text": "聚集函数"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jlcs4ccf40",
+                                    "created": 1596074963934,
+                                    "text": "平均值avg"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jle9wap140",
+                                            "created": 1596075080994,
+                                            "text": "select avg(A1) from r where P"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlcvbpx280",
+                                    "created": 1596074970911,
+                                    "text": "最小值min"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlcxp8s280",
+                                    "created": 1596074976082,
+                                    "text": "最大值max"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlczrwuqo0",
+                                    "created": 1596074980597,
+                                    "text": "总和sum"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jld2hxchs0",
+                                    "created": 1596074986523,
+                                    "text": "计数count"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jleunx7140",
+                                    "created": 1596075126200,
+                                    "text": "分组聚集group by"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jlgf9ia480",
+                                            "created": 1596075249405,
+                                            "text": "select name, avg(salary) as avg_salary from r group by salary"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jlgzczwq80",
+                                                    "created": 1596075293152,
+                                                    "text": "查询每个系的平均工资"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jlurx36uw0",
+                                            "created": 1596076374051,
+                                            "text": "需要保证出现在select语句中但没有被聚集的属性只能是出现在group by子句中的属性"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlxjeovq80",
+                                    "created": 1596076590616,
+                                    "text": "having"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jmz91tcs00",
+                                            "created": 1596079545908,
+                                            "text": "对group by子句构成的分组限定条件而不是对单个元组限定条件"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jlxvzu7rc0",
+                                            "created": 1596076618016,
+                                            "text": "出现在having子句但是没有被聚集的属性必须出现在group by语句中"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jlyfvdxug0",
+                            "created": 1596076661283,
+                            "text": "查询顺序"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jlyit3nd40",
+                                    "created": 1596076667675,
+                                    "text": "先根据from语句计算出一个关系"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlyou3h3c0",
+                                    "created": 1596076680796,
+                                    "text": "若出现where子句，将where子句的谓词应用到from的结果关系上"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlz4e9t680",
+                                    "created": 1596076714668,
+                                    "text": "若出现group by子句，满足where谓词的元组通过group by子句形成分组"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlzhq33xc0",
+                                    "created": 1596076743680,
+                                    "text": "若出现having子句，将应用到每个分组上，不满足hacing字句谓词的分组被抛弃"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jlzvz0ma00",
+                                    "created": 1596076774695,
+                                    "text": "select在每个分组上应用聚集函数来得到单个结果元组"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jm16q9xyg0",
+                            "created": 1596076876475,
+                            "text": "数据库的修改"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jm18j0xzk0",
+                                    "created": 1596076880390,
+                                    "text": "删除"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jm19jzuog0",
+                                            "created": 1596076882626,
+                                            "text": "delete from r where P"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jm1g3iz480",
+                                                    "created": 1596076896868,
+                                                    "text": "delete只能作用于一个关系"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jm3cz596w0",
+                                    "created": 1596077046801,
+                                    "text": "插入"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jm3driz5c0",
+                                            "created": 1596077048517,
+                                            "text": "insert into r values(A1,A2,...,An)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jm4bh7js80",
+                                            "created": 1596077121903,
+                                            "text": "可以嵌套select子句，但是但执行插入之前必须先执行完select子句，并且要满足主码约束"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jm4vftb280",
+                                    "created": 1596077165355,
+                                    "text": "更新"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jm4wp3u4o0",
+                                            "created": 1596077168093,
+                                            "text": "update r set C where P"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jm58b3aq00",
+                                                    "created": 1596077193367,
+                                                    "text": "在关系r上所有满足条件P的元组中执行操作C"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jm64g426w0",
+                                            "created": 1596077263328,
+                                            "text": "支持case结构"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jm6mph59s0",
+                                                    "created": 1596077303076,
+                                                    "text": "set salary = case when P then C1 else C2"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4b4dzzohq00",
+                    "created": 1595214620909,
+                    "text": "中级SQL"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4jm87o87aw0",
+                            "created": 1596077427077,
+                            "text": "连接表达式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jmb5xd8ts0",
+                                    "created": 1596077658369,
+                                    "text": "连接条件on"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jmb8kv6vk0",
+                                            "created": 1596077664143,
+                                            "text": "允许在参与连接的关系上设置通用的谓词，写法类似where"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jmbiiq5c80",
+                                            "created": 1596077685782,
+                                            "text": "select * from r1 join R2 on P"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jmej829lk0",
+                                    "created": 1596077922406,
+                                    "text": "外连接outer join"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jmf7ebvnk0",
+                                            "created": 1596077975028,
+                                            "text": "左外连接left outer join"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jmjh0pjwo0",
+                                                    "created": 1596078309429,
+                                                    "text": "只保留左边关系中出现的元组"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jmfc5gli00",
+                                            "created": 1596077985376,
+                                            "text": "右外连接right outer join"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jmjli61y00",
+                                                    "created": 1596078319192,
+                                                    "text": "只保留右边关系中出现的元组"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jmfi6pviw0",
+                                            "created": 1596077998512,
+                                            "text": "全外连接full outer join"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jmjrrhx2w0",
+                                                    "created": 1596078332817,
+                                                    "text": "保留出现在两个关系中的元组"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jmkgo6lps0",
+                                            "created": 1596078387036,
+                                            "text": "在内连接之后，对于左侧关系中任意一个与右侧关系中任何元组都不匹配的元组，向连接结果中加入一个元组，其值为左侧关系中的属性+空值"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jmmwmxkdk0",
+                            "created": 1596078578517,
+                            "text": "视图"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jmmyifjm00",
+                                    "created": 1596078582598,
+                                    "text": "作为虚关系（在概念上包含查询结果，并不预先计算并存储，而是使用时才执行查询）但对用户可见的关系，关系可以支持大量视图"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jmowqbz140",
+                                    "created": 1596078735451,
+                                    "text": "create view v(A1,A2,...,An) as <query expression>"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jmparfgs80",
+                                            "created": 1596078765992,
+                                            "text": "v为视图名，后续<>为合法查询表达式，视图中属性名可显式指定"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jmqunxxgo0",
+                                    "created": 1596078887681,
+                                    "text": "视图本身也是个关系"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jmuzc3sn40",
+                                    "created": 1596079211306,
+                                    "text": "物化视图"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jmv13hwoo0",
+                                            "created": 1596079215139,
+                                            "text": "特定数据库允许存储视图关系，但是他们保证，如果用于定义视图的实际关系发生改变，视图也跟着修改"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jmvqguxeo0",
+                                            "created": 1596079270366,
+                                            "text": "频繁使用视图的应用会在视图的物化中受益"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jmxhlbk340",
+                                    "created": 1596079407774,
+                                    "text": "可更新视图"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jmxkms7dc0",
+                                            "created": 1596079414392,
+                                            "text": "满足条件"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jmxn0a2hk0",
+                                                    "created": 1596079419562,
+                                                    "text": "from子句中只有一个数据库关系"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4jmxrs0xq80",
+                                                    "created": 1596079429947,
+                                                    "text": "select子句中只包含关系的属性名，不包含任何表达式、聚集、或distinct声明"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4jmy3ny5400",
+                                                    "created": 1596079455822,
+                                                    "text": "任何没有出现在select子句中的属性可以取空值，即属性没有not null，也不构成主码一部分"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4jmyqlygzk0",
+                                                    "created": 1596079505767,
+                                                    "text": "查询中不含有group by或having子句"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jn0etaiuo0",
+                                            "created": 1596079636818,
+                                            "text": "此时SQL允许执行update、insert、delete操作"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jn0c1fzg80",
+                            "created": 1596079630780,
+                            "text": "事务"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jn17mltls0",
+                                    "created": 1596079699540,
+                                    "text": "每当一条SQL语句被执行，就隐式开始了一个事务，提交和回滚语句会结束一个事务"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jn2dl48zc0",
+                                    "created": 1596079790875,
+                                    "text": "commit work提交当前事务"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jn2mv9x480",
+                                            "created": 1596079811080,
+                                            "text": "将该事务做的更新在数据库中持久保存，事务提交后，一个新事务自动开始"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jn2gm8ank0",
+                                    "created": 1596079797473,
+                                    "text": "rollback work回滚当前事务语句"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jn3296vr40",
+                                            "created": 1596079844573,
+                                            "text": "撤销事务中所有SQL语句对数据库的更新"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jn5gbfkfk0",
+                            "created": 1596080031912,
+                            "text": "完整性约束"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jrr5ds9c00",
+                                    "created": 1596093016561,
+                                    "text": "not null"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jrriptyu80",
+                                            "created": 1596093045588,
+                                            "text": "非空约束"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jrr9oeedc0",
+                                    "created": 1596093025910,
+                                    "text": "unique"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jrrmorvg80",
+                                            "created": 1596093054231,
+                                            "text": "唯一约束"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jrrbr9owo0",
+                                    "created": 1596093030437,
+                                    "text": "check<P>"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jrrxqs1ao0",
+                                            "created": 1596093078297,
+                                            "text": "保证属性满足执行条件"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jrs41is0g0",
+                                                    "created": 1596093092007,
+                                                    "text": "check (semester in ('Fall', 'Winter', 'Spring','Summer')"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jrspxm4eo0",
+                                    "created": 1596093139660,
+                                    "text": "参照完整性约束（子集依赖）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jrt0h38yo0",
+                                            "created": 1596093162605,
+                                            "text": "外码参照被参照表中的主码属性"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jrtuonk4g0",
+                                    "created": 1596093228366,
+                                    "text": "initially deferred"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jru0zubo80",
+                                            "created": 1596093242103,
+                                            "text": "将该子句加入约束声明之后，只会在事务结束时检查完整性约束（默认是立即检查），事务执行中可以违反完整性约束"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4jrv8v5w7s0",
+                            "created": 1596093337599,
+                            "text": "SQL数据类型与横式"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jrvd6t8i80",
+                                    "created": 1596093347010,
+                                    "text": "日期和时间类型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jrvlcsgr40",
+                                            "created": 1596093364786,
+                                            "text": "date日历日期，包括年（四位）、月、日"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jrvtn9hrk0",
+                                            "created": 1596093382834,
+                                            "text": "time时间，包括时分秒，可用变量time(p)来表示秒的小数点后的数字位数（默认0）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jrweyapsw0",
+                                            "created": 1596093429213,
+                                            "text": "timestamp，date和time的结合，可用变量timestamp(p)来表示秒后小数点后数字位数(默认为6）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jrxh1rylc0",
+                                    "created": 1596093512141,
+                                    "text": "SQL允许为属性指定默认值，A numeric(3,0) default 0"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jry09qg7s0",
+                                    "created": 1596093553981,
+                                    "text": "创建索引"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jry3am2340",
+                                            "created": 1596093560565,
+                                            "text": "在关系的属性上创建索引，允许数据库高效找到关系中在索引属性上取给定值的元组，B+树"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4js2ugqyt40",
+                                    "created": 1596093933166,
+                                    "text": "自定义类型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4js2wcejqg0",
+                                            "created": 1596093937256,
+                                            "text": "独特类型distinct type"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4js2zywcgg0",
+                                            "created": 1596093945147,
+                                            "text": "结构化数据类型structure data type"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c4js8uft7rs0",
+                            "created": 1596094403294,
+                            "text": "授权"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4js95cr6zs0",
+                                    "created": 1596094427054,
+                                    "text": "授予/收回"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4js99v3ngg0",
+                                            "created": 1596094436870,
+                                            "text": "grant <权限列表> on <关系名或视图名> to <用户/角色列表>"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4js9xfqetc0",
+                                                    "created": 1596094488184,
+                                                    "text": "权限列表中可有select、update、insert、delete"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jsajy7coo0",
+                                            "created": 1596094537190,
+                                            "text": "revoke <权限列表> on <关系名或视图名> from <用户/角色列表>"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jsb8zau6w0",
+                                    "created": 1596094591676,
+                                    "text": "角色"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jsbnqc6o00",
+                                            "created": 1596094623785,
+                                            "text": "创建角色create role R1"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jsbub0j680",
+                                                    "created": 1596094638096,
+                                                    "text": "创建角色R1"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jscl4abaw0",
+                                            "created": 1596094696463,
+                                            "text": "角色权限包含"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jscocr31k0",
+                                                    "created": 1596094703505,
+                                                    "text": "所有直接授予用户/角色的权限"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c4jscuxpfjk0",
+                                                    "created": 1596094717833,
+                                                    "text": "所有授予给用户/角色所拥有角色的权限"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jszaywk4w0",
+                                    "created": 1596096476745,
+                                    "text": "权限收回"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jszhidd340",
+                                            "created": 1596096490983,
+                                            "text": "级联收回"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jszoo0py00",
+                                                    "created": 1596096506562,
+                                                    "text": "防止相互授权，默认级联收回，可用cascade显式声明"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c4jszwz48c00",
+                                            "created": 1596096524647,
+                                            "text": "revoke select on R from A restrict"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c4jt09oa2og0",
+                                                    "created": 1596096552290,
+                                                    "text": "restrict可以防止级联收回"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4b4e3mbx9s0",
+                    "created": 1595214628809,
+                    "text": "高级SQL"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

@@ -1,0 +1,206 @@
+{
+    "root": {
+        "data": {
+            "id": "c4jt7gdhn140",
+            "created": 1596097115424,
+            "text": "关系数据库设计"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c4jt7zlo62w0",
+                    "created": 1596097157278,
+                    "text": "原子域"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4jt8scinj40",
+                            "created": 1596097219851,
+                            "text": "若该域的元素被认为是不可分的单元，则称该域是原子的"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4jt8qar8bk0",
+                    "created": 1596097215391,
+                    "text": "第一范式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4jt92ped1c0",
+                            "created": 1596097242398,
+                            "text": "若关系R的所有属性都是原子的，则称关系R属于第一范式(1NF)"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4jt839lf5k0",
+                    "created": 1596097165255,
+                    "text": "函数依赖"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4jtoecoy740",
+                            "created": 1596098443213,
+                            "text": "R的子集K是r(R)的超码的条件：在关系r(R)的任意合法实例中，对于r的实例中的所有元组对t1和t2总能满足，若t1≠t2，则t1[K]≠t2[K]"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4jtq0o3mu80",
+                            "created": 1596098570157,
+                            "text": "给定r(R)的一个实例，其满足函数依赖α→β的条件是：对示例中所有元组对t1和t2，若t1[α]=t2[α]则t1[β]=t2[β]"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4jtr33udyo0",
+                            "created": 1596098653826,
+                            "text": "若在r(R)的每个合法实例中都满足函数依赖α→β，则称该函数依赖在模式r(R)上成立"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4jtrkuualk0",
+                            "created": 1596098692464,
+                            "text": "因此，若函数依赖K→R在r(R)上成立，则K是r(R)的一个超码"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4jts53sm2g0",
+                            "created": 1596098736541,
+                            "text": "在所有关系中都满足的函数依赖是平凡的"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4jtt3d3mqo0",
+                    "created": 1596098811114,
+                    "text": "BCNF范式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4jtt6vy5nk0",
+                            "created": 1596098818784,
+                            "text": "具有函数依赖集F的关系模式R属于BCNF的条件是，对于F*中所有形如α→β的函数依赖，（其中α∈R且β∈R），以下至少一项成立"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4jttvwkz8w0",
+                            "created": 1596098873242,
+                            "text": "条件"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jttxgo20o0",
+                                    "created": 1596098876633,
+                                    "text": "α→β是平凡的函数依赖，即β∈α"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jtu7mbwio0",
+                                    "created": 1596098898744,
+                                    "text": "α是模式R的一个超码"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4jth4gs7g00",
+                    "created": 1596097873144,
+                    "text": "第三范式"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c4jthbqt5080",
+                            "created": 1596097888987,
+                            "text": "具有函数依赖集F的关系模式R属于第三范式，对于F*中所有形如α→β的函数依赖（其中α∈R且β∈R），以下至少一项成立"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c4jtipi26pk0",
+                            "created": 1596097997298,
+                            "text": "条件"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c4jtiyfj2co0",
+                                    "created": 1596098016736,
+                                    "text": "α→β是一个平凡的函数依赖"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jtj88rjdk0",
+                                    "created": 1596098038094,
+                                    "text": "α是R的一个超码"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c4jtjeawwf40",
+                                    "created": 1596098051285,
+                                    "text": "β-α的每一个属性A都包含于R的一个候选码中"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c4jtjpmeguw0",
+                                            "created": 1596098075924,
+                                            "text": "不需要存在单个候选码包含β-α的所有属性"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c4jt858z5x40",
+                    "created": 1596097169571,
+                    "text": "分解算法"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}
